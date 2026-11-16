@@ -185,8 +185,9 @@ void main() {
   testWidgets('App root smoke test renders without crash', (tester) async {
     await tester.pumpWidget(const ProviderScope(child: RecipeMateApp()));
 
-    // Initial frame renders home screen title
-    expect(find.textContaining('Bonjour'), findsOneWidget);
+    // Initial frame renders home screen placeholder
+    expect(find.text('Accueil'), findsWidgets);
+    expect(find.text('Responsable : Molka'), findsOneWidget);
     expect(find.text('Mon frigo'), findsOneWidget);
   });
 }

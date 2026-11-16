@@ -1,39 +1,45 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:recipemate/core/theme/app_colors.dart';
-import 'package:recipemate/core/theme/app_text_styles.dart';
 
 /// Styled badge chip used to display diets, categories or tags.
+/// Aligned with `docs/design/RecipeMate.html`:
+/// - Height: 26-28px
+/// - Border radius: 8px (or 99px for pill style)
+/// - Background: `#DDEBCB` (or `#EEF3E6`)
+/// - Text: `#3F6233`, font-size: 12px, font-weight: 600
 class DietBadge extends StatelessWidget {
   const DietBadge({
     required this.label,
     super.key,
-    this.backgroundColor = AppColors.softGreenLight,
-    this.textColor = AppColors.primaryDark,
+    this.backgroundColor = AppColors.softGreen,
+    this.textColor = AppColors.tonalGreenText,
     this.isSmall = false,
+    this.isPill = false,
   });
 
   final String label;
   final Color backgroundColor;
   final Color textColor;
   final bool isSmall;
+  final bool isPill;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
-        horizontal: isSmall ? 8 : 10,
-        vertical: isSmall ? 3 : 5,
-      ),
+      height: isSmall ? 24.0 : 26.0,
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       decoration: BoxDecoration(
         color: backgroundColor,
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: textColor.withValues(alpha: 0.2), width: 0.8),
+        borderRadius: BorderRadius.circular(isPill ? 99 : 8),
       ),
+      alignment: Alignment.center,
       child: Text(
         label,
-        style: (isSmall ? AppTextStyles.label : AppTextStyles.badge).copyWith(
-          color: textColor,
+        style: GoogleFonts.inter(
+          fontSize: isSmall ? 11 : 12,
           fontWeight: FontWeight.w600,
+          color: textColor,
         ),
       ),
     );

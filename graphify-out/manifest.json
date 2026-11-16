@@ -88,104 +88,108 @@
     "hash": "0b5d6a5f98b3246f10b3feb2f68f475e"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\theme\\app_colors.dart": {
-    "mtime": 1794832501.7766337,
-    "hash": "ce3b47e44c246e8598cdc18ba9f0a462"
+    "mtime": 1794834385.2447913,
+    "hash": "92ac31a3a37a2438070ebd5f94579ba5"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\theme\\app_text_styles.dart": {
-    "mtime": 1794833222.3966234,
-    "hash": "aa6efc5bc32f6574fb7c841b578e5da3"
+    "mtime": 1794834395.6572394,
+    "hash": "61ba18d1adf9ebc64de8c4210bb708f6"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\theme\\app_theme.dart": {
-    "mtime": 1794833222.4031906,
-    "hash": "aab529b63d7bdef58a13b8913c72a512"
+    "mtime": 1794834407.0287595,
+    "hash": "5493462ff7d2994dbae45cda75c7e608"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\add_recipe\\add_recipe_screen.dart": {
-    "mtime": 1794833222.4150875,
-    "hash": "cd7a6c8ca5058e7f1e7747046942010d"
+    "mtime": 1794834634.8515325,
+    "hash": "c6be640096152b4a0c43076034b0d33c"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\auth\\auth_screen.dart": {
-    "mtime": 1794833222.4398625,
-    "hash": "c878dc4a65f1b6b41e24798e785711c8"
+    "mtime": 1794834519.4342508,
+    "hash": "9ce5ba48fefc9e2847647d500a0e437b"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\collections\\collections_screen.dart": {
-    "mtime": 1794833222.4588664,
-    "hash": "8c2805203d82df2a42e4da34f44504c6"
+    "mtime": 1794834533.2860255,
+    "hash": "bde7e162019484c60faf997a71cf9e10"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\cooking_mode\\cooking_mode_screen.dart": {
-    "mtime": 1794833222.4863381,
-    "hash": "db66832c611241368a5a2ec878102715"
+    "mtime": 1794834511.3251655,
+    "hash": "eed8bf7f1caf68c47875d40914b15d81"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\explore\\explore_screen.dart": {
-    "mtime": 1794833222.5070403,
-    "hash": "0d317a98b9a6e1baae9c134a48de8158"
+    "mtime": 1794834503.3706472,
+    "hash": "6c3e2dcb782bc411a2e6249bb8923613"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\favorites\\favorites_screen.dart": {
-    "mtime": 1794832791.282979,
-    "hash": "7841b988a40e5c64ee2fc7f1dd1ade52"
+    "mtime": 1794834529.7388473,
+    "hash": "c0f9746a702e56b72cd3778e35f4728e"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\fridge\\fridge_screen.dart": {
-    "mtime": 1794832839.3508778,
-    "hash": "c4cee440a0e733824274a41900b80b04"
+    "mtime": 1794834634.885818,
+    "hash": "583ff9168493e8a6f769f7fb19247311"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\home\\home_screen.dart": {
-    "mtime": 1794833222.5652926,
-    "hash": "7d57568c6273bafe9d2a93bab1809ab0"
+    "mtime": 1794834634.8947017,
+    "hash": "f6e995bba0a451cd76b975798e8aa0cc"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\onboarding\\onboarding_screen.dart": {
-    "mtime": 1794833222.577299,
-    "hash": "ce669834c3f52eea08b5f0085c43da9a"
+    "mtime": 1794834515.735869,
+    "hash": "ae213f4b75373909f7cbf600e760fe1b"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\product\\product_screen.dart": {
-    "mtime": 1794833222.5992308,
-    "hash": "01958bfbb92ac7812246b73c190c2372"
+    "mtime": 1794834557.1533153,
+    "hash": "c0c42fd15d8a594cdf8a77f9a281c5e7"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\profile\\profile_screen.dart": {
-    "mtime": 1794833222.6161222,
-    "hash": "e7f83e80b365219caa28b08d522d460b"
+    "mtime": 1794834634.91336,
+    "hash": "13961998ec13cd247eb8e7bcd4b1756a"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\recipe_details\\recipe_details_screen.dart": {
-    "mtime": 1794833222.6437304,
-    "hash": "00debe0a5560ed38f80019afdbc72bf7"
+    "mtime": 1794834634.9192474,
+    "hash": "cb7ad0960741f3909b8a4457c93d3fc5"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\recommendations\\recommendations_screen.dart": {
-    "mtime": 1794833222.6574812,
-    "hash": "6ec06ea01148871b7d2416a05d5fa540"
+    "mtime": 1794834634.925674,
+    "hash": "484ed61b7bac8f4764f61ba4105082d9"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\scanner\\scanner_screen.dart": {
-    "mtime": 1794833222.6687443,
-    "hash": "f05a6c210b3e4d775526b2d860b7ab5f"
+    "mtime": 1794834552.032457,
+    "hash": "094ccbb0dbc91fe07feb11ee949a31cb"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\app_buttons.dart": {
-    "mtime": 1794833222.6984172,
-    "hash": "4e2298462335c7cbcef91601df4734a4"
+    "mtime": 1794834634.9517007,
+    "hash": "91be53f9b1436170bca1a90b0d0f72d6"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\app_nav_bar.dart": {
-    "mtime": 1794833222.7014804,
-    "hash": "1da11aa38a7d2c33fdb6479d9bd4a746"
+    "mtime": 1794834476.4441907,
+    "hash": "ae060b3f8f2960df43c20061ab24f14d"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\app_text_field.dart": {
-    "mtime": 1794833222.7059731,
-    "hash": "9a0fc12ecf0880c002eb6a5ca50d778c"
+    "mtime": 1794834634.9593036,
+    "hash": "839d09ccbc5b7c4e67d4c21398bc3dd1"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\diet_badge.dart": {
-    "mtime": 1794833222.7099128,
-    "hash": "59430e80b1b46970938b3df33e61f668"
+    "mtime": 1794834444.2906542,
+    "hash": "691f9cd9a9a17d9e3bc0d4a755fdc539"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\feature_placeholder.dart": {
+    "mtime": 1794834634.9730098,
+    "hash": "5c91400604e337ed95123a7af4989847"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\macro_ring.dart": {
-    "mtime": 1794833222.7148151,
-    "hash": "7db59db564a763c925ac489f45162f7b"
+    "mtime": 1794834438.9315202,
+    "hash": "b9c6a28d65902e3c2da930c33deb9a8a"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\match_bar.dart": {
-    "mtime": 1794833288.078905,
-    "hash": "f584eb654712607428433b987eb38f50"
+    "mtime": 1794834430.0126843,
+    "hash": "67dbf93581651546d75aa842c3d26f28"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\recipe_card.dart": {
-    "mtime": 1794833305.0301795,
-    "hash": "3d6b26d89f09163bd3753dcac34e5679"
+    "mtime": 1794834469.809278,
+    "hash": "b77e27b4606e44922a53412de42bad7f"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\test\\widget_test.dart": {
-    "mtime": 1794833222.7674198,
-    "hash": "3d9fb6d57a154f02128e6e7056a3f45b"
+    "mtime": 1794834561.8060758,
+    "hash": "06d882e43946229736c92628229bc8f3"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\test\\models\\fridge_item_test.dart": {
     "mtime": 1794832911.6796784,
@@ -268,7 +272,7 @@
     "hash": "e7f42003d7726fc062c500405f952e47"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\graphify-out\\converted\\RecipeMate_Plan_de_travail_d57f511d.md": {
-    "mtime": 1794833354.10021,
+    "mtime": 1794834666.823516,
     "hash": "0c003ef808867a4f7096b4e3bfc6bfb0"
   },
   "C:\\Users\\Adem\\Desktop\\RecipeMate\\docs\\design\\RecipeMate.html": {

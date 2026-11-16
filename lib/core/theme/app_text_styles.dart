@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:recipemate/core/theme/app_colors.dart';
 
-/// Typography tokens for RecipeMate.
+/// Typography tokens for RecipeMate directly aligned with `docs/design/RecipeMate.html`.
 /// Poppins for headings & display titles.
 /// Inter for body, captions, labels, and buttons.
 abstract final class AppTextStyles {
-  // Headings (Poppins)
+  // Headings & Titles (Poppins)
   static TextStyle get display => GoogleFonts.poppins(
     fontSize: 32,
     fontWeight: FontWeight.w700,
-    height: 1.2,
-    letterSpacing: -0.5,
+    letterSpacing: -0.02 * 32,
+    height: 1.15,
     color: AppColors.textPrimary,
   );
 
@@ -19,15 +19,14 @@ abstract final class AppTextStyles {
     fontSize: 26,
     fontWeight: FontWeight.w700,
     height: 1.25,
-    letterSpacing: -0.3,
+    letterSpacing: -0.02 * 26,
     color: AppColors.textPrimary,
   );
 
   static TextStyle get title => GoogleFonts.poppins(
     fontSize: 22,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
     height: 1.3,
-    letterSpacing: -0.2,
     color: AppColors.textPrimary,
   );
 
@@ -38,25 +37,32 @@ abstract final class AppTextStyles {
     color: AppColors.textPrimary,
   );
 
+  static TextStyle get sectionHeader => GoogleFonts.poppins(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    height: 1.35,
+    color: AppColors.textPrimary,
+  );
+
   // Body & Content (Inter)
   static TextStyle get body => GoogleFonts.inter(
     fontSize: 15,
     fontWeight: FontWeight.w400,
-    height: 1.45,
+    height: 1.5,
     color: AppColors.textPrimary,
   );
 
   static TextStyle get bodyMedium => GoogleFonts.inter(
     fontSize: 15,
     fontWeight: FontWeight.w500,
-    height: 1.45,
+    height: 1.5,
     color: AppColors.textPrimary,
   );
 
   static TextStyle get bodySecondary => GoogleFonts.inter(
     fontSize: 15,
     fontWeight: FontWeight.w400,
-    height: 1.45,
+    height: 1.5,
     color: AppColors.textSecondary,
   );
 
@@ -75,25 +81,20 @@ abstract final class AppTextStyles {
   );
 
   // Buttons & Interactive
-  static TextStyle get button => GoogleFonts.inter(
-    fontSize: 15,
-    fontWeight: FontWeight.w600,
-    height: 1.2,
-    color: Colors.white,
-  );
+  static TextStyle get button =>
+      GoogleFonts.inter(fontSize: 15, fontWeight: FontWeight.w600, height: 1.2);
 
-  static TextStyle get buttonSmall => GoogleFonts.inter(
-    fontSize: 14,
-    fontWeight: FontWeight.w600,
-    height: 1.2,
-    color: Colors.white,
-  );
+  static TextStyle get buttonSmall =>
+      GoogleFonts.inter(fontSize: 14, fontWeight: FontWeight.w600, height: 1.2);
+
+  static TextStyle get tonalButton =>
+      GoogleFonts.inter(fontSize: 14, fontWeight: FontWeight.w600, height: 1.2);
 
   // Labels & Tags
   static TextStyle get label => GoogleFonts.inter(
     fontSize: 12,
     fontWeight: FontWeight.w600,
-    letterSpacing: 0.8,
+    letterSpacing: 0.08 * 12,
     color: AppColors.textSecondary,
   );
 

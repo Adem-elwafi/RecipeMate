@@ -150,7 +150,7 @@
     {
       "label": "FlutterAppDelegate",
       "file_type": "code",
-      "source_file": "",
+      "source_file": "ios/Runner/AppDelegate.swift",
       "source_location": "",
       "id": "flutterappdelegate",
       "community": 15,
@@ -159,7 +159,7 @@
     {
       "label": "FlutterImplicitEngineDelegate",
       "file_type": "code",
-      "source_file": "",
+      "source_file": "ios/Runner/AppDelegate.swift",
       "source_location": "",
       "id": "flutterimplicitenginedelegate",
       "community": 15,
@@ -249,7 +249,7 @@
     {
       "label": "FlutterSceneDelegate",
       "file_type": "code",
-      "source_file": "",
+      "source_file": "ios/Runner/SceneDelegate.swift",
       "source_location": "",
       "id": "flutterscenedelegate",
       "community": 21,
@@ -276,7 +276,7 @@
     {
       "label": "XCTestCase",
       "file_type": "code",
-      "source_file": "",
+      "source_file": "ios/RunnerTests/RunnerTests.swift",
       "source_location": "",
       "id": "xctestcase",
       "community": 18,
@@ -369,7 +369,7 @@
       "source_file": "lib/core/data/mock_data.dart",
       "source_location": null,
       "id": "lib_core_data_mock_data_dart",
-      "community": 5,
+      "community": 7,
       "norm_label": "mock_data.dart"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "lib/core/data/mock_data.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_data_mock_data_dart_recipe",
-      "community": 5,
+      "community": 7,
       "norm_label": "recipe"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "test/models/fridge_item_test.dart",
       "source_location": null,
       "id": "package_recipemate_core_models_fridge_item_dart",
-      "community": 5,
+      "community": 7,
       "norm_label": "package:recipemate/core/models/fridge_item.dart"
     },
     {
@@ -396,7 +396,7 @@
       "source_file": "test/models/recipe_test.dart",
       "source_location": null,
       "id": "package_recipemate_core_models_ingredient_dart",
-      "community": 3,
+      "community": 8,
       "norm_label": "package:recipemate/core/models/ingredient.dart"
     },
     {
@@ -414,7 +414,7 @@
       "source_file": "lib/core/data/mock_data.dart",
       "source_location": null,
       "id": "package_recipemate_core_models_user_profile_dart",
-      "community": 5,
+      "community": 7,
       "norm_label": "package:recipemate/core/models/user_profile.dart"
     },
     {
@@ -423,7 +423,7 @@
       "source_file": "lib/core/models/fridge_item.dart",
       "source_location": null,
       "id": "lib_core_models_fridge_item_dart",
-      "community": 3,
+      "community": 8,
       "norm_label": "fridge_item.dart"
     },
     {
@@ -432,7 +432,7 @@
       "source_file": "lib/core/models/fridge_item.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_fridge_item_dart_fridgeitem",
-      "community": 3,
+      "community": 8,
       "norm_label": "fridgeitem"
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "lib/core/models/fridge_item.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_fridge_item_dart_dateformat",
-      "community": 3,
+      "community": 8,
       "norm_label": "dateformat"
     },
     {
@@ -450,7 +450,7 @@
       "source_file": "lib/core/models/fridge_item.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_fridge_item_dart_copywith",
-      "community": 3,
+      "community": 8,
       "norm_label": "copywith"
     },
     {
@@ -459,16 +459,16 @@
       "source_file": "lib/core/models/user_profile.dart",
       "source_location": null,
       "id": "package_flutter_foundation_dart",
-      "community": 3,
+      "community": 8,
       "norm_label": "package:flutter/foundation.dart"
     },
     {
       "label": "package:intl/intl.dart",
       "file_type": "code",
-      "source_file": "lib/features/product/product_screen.dart",
+      "source_file": "lib/core/models/fridge_item.dart",
       "source_location": null,
       "id": "package_intl_intl_dart",
-      "community": 3,
+      "community": 8,
       "norm_label": "package:intl/intl.dart"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "lib/core/models/ingredient.dart",
       "source_location": null,
       "id": "lib_core_models_ingredient_dart",
-      "community": 3,
+      "community": 8,
       "norm_label": "ingredient.dart"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "lib/core/models/ingredient.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_ingredient_dart_ingredient",
-      "community": 3,
+      "community": 8,
       "norm_label": "ingredient"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "lib/core/models/ingredient.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_ingredient_dart_recipeingredient",
-      "community": 3,
+      "community": 8,
       "norm_label": "recipeingredient"
     },
     {
@@ -504,7 +504,7 @@
       "source_file": "lib/core/models/ingredient.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_ingredient_dart_ingredientcategory",
-      "community": 3,
+      "community": 8,
       "norm_label": "ingredientcategory"
     },
     {
@@ -513,7 +513,7 @@
       "source_file": "lib/core/models/recipe.dart",
       "source_location": null,
       "id": "lib_core_models_recipe_dart",
-      "community": 3,
+      "community": 8,
       "norm_label": "recipe.dart"
     },
     {
@@ -522,7 +522,7 @@
       "source_file": "lib/core/models/recipe.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_recipe_dart_recipe",
-      "community": 3,
+      "community": 8,
       "norm_label": "recipe"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "lib/core/models/recipe.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_recipe_dart_copywith",
-      "community": 3,
+      "community": 8,
       "norm_label": "copywith"
     },
     {
@@ -540,7 +540,7 @@
       "source_file": "lib/core/models/user_profile.dart",
       "source_location": null,
       "id": "lib_core_models_user_profile_dart",
-      "community": 3,
+      "community": 8,
       "norm_label": "user_profile.dart"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "lib/core/models/user_profile.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_user_profile_dart_userprofile",
-      "community": 3,
+      "community": 8,
       "norm_label": "userprofile"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "lib/core/models/user_profile.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_models_user_profile_dart_copywith",
-      "community": 3,
+      "community": 8,
       "norm_label": "copywith"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "lib_core_router_app_router_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "app_router.dart"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_router_app_router_dart_scaffold",
-      "community": 7,
+      "community": 6,
       "norm_label": "scaffold"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_router_app_router_dart_recipedetailsscreen",
-      "community": 7,
+      "community": 6,
       "norm_label": "recipedetailsscreen"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_router_app_router_dart_cookingmodescreen",
-      "community": 7,
+      "community": 6,
       "norm_label": "cookingmodescreen"
     },
     {
@@ -603,13 +603,13 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_core_router_app_router_dart_productscreen",
-      "community": 7,
+      "community": 6,
       "norm_label": "productscreen"
     },
     {
       "label": "package:go_router/go_router.dart",
       "file_type": "code",
-      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_go_router_go_router_dart",
       "community": 1,
@@ -621,7 +621,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_add_recipe_add_recipe_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/add_recipe/add_recipe_screen.dart"
     },
     {
@@ -630,7 +630,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_auth_auth_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/auth/auth_screen.dart"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_collections_collections_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/collections/collections_screen.dart"
     },
     {
@@ -648,7 +648,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_cooking_mode_cooking_mode_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/cooking_mode/cooking_mode_screen.dart"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_explore_explore_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/explore/explore_screen.dart"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_favorites_favorites_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/favorites/favorites_screen.dart"
     },
     {
@@ -675,7 +675,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_fridge_fridge_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/fridge/fridge_screen.dart"
     },
     {
@@ -684,7 +684,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_home_home_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/home/home_screen.dart"
     },
     {
@@ -693,7 +693,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_onboarding_onboarding_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/onboarding/onboarding_screen.dart"
     },
     {
@@ -702,7 +702,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_product_product_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/product/product_screen.dart"
     },
     {
@@ -711,7 +711,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_profile_profile_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/profile/profile_screen.dart"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_recipe_details_recipe_details_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/recipe_details/recipe_details_screen.dart"
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_recommendations_recommendations_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/recommendations/recommendations_screen.dart"
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_features_scanner_scanner_screen_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/features/scanner/scanner_screen.dart"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "lib/core/router/app_router.dart",
       "source_location": null,
       "id": "package_recipemate_shared_widgets_app_nav_bar_dart",
-      "community": 7,
+      "community": 6,
       "norm_label": "package:recipemate/shared/widgets/app_nav_bar.dart"
     },
     {
@@ -771,7 +771,7 @@
     {
       "label": "package:google_fonts/google_fonts.dart",
       "file_type": "code",
-      "source_file": "lib/core/theme/app_text_styles.dart",
+      "source_file": "lib/shared/widgets/recipe_card.dart",
       "source_location": null,
       "id": "package_google_fonts_google_fonts_dart",
       "community": 0,
@@ -816,7 +816,7 @@
     {
       "label": "package:recipemate/core/theme/app_text_styles.dart",
       "file_type": "code",
-      "source_file": "lib/shared/widgets/recipe_card.dart",
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
       "source_location": null,
       "id": "package_recipemate_core_theme_app_text_styles_dart",
       "community": 0,
@@ -828,7 +828,7 @@
       "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
       "source_location": null,
       "id": "lib_features_add_recipe_add_recipe_screen_dart",
-      "community": 8,
+      "community": 3,
       "norm_label": "add_recipe_screen.dart"
     },
     {
@@ -837,44 +837,8 @@
       "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_addrecipescreen",
-      "community": 8,
+      "community": 3,
       "norm_label": "addrecipescreen"
-    },
-    {
-      "label": "_AddRecipeScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_addrecipescreenstate",
-      "community": 8,
-      "norm_label": "_addrecipescreenstate"
-    },
-    {
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_dispose",
-      "community": 8,
-      "norm_label": "dispose"
-    },
-    {
-      "label": "_save",
-      "file_type": "code",
-      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_save",
-      "community": 8,
-      "norm_label": "_save"
-    },
-    {
-      "label": "SnackBar",
-      "file_type": "code",
-      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_snackbar",
-      "community": 8,
-      "norm_label": "snackbar"
     },
     {
       "label": "build",
@@ -882,44 +846,26 @@
       "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_build",
-      "community": 8,
+      "community": 3,
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_scaffold",
-      "community": 8,
-      "norm_label": "scaffold"
+      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_featureplaceholder",
+      "community": 3,
+      "norm_label": "featureplaceholder"
     },
     {
-      "label": "SizedBox",
+      "label": "package:recipemate/shared/widgets/feature_placeholder.dart",
       "file_type": "code",
-      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_sizedbox",
-      "community": 8,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "package:recipemate/shared/widgets/app_buttons.dart",
-      "file_type": "code",
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "id": "package_recipemate_shared_widgets_app_buttons_dart",
-      "community": 8,
-      "norm_label": "package:recipemate/shared/widgets/app_buttons.dart"
-    },
-    {
-      "label": "package:recipemate/shared/widgets/app_text_field.dart",
-      "file_type": "code",
-      "source_file": "lib/features/explore/explore_screen.dart",
-      "source_location": null,
-      "id": "package_recipemate_shared_widgets_app_text_field_dart",
-      "community": 8,
-      "norm_label": "package:recipemate/shared/widgets/app_text_field.dart"
+      "id": "package_recipemate_shared_widgets_feature_placeholder_dart",
+      "community": 1,
+      "norm_label": "package:recipemate/shared/widgets/feature_placeholder.dart"
     },
     {
       "label": "auth_screen.dart",
@@ -927,7 +873,7 @@
       "source_file": "lib/features/auth/auth_screen.dart",
       "source_location": null,
       "id": "lib_features_auth_auth_screen_dart",
-      "community": 8,
+      "community": 3,
       "norm_label": "auth_screen.dart"
     },
     {
@@ -936,35 +882,8 @@
       "source_file": "lib/features/auth/auth_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_authscreen",
-      "community": 8,
+      "community": 3,
       "norm_label": "authscreen"
-    },
-    {
-      "label": "_AuthScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/auth/auth_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_authscreenstate",
-      "community": 8,
-      "norm_label": "_authscreenstate"
-    },
-    {
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "lib/features/auth/auth_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_dispose",
-      "community": 8,
-      "norm_label": "dispose"
-    },
-    {
-      "label": "_submit",
-      "file_type": "code",
-      "source_file": "lib/features/auth/auth_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_submit",
-      "community": 8,
-      "norm_label": "_submit"
     },
     {
       "label": "build",
@@ -972,26 +891,17 @@
       "source_file": "lib/features/auth/auth_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_build",
-      "community": 8,
+      "community": 3,
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/auth/auth_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_scaffold",
-      "community": 8,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/auth/auth_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_sizedbox",
-      "community": 8,
-      "norm_label": "sizedbox"
+      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_featureplaceholder",
+      "community": 3,
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "collections_screen.dart",
@@ -1012,24 +922,6 @@
       "norm_label": "collectionsscreen"
     },
     {
-      "label": "_CollectionsScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/collections/collections_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_collectionsscreenstate",
-      "community": 13,
-      "norm_label": "_collectionsscreenstate"
-    },
-    {
-      "label": "_deleteCollection",
-      "file_type": "code",
-      "source_file": "lib/features/collections/collections_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_deletecollection",
-      "community": 13,
-      "norm_label": "_deletecollection"
-    },
-    {
       "label": "build",
       "file_type": "code",
       "source_file": "lib/features/collections/collections_screen.dart",
@@ -1039,40 +931,13 @@
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/collections/collections_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_featureplaceholder",
       "community": 13,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "Container",
-      "file_type": "code",
-      "source_file": "lib/features/collections/collections_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_container",
-      "community": 13,
-      "norm_label": "container"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/collections/collections_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_sizedbox",
-      "community": 13,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "SnackBar",
-      "file_type": "code",
-      "source_file": "lib/features/collections/collections_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_snackbar",
-      "community": 13,
-      "norm_label": "snackbar"
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "cooking_mode_screen.dart",
@@ -1093,42 +958,6 @@
       "norm_label": "cookingmodescreen"
     },
     {
-      "label": "_CookingModeScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_cookingmodescreenstate",
-      "community": 10,
-      "norm_label": "_cookingmodescreenstate"
-    },
-    {
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_dispose",
-      "community": 10,
-      "norm_label": "dispose"
-    },
-    {
-      "label": "_toggleTimer",
-      "file_type": "code",
-      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_toggletimer",
-      "community": 10,
-      "norm_label": "_toggletimer"
-    },
-    {
-      "label": "_resetTimer",
-      "file_type": "code",
-      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_resettimer",
-      "community": 10,
-      "norm_label": "_resettimer"
-    },
-    {
       "label": "build",
       "file_type": "code",
       "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
@@ -1138,58 +967,13 @@
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_featureplaceholder",
       "community": 10,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_sizedbox",
-      "community": 10,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "Icon",
-      "file_type": "code",
-      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_icon",
-      "community": 10,
-      "norm_label": "icon"
-    },
-    {
-      "label": "Spacer",
-      "file_type": "code",
-      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_spacer",
-      "community": 10,
-      "norm_label": "spacer"
-    },
-    {
-      "label": "dart:async",
-      "file_type": "code",
-      "source_file": "test/widgets/recipe_card_test.dart",
-      "source_location": null,
-      "id": "dart_async",
-      "community": 10,
-      "norm_label": "dart:async"
-    },
-    {
-      "label": "package:recipemate/core/data/mock_data.dart",
-      "file_type": "code",
-      "source_file": "test/widgets/recipe_card_test.dart",
-      "source_location": null,
-      "id": "package_recipemate_core_data_mock_data_dart",
-      "community": 5,
-      "norm_label": "package:recipemate/core/data/mock_data.dart"
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "explore_screen.dart",
@@ -1210,24 +994,6 @@
       "norm_label": "explorescreen"
     },
     {
-      "label": "_ExploreScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/explore/explore_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_explorescreenstate",
-      "community": 1,
-      "norm_label": "_explorescreenstate"
-    },
-    {
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "lib/features/explore/explore_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_dispose",
-      "community": 1,
-      "norm_label": "dispose"
-    },
-    {
       "label": "build",
       "file_type": "code",
       "source_file": "lib/features/explore/explore_screen.dart",
@@ -1237,49 +1003,13 @@
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/explore/explore_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_featureplaceholder",
       "community": 1,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "ChoiceChip",
-      "file_type": "code",
-      "source_file": "lib/features/explore/explore_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_choicechip",
-      "community": 1,
-      "norm_label": "choicechip"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/explore/explore_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_sizedbox",
-      "community": 1,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "RecipeCard",
-      "file_type": "code",
-      "source_file": "lib/features/explore/explore_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_recipecard",
-      "community": 1,
-      "norm_label": "recipecard"
-    },
-    {
-      "label": "package:recipemate/shared/widgets/recipe_card.dart",
-      "file_type": "code",
-      "source_file": "test/widgets/recipe_card_test.dart",
-      "source_location": null,
-      "id": "package_recipemate_shared_widgets_recipe_card_dart",
-      "community": 1,
-      "norm_label": "package:recipemate/shared/widgets/recipe_card.dart"
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "favorites_screen.dart",
@@ -1309,40 +1039,13 @@
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/favorites/favorites_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_featureplaceholder",
       "community": 1,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "Icon",
-      "file_type": "code",
-      "source_file": "lib/features/favorites/favorites_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_icon",
-      "community": 1,
-      "norm_label": "icon"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/favorites/favorites_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_sizedbox",
-      "community": 1,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "RecipeCard",
-      "file_type": "code",
-      "source_file": "lib/features/favorites/favorites_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_recipecard",
-      "community": 1,
-      "norm_label": "recipecard"
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "fridge_screen.dart",
@@ -1350,7 +1053,7 @@
       "source_file": "lib/features/fridge/fridge_screen.dart",
       "source_location": null,
       "id": "lib_features_fridge_fridge_screen_dart",
-      "community": 9,
+      "community": 7,
       "norm_label": "fridge_screen.dart"
     },
     {
@@ -1359,53 +1062,8 @@
       "source_file": "lib/features/fridge/fridge_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_fridgescreen",
-      "community": 9,
+      "community": 7,
       "norm_label": "fridgescreen"
-    },
-    {
-      "label": "_FridgeScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_fridgescreenstate",
-      "community": 9,
-      "norm_label": "_fridgescreenstate"
-    },
-    {
-      "label": "initState",
-      "file_type": "code",
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_initstate",
-      "community": 9,
-      "norm_label": "initstate"
-    },
-    {
-      "label": "_sortItems",
-      "file_type": "code",
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_sortitems",
-      "community": 9,
-      "norm_label": "_sortitems"
-    },
-    {
-      "label": "_removeItem",
-      "file_type": "code",
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_removeitem",
-      "community": 9,
-      "norm_label": "_removeitem"
-    },
-    {
-      "label": "SnackBar",
-      "file_type": "code",
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_snackbar",
-      "community": 9,
-      "norm_label": "snackbar"
     },
     {
       "label": "build",
@@ -1413,53 +1071,17 @@
       "source_file": "lib/features/fridge/fridge_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_build",
-      "community": 9,
+      "community": 7,
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/fridge/fridge_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_scaffold",
-      "community": 9,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_sizedbox",
-      "community": 9,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "Spacer",
-      "file_type": "code",
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_spacer",
-      "community": 9,
-      "norm_label": "spacer"
-    },
-    {
-      "label": "Icon",
-      "file_type": "code",
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_icon",
-      "community": 9,
-      "norm_label": "icon"
-    },
-    {
-      "label": "Container",
-      "file_type": "code",
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_container",
-      "community": 9,
-      "norm_label": "container"
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_featureplaceholder",
+      "community": 7,
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "home_screen.dart",
@@ -1489,40 +1111,13 @@
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/home/home_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_home_home_screen_dart_scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_home_home_screen_dart_featureplaceholder",
       "community": 1,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/home/home_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_home_home_screen_dart_sizedbox",
-      "community": 1,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "Row",
-      "file_type": "code",
-      "source_file": "lib/features/home/home_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_home_home_screen_dart_row",
-      "community": 1,
-      "norm_label": "row"
-    },
-    {
-      "label": "package:recipemate/shared/widgets/macro_ring.dart",
-      "file_type": "code",
-      "source_file": "lib/features/home/home_screen.dart",
-      "source_location": null,
-      "id": "package_recipemate_shared_widgets_macro_ring_dart",
-      "community": 1,
-      "norm_label": "package:recipemate/shared/widgets/macro_ring.dart"
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "onboarding_screen.dart",
@@ -1530,7 +1125,7 @@
       "source_file": "lib/features/onboarding/onboarding_screen.dart",
       "source_location": null,
       "id": "lib_features_onboarding_onboarding_screen_dart",
-      "community": 12,
+      "community": 3,
       "norm_label": "onboarding_screen.dart"
     },
     {
@@ -1539,35 +1134,8 @@
       "source_file": "lib/features/onboarding/onboarding_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_onboardingscreen",
-      "community": 12,
+      "community": 3,
       "norm_label": "onboardingscreen"
-    },
-    {
-      "label": "_OnboardingScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/onboarding/onboarding_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate",
-      "community": 12,
-      "norm_label": "_onboardingscreenstate"
-    },
-    {
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "lib/features/onboarding/onboarding_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_dispose",
-      "community": 12,
-      "norm_label": "dispose"
-    },
-    {
-      "label": "_onNext",
-      "file_type": "code",
-      "source_file": "lib/features/onboarding/onboarding_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_onnext",
-      "community": 12,
-      "norm_label": "_onnext"
     },
     {
       "label": "build",
@@ -1575,44 +1143,17 @@
       "source_file": "lib/features/onboarding/onboarding_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_build",
-      "community": 12,
+      "community": 3,
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/onboarding/onboarding_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_scaffold",
-      "community": 12,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/onboarding/onboarding_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_sizedbox",
-      "community": 12,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "Column",
-      "file_type": "code",
-      "source_file": "lib/features/onboarding/onboarding_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_column",
-      "community": 12,
-      "norm_label": "column"
-    },
-    {
-      "label": "AnimatedContainer",
-      "file_type": "code",
-      "source_file": "lib/features/onboarding/onboarding_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_animatedcontainer",
-      "community": 12,
-      "norm_label": "animatedcontainer"
+      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_featureplaceholder",
+      "community": 3,
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "product_screen.dart",
@@ -1620,7 +1161,7 @@
       "source_file": "lib/features/product/product_screen.dart",
       "source_location": null,
       "id": "lib_features_product_product_screen_dart",
-      "community": 3,
+      "community": 9,
       "norm_label": "product_screen.dart"
     },
     {
@@ -1629,35 +1170,8 @@
       "source_file": "lib/features/product/product_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_productscreen",
-      "community": 3,
+      "community": 9,
       "norm_label": "productscreen"
-    },
-    {
-      "label": "_ProductScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_productscreenstate",
-      "community": 3,
-      "norm_label": "_productscreenstate"
-    },
-    {
-      "label": "_addToFridge",
-      "file_type": "code",
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_addtofridge",
-      "community": 3,
-      "norm_label": "_addtofridge"
-    },
-    {
-      "label": "SnackBar",
-      "file_type": "code",
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_snackbar",
-      "community": 3,
-      "norm_label": "snackbar"
     },
     {
       "label": "build",
@@ -1665,62 +1179,17 @@
       "source_file": "lib/features/product/product_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_build",
-      "community": 3,
+      "community": 9,
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/product/product_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_scaffold",
-      "community": 3,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_sizedbox",
-      "community": 3,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "Icon",
-      "file_type": "code",
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_icon",
-      "community": 3,
-      "norm_label": "icon"
-    },
-    {
-      "label": "Spacer",
-      "file_type": "code",
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_spacer",
-      "community": 3,
-      "norm_label": "spacer"
-    },
-    {
-      "label": "_scoreCard",
-      "file_type": "code",
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_scorecard",
-      "community": 3,
-      "norm_label": "_scorecard"
-    },
-    {
-      "label": "Container",
-      "file_type": "code",
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_container",
-      "community": 3,
-      "norm_label": "container"
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_featureplaceholder",
+      "community": 9,
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "profile_screen.dart",
@@ -1728,7 +1197,7 @@
       "source_file": "lib/features/profile/profile_screen.dart",
       "source_location": null,
       "id": "lib_features_profile_profile_screen_dart",
-      "community": 6,
+      "community": 12,
       "norm_label": "profile_screen.dart"
     },
     {
@@ -1737,7 +1206,7 @@
       "source_file": "lib/features/profile/profile_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_profilescreen",
-      "community": 6,
+      "community": 12,
       "norm_label": "profilescreen"
     },
     {
@@ -1746,89 +1215,17 @@
       "source_file": "lib/features/profile/profile_screen.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_build",
-      "community": 6,
+      "community": 12,
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/profile/profile_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_scaffold",
-      "community": 6,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/profile/profile_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_sizedbox",
-      "community": 6,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "DietBadge",
-      "file_type": "code",
-      "source_file": "lib/features/profile/profile_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_dietbadge",
-      "community": 6,
-      "norm_label": "dietbadge"
-    },
-    {
-      "label": "Divider",
-      "file_type": "code",
-      "source_file": "lib/features/profile/profile_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_divider",
-      "community": 6,
-      "norm_label": "divider"
-    },
-    {
-      "label": "_quickLinkCard",
-      "file_type": "code",
-      "source_file": "lib/features/profile/profile_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_quicklinkcard",
-      "community": 6,
-      "norm_label": "_quicklinkcard"
-    },
-    {
-      "label": "Material",
-      "file_type": "code",
-      "source_file": "lib/features/profile/profile_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_material",
-      "community": 6,
-      "norm_label": "material"
-    },
-    {
-      "label": "_goalRow",
-      "file_type": "code",
-      "source_file": "lib/features/profile/profile_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_goalrow",
-      "community": 6,
-      "norm_label": "_goalrow"
-    },
-    {
-      "label": "Row",
-      "file_type": "code",
-      "source_file": "lib/features/profile/profile_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_row",
-      "community": 6,
-      "norm_label": "row"
-    },
-    {
-      "label": "package:recipemate/shared/widgets/diet_badge.dart",
-      "file_type": "code",
-      "source_file": "lib/shared/widgets/recipe_card.dart",
-      "source_location": null,
-      "id": "package_recipemate_shared_widgets_diet_badge_dart",
-      "community": 6,
-      "norm_label": "package:recipemate/shared/widgets/diet_badge.dart"
+      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_featureplaceholder",
+      "community": 12,
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "recipe_details_screen.dart",
@@ -1849,24 +1246,6 @@
       "norm_label": "recipedetailsscreen"
     },
     {
-      "label": "_RecipeDetailsScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_recipedetailsscreenstate",
-      "community": 5,
-      "norm_label": "_recipedetailsscreenstate"
-    },
-    {
-      "label": "initState",
-      "file_type": "code",
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_initstate",
-      "community": 5,
-      "norm_label": "initstate"
-    },
-    {
       "label": "build",
       "file_type": "code",
       "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
@@ -1876,67 +1255,13 @@
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_featureplaceholder",
       "community": 5,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "ColoredBox",
-      "file_type": "code",
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_coloredbox",
-      "community": 5,
-      "norm_label": "coloredbox"
-    },
-    {
-      "label": "DecoratedBox",
-      "file_type": "code",
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_decoratedbox",
-      "community": 5,
-      "norm_label": "decoratedbox"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_sizedbox",
-      "community": 5,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "Padding",
-      "file_type": "code",
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_padding",
-      "community": 5,
-      "norm_label": "padding"
-    },
-    {
-      "label": "_metricItem",
-      "file_type": "code",
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_metricitem",
-      "community": 5,
-      "norm_label": "_metricitem"
-    },
-    {
-      "label": "Column",
-      "file_type": "code",
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_column",
-      "community": 5,
-      "norm_label": "column"
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "recommendations_screen.dart",
@@ -1966,31 +1291,13 @@
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/recommendations/recommendations_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recommendations_recommendations_screen_dart_scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recommendations_recommendations_screen_dart_featureplaceholder",
       "community": 1,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/recommendations/recommendations_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recommendations_recommendations_screen_dart_sizedbox",
-      "community": 1,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "Padding",
-      "file_type": "code",
-      "source_file": "lib/features/recommendations/recommendations_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_recommendations_recommendations_screen_dart_padding",
-      "community": 1,
-      "norm_label": "padding"
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "scanner_screen.dart",
@@ -2011,42 +1318,6 @@
       "norm_label": "scannerscreen"
     },
     {
-      "label": "_ScannerScreenState",
-      "file_type": "code",
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_scannerscreenstate",
-      "community": 11,
-      "norm_label": "_scannerscreenstate"
-    },
-    {
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_dispose",
-      "community": 11,
-      "norm_label": "dispose"
-    },
-    {
-      "label": "_onDetect",
-      "file_type": "code",
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_ondetect",
-      "community": 11,
-      "norm_label": "_ondetect"
-    },
-    {
-      "label": "_openManualEntry",
-      "file_type": "code",
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_openmanualentry",
-      "community": 11,
-      "norm_label": "_openmanualentry"
-    },
-    {
       "label": "build",
       "file_type": "code",
       "source_file": "lib/features/scanner/scanner_screen.dart",
@@ -2056,49 +1327,13 @@
       "norm_label": "build"
     },
     {
-      "label": "Scaffold",
+      "label": "FeaturePlaceholder",
       "file_type": "code",
       "source_file": "lib/features/scanner/scanner_screen.dart",
       "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_featureplaceholder",
       "community": 11,
-      "norm_label": "scaffold"
-    },
-    {
-      "label": "SizedBox",
-      "file_type": "code",
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_sizedbox",
-      "community": 11,
-      "norm_label": "sizedbox"
-    },
-    {
-      "label": "Center",
-      "file_type": "code",
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_center",
-      "community": 11,
-      "norm_label": "center"
-    },
-    {
-      "label": "Icon",
-      "file_type": "code",
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_icon",
-      "community": 11,
-      "norm_label": "icon"
-    },
-    {
-      "label": "package:mobile_scanner/mobile_scanner.dart",
-      "file_type": "code",
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "id": "package_mobile_scanner_mobile_scanner_dart",
-      "community": 11,
-      "norm_label": "package:mobile_scanner/mobile_scanner.dart"
+      "norm_label": "featureplaceholder"
     },
     {
       "label": "app_buttons.dart",
@@ -2119,15 +1354,6 @@
       "norm_label": "primarybutton"
     },
     {
-      "label": "TonalButton",
-      "file_type": "code",
-      "source_file": "lib/shared/widgets/app_buttons.dart",
-      "source_location": null,
-      "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_app_buttons_dart_tonalbutton",
-      "community": 0,
-      "norm_label": "tonalbutton"
-    },
-    {
       "label": "OutlineButtonWidget",
       "file_type": "code",
       "source_file": "lib/shared/widgets/app_buttons.dart",
@@ -2135,6 +1361,15 @@
       "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_app_buttons_dart_outlinebuttonwidget",
       "community": 0,
       "norm_label": "outlinebuttonwidget"
+    },
+    {
+      "label": "TonalButton",
+      "file_type": "code",
+      "source_file": "lib/shared/widgets/app_buttons.dart",
+      "source_location": null,
+      "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_app_buttons_dart_tonalbutton",
+      "community": 0,
+      "norm_label": "tonalbutton"
     },
     {
       "label": "FavoriteButton",
@@ -2290,6 +1525,60 @@
       "norm_label": "container"
     },
     {
+      "label": "feature_placeholder.dart",
+      "file_type": "code",
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "id": "lib_shared_widgets_feature_placeholder_dart",
+      "community": 0,
+      "norm_label": "feature_placeholder.dart"
+    },
+    {
+      "label": "FeaturePlaceholder",
+      "file_type": "code",
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_featureplaceholder",
+      "community": 0,
+      "norm_label": "featureplaceholder"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_build",
+      "community": 0,
+      "norm_label": "build"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_scaffold",
+      "community": 0,
+      "norm_label": "scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_sizedbox",
+      "community": 0,
+      "norm_label": "sizedbox"
+    },
+    {
+      "label": "Icon",
+      "file_type": "code",
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_icon",
+      "community": 0,
+      "norm_label": "icon"
+    },
+    {
       "label": "macro_ring.dart",
       "file_type": "code",
       "source_file": "lib/shared/widgets/macro_ring.dart",
@@ -2394,7 +1683,7 @@
       "source_file": "lib/shared/widgets/recipe_card.dart",
       "source_location": null,
       "id": "lib_shared_widgets_recipe_card_dart",
-      "community": 6,
+      "community": 5,
       "norm_label": "recipe_card.dart"
     },
     {
@@ -2403,7 +1692,7 @@
       "source_file": "lib/shared/widgets/recipe_card.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_recipe_card_dart_recipecard",
-      "community": 6,
+      "community": 5,
       "norm_label": "recipecard"
     },
     {
@@ -2412,7 +1701,7 @@
       "source_file": "lib/shared/widgets/recipe_card.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_recipe_card_dart_build",
-      "community": 6,
+      "community": 5,
       "norm_label": "build"
     },
     {
@@ -2421,7 +1710,7 @@
       "source_file": "lib/shared/widgets/recipe_card.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_recipe_card_dart_container",
-      "community": 6,
+      "community": 5,
       "norm_label": "container"
     },
     {
@@ -2430,7 +1719,7 @@
       "source_file": "lib/shared/widgets/recipe_card.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_recipe_card_dart_coloredbox",
-      "community": 6,
+      "community": 5,
       "norm_label": "coloredbox"
     },
     {
@@ -2439,7 +1728,7 @@
       "source_file": "lib/shared/widgets/recipe_card.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_recipe_card_dart_sizedbox",
-      "community": 6,
+      "community": 5,
       "norm_label": "sizedbox"
     },
     {
@@ -2448,8 +1737,17 @@
       "source_file": "lib/shared/widgets/recipe_card.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_recipe_card_dart_icon",
-      "community": 6,
+      "community": 5,
       "norm_label": "icon"
+    },
+    {
+      "label": "Text",
+      "file_type": "code",
+      "source_file": "lib/shared/widgets/recipe_card.dart",
+      "source_location": null,
+      "id": "c_users_adem_desktop_recipemate_lib_shared_widgets_recipe_card_dart_text",
+      "community": 5,
+      "norm_label": "text"
     },
     {
       "label": "package:recipemate/shared/widgets/match_bar.dart",
@@ -2457,7 +1755,7 @@
       "source_file": "test/widgets/recipe_card_test.dart",
       "source_location": null,
       "id": "package_recipemate_shared_widgets_match_bar_dart",
-      "community": 6,
+      "community": 2,
       "norm_label": "package:recipemate/shared/widgets/match_bar.dart"
     },
     {
@@ -2587,6 +1885,15 @@
       "norm_label": "main"
     },
     {
+      "label": "dart:async",
+      "file_type": "code",
+      "source_file": "test/widgets/recipe_card_test.dart",
+      "source_location": null,
+      "id": "dart_async",
+      "community": 10,
+      "norm_label": "dart:async"
+    },
+    {
       "label": "dart:io",
       "file_type": "code",
       "source_file": "test/widgets/recipe_card_test.dart",
@@ -2610,7 +1917,7 @@
       "source_file": "test/widgets/recipe_card_test.dart",
       "source_location": null,
       "id": "package_flutter_test_flutter_test_dart",
-      "community": 5,
+      "community": 2,
       "norm_label": "package:flutter_test/flutter_test.dart"
     },
     {
@@ -2628,7 +1935,7 @@
       "source_file": "test/models/fridge_item_test.dart",
       "source_location": null,
       "id": "test_models_fridge_item_test_dart",
-      "community": 5,
+      "community": 1,
       "norm_label": "fridge_item_test.dart"
     },
     {
@@ -2637,8 +1944,17 @@
       "source_file": "test/models/fridge_item_test.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_test_models_fridge_item_test_dart_main",
-      "community": 5,
+      "community": 1,
       "norm_label": "main"
+    },
+    {
+      "label": "package:recipemate/core/data/mock_data.dart",
+      "file_type": "code",
+      "source_file": "test/widgets/recipe_card_test.dart",
+      "source_location": null,
+      "id": "package_recipemate_core_data_mock_data_dart",
+      "community": 1,
+      "norm_label": "package:recipemate/core/data/mock_data.dart"
     },
     {
       "label": "recipe_test.dart",
@@ -2664,7 +1980,7 @@
       "source_file": "test/widgets/match_bar_test.dart",
       "source_location": null,
       "id": "test_widgets_match_bar_test_dart",
-      "community": 6,
+      "community": 2,
       "norm_label": "match_bar_test.dart"
     },
     {
@@ -2673,7 +1989,7 @@
       "source_file": "test/widgets/match_bar_test.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_test_widgets_match_bar_test_dart_main",
-      "community": 6,
+      "community": 2,
       "norm_label": "main"
     },
     {
@@ -2682,7 +1998,7 @@
       "source_file": "test/widgets/match_bar_test.dart",
       "source_location": null,
       "id": "c_users_adem_desktop_recipemate_test_widgets_match_bar_test_dart_materialapp",
-      "community": 6,
+      "community": 2,
       "norm_label": "materialapp"
     },
     {
@@ -2810,6 +2126,15 @@
       "id": "c_users_adem_desktop_recipemate_test_widgets_recipe_card_test_dart_main",
       "community": 2,
       "norm_label": "main"
+    },
+    {
+      "label": "package:recipemate/shared/widgets/recipe_card.dart",
+      "file_type": "code",
+      "source_file": "test/widgets/recipe_card_test.dart",
+      "source_location": null,
+      "id": "package_recipemate_shared_widgets_recipe_card_dart",
+      "community": 1,
+      "norm_label": "package:recipemate/shared/widgets/recipe_card.dart"
     },
     {
       "label": "generated_plugin_registrant.cc",
@@ -3161,6 +2486,879 @@
       "id": "windows_runner_win32_window_h",
       "community": 33,
       "norm_label": "win32_window.h"
+    },
+    {
+      "label": "_AddRecipeScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "_addrecipescreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_addrecipescreenstate"
+    },
+    {
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "dispose",
+      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_dispose"
+    },
+    {
+      "label": "_save",
+      "file_type": "code",
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "_save",
+      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_save"
+    },
+    {
+      "label": "SnackBar",
+      "file_type": "code",
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "snackbar",
+      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_snackbar"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_sizedbox"
+    },
+    {
+      "label": "package:recipemate/shared/widgets/app_buttons.dart",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "package:recipemate/shared/widgets/app_buttons.dart",
+      "id": "package_recipemate_shared_widgets_app_buttons_dart"
+    },
+    {
+      "label": "package:recipemate/shared/widgets/app_text_field.dart",
+      "file_type": "code",
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "package:recipemate/shared/widgets/app_text_field.dart",
+      "id": "package_recipemate_shared_widgets_app_text_field_dart"
+    },
+    {
+      "label": "_AuthScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "_authscreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_authscreenstate"
+    },
+    {
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "dispose",
+      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_dispose"
+    },
+    {
+      "label": "_submit",
+      "file_type": "code",
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "_submit",
+      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_submit"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_sizedbox"
+    },
+    {
+      "label": "_CollectionsScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "community": 13,
+      "norm_label": "_collectionsscreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_collectionsscreenstate"
+    },
+    {
+      "label": "_deleteCollection",
+      "file_type": "code",
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "community": 13,
+      "norm_label": "_deletecollection",
+      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_deletecollection"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "community": 13,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_scaffold"
+    },
+    {
+      "label": "Container",
+      "file_type": "code",
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "community": 13,
+      "norm_label": "container",
+      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_container"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "community": 13,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_sizedbox"
+    },
+    {
+      "label": "SnackBar",
+      "file_type": "code",
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "community": 13,
+      "norm_label": "snackbar",
+      "id": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_snackbar"
+    },
+    {
+      "label": "_CookingModeScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "community": 10,
+      "norm_label": "_cookingmodescreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_cookingmodescreenstate"
+    },
+    {
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "community": 10,
+      "norm_label": "dispose",
+      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_dispose"
+    },
+    {
+      "label": "_toggleTimer",
+      "file_type": "code",
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "community": 10,
+      "norm_label": "_toggletimer",
+      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_toggletimer"
+    },
+    {
+      "label": "_resetTimer",
+      "file_type": "code",
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "community": 10,
+      "norm_label": "_resettimer",
+      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_resettimer"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "community": 10,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "community": 10,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_sizedbox"
+    },
+    {
+      "label": "Icon",
+      "file_type": "code",
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "community": 10,
+      "norm_label": "icon",
+      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_icon"
+    },
+    {
+      "label": "Spacer",
+      "file_type": "code",
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "community": 10,
+      "norm_label": "spacer",
+      "id": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_spacer"
+    },
+    {
+      "label": "_ExploreScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "_explorescreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_explorescreenstate"
+    },
+    {
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "dispose",
+      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_dispose"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_scaffold"
+    },
+    {
+      "label": "ChoiceChip",
+      "file_type": "code",
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "choicechip",
+      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_choicechip"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_sizedbox"
+    },
+    {
+      "label": "RecipeCard",
+      "file_type": "code",
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "recipecard",
+      "id": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_recipecard"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/favorites/favorites_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_scaffold"
+    },
+    {
+      "label": "Icon",
+      "file_type": "code",
+      "source_file": "lib/features/favorites/favorites_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "icon",
+      "id": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_icon"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/favorites/favorites_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_sizedbox"
+    },
+    {
+      "label": "RecipeCard",
+      "file_type": "code",
+      "source_file": "lib/features/favorites/favorites_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "recipecard",
+      "id": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_recipecard"
+    },
+    {
+      "label": "_FridgeScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "_fridgescreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_fridgescreenstate"
+    },
+    {
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "initstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_initstate"
+    },
+    {
+      "label": "_sortItems",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "_sortitems",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_sortitems"
+    },
+    {
+      "label": "_removeItem",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "_removeitem",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_removeitem"
+    },
+    {
+      "label": "SnackBar",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "snackbar",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_snackbar"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_sizedbox"
+    },
+    {
+      "label": "Spacer",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "spacer",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_spacer"
+    },
+    {
+      "label": "Icon",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "icon",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_icon"
+    },
+    {
+      "label": "Container",
+      "file_type": "code",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "community": 7,
+      "norm_label": "container",
+      "id": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_container"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/home/home_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_home_home_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/home/home_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_home_home_screen_dart_sizedbox"
+    },
+    {
+      "label": "Row",
+      "file_type": "code",
+      "source_file": "lib/features/home/home_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "row",
+      "id": "c_users_adem_desktop_recipemate_lib_features_home_home_screen_dart_row"
+    },
+    {
+      "label": "package:recipemate/shared/widgets/macro_ring.dart",
+      "file_type": "code",
+      "source_file": "lib/features/home/home_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "package:recipemate/shared/widgets/macro_ring.dart",
+      "id": "package_recipemate_shared_widgets_macro_ring_dart"
+    },
+    {
+      "label": "_OnboardingScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "_onboardingscreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate"
+    },
+    {
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "dispose",
+      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_dispose"
+    },
+    {
+      "label": "_onNext",
+      "file_type": "code",
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "_onnext",
+      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_onnext"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_sizedbox"
+    },
+    {
+      "label": "Column",
+      "file_type": "code",
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "column",
+      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_column"
+    },
+    {
+      "label": "AnimatedContainer",
+      "file_type": "code",
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "animatedcontainer",
+      "id": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_animatedcontainer"
+    },
+    {
+      "label": "_ProductScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "community": 9,
+      "norm_label": "_productscreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_productscreenstate"
+    },
+    {
+      "label": "_addToFridge",
+      "file_type": "code",
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "community": 9,
+      "norm_label": "_addtofridge",
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_addtofridge"
+    },
+    {
+      "label": "SnackBar",
+      "file_type": "code",
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "community": 9,
+      "norm_label": "snackbar",
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_snackbar"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "community": 9,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "community": 9,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_sizedbox"
+    },
+    {
+      "label": "Icon",
+      "file_type": "code",
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "community": 9,
+      "norm_label": "icon",
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_icon"
+    },
+    {
+      "label": "Spacer",
+      "file_type": "code",
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "community": 9,
+      "norm_label": "spacer",
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_spacer"
+    },
+    {
+      "label": "_scoreCard",
+      "file_type": "code",
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "community": 9,
+      "norm_label": "_scorecard",
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_scorecard"
+    },
+    {
+      "label": "Container",
+      "file_type": "code",
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "community": 9,
+      "norm_label": "container",
+      "id": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_container"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "community": 12,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "community": 12,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_sizedbox"
+    },
+    {
+      "label": "DietBadge",
+      "file_type": "code",
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "community": 12,
+      "norm_label": "dietbadge",
+      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_dietbadge"
+    },
+    {
+      "label": "Divider",
+      "file_type": "code",
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "community": 12,
+      "norm_label": "divider",
+      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_divider"
+    },
+    {
+      "label": "_quickLinkCard",
+      "file_type": "code",
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "community": 12,
+      "norm_label": "_quicklinkcard",
+      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_quicklinkcard"
+    },
+    {
+      "label": "Material",
+      "file_type": "code",
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "community": 12,
+      "norm_label": "material",
+      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_material"
+    },
+    {
+      "label": "_goalRow",
+      "file_type": "code",
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "community": 12,
+      "norm_label": "_goalrow",
+      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_goalrow"
+    },
+    {
+      "label": "Row",
+      "file_type": "code",
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "community": 12,
+      "norm_label": "row",
+      "id": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_row"
+    },
+    {
+      "label": "package:recipemate/shared/widgets/diet_badge.dart",
+      "file_type": "code",
+      "source_file": "lib/shared/widgets/recipe_card.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "package:recipemate/shared/widgets/diet_badge.dart",
+      "id": "package_recipemate_shared_widgets_diet_badge_dart"
+    },
+    {
+      "label": "_RecipeDetailsScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "_recipedetailsscreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_recipedetailsscreenstate"
+    },
+    {
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "initstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_initstate"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_scaffold"
+    },
+    {
+      "label": "ColoredBox",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "coloredbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_coloredbox"
+    },
+    {
+      "label": "DecoratedBox",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "decoratedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_decoratedbox"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_sizedbox"
+    },
+    {
+      "label": "Padding",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "padding",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_padding"
+    },
+    {
+      "label": "_metricItem",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "_metricitem",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_metricitem"
+    },
+    {
+      "label": "Column",
+      "file_type": "code",
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "column",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_column"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/recommendations/recommendations_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recommendations_recommendations_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/recommendations/recommendations_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recommendations_recommendations_screen_dart_sizedbox"
+    },
+    {
+      "label": "Padding",
+      "file_type": "code",
+      "source_file": "lib/features/recommendations/recommendations_screen.dart",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "padding",
+      "id": "c_users_adem_desktop_recipemate_lib_features_recommendations_recommendations_screen_dart_padding"
+    },
+    {
+      "label": "_ScannerScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "community": 11,
+      "norm_label": "_scannerscreenstate",
+      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_scannerscreenstate"
+    },
+    {
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "community": 11,
+      "norm_label": "dispose",
+      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_dispose"
+    },
+    {
+      "label": "_onDetect",
+      "file_type": "code",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "community": 11,
+      "norm_label": "_ondetect",
+      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_ondetect"
+    },
+    {
+      "label": "_openManualEntry",
+      "file_type": "code",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "community": 11,
+      "norm_label": "_openmanualentry",
+      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_openmanualentry"
+    },
+    {
+      "label": "Scaffold",
+      "file_type": "code",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "community": 11,
+      "norm_label": "scaffold",
+      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_scaffold"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "community": 11,
+      "norm_label": "sizedbox",
+      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_sizedbox"
+    },
+    {
+      "label": "Center",
+      "file_type": "code",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "community": 11,
+      "norm_label": "center",
+      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_center"
+    },
+    {
+      "label": "Icon",
+      "file_type": "code",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "community": 11,
+      "norm_label": "icon",
+      "id": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_icon"
+    },
+    {
+      "label": "package:mobile_scanner/mobile_scanner.dart",
+      "file_type": "code",
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "community": 11,
+      "norm_label": "package:mobile_scanner/mobile_scanner.dart",
+      "id": "package_mobile_scanner_mobile_scanner_dart"
     }
   ],
   "links": [
@@ -3170,9 +3368,9 @@
       "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java",
-      "target": "plugins_generatedpluginregistrant_generatedpluginregistrant",
-      "confidence_score": 1.0
+      "target": "plugins_generatedpluginregistrant_generatedpluginregistrant"
     },
     {
       "relation": "method",
@@ -3180,9 +3378,9 @@
       "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plugins_generatedpluginregistrant_generatedpluginregistrant",
-      "target": "plugins_generatedpluginregistrant_generatedpluginregistrant_registerwith",
-      "confidence_score": 1.0
+      "target": "plugins_generatedpluginregistrant_generatedpluginregistrant_registerwith"
     },
     {
       "relation": "contains",
@@ -3190,9 +3388,9 @@
       "source_file": "android/app/src/main/kotlin/com/recipemate/recipemate/MainActivity.kt",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "android_app_src_main_kotlin_com_recipemate_recipemate_mainactivity_kt",
-      "target": "recipemate_mainactivity_mainactivity",
-      "confidence_score": 1.0
+      "target": "recipemate_mainactivity_mainactivity"
     },
     {
       "relation": "contains",
@@ -3200,9 +3398,9 @@
       "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ios_flutter_ephemeral_flutter_lldb_helper_py",
-      "target": "ephemeral_flutter_lldb_helper_handle_new_rx_page",
-      "confidence_score": 1.0
+      "target": "ephemeral_flutter_lldb_helper_handle_new_rx_page"
     },
     {
       "relation": "contains",
@@ -3210,9 +3408,9 @@
       "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ios_flutter_ephemeral_flutter_lldb_helper_py",
-      "target": "ephemeral_flutter_lldb_helper_lldb_init_module",
-      "confidence_score": 1.0
+      "target": "ephemeral_flutter_lldb_helper_lldb_init_module"
     },
     {
       "relation": "rationale_for",
@@ -3220,9 +3418,9 @@
       "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ephemeral_flutter_lldb_helper_rationale_8",
-      "target": "ephemeral_flutter_lldb_helper_handle_new_rx_page",
-      "confidence_score": 1.0
+      "target": "ephemeral_flutter_lldb_helper_handle_new_rx_page"
     },
     {
       "relation": "contains",
@@ -3230,9 +3428,9 @@
       "source_file": "ios/Runner/AppDelegate.swift",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ios_runner_appdelegate_swift",
-      "target": "runner_appdelegate_appdelegate",
-      "confidence_score": 1.0
+      "target": "runner_appdelegate_appdelegate"
     },
     {
       "relation": "inherits",
@@ -3240,9 +3438,9 @@
       "source_file": "ios/Runner/AppDelegate.swift",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_appdelegate_appdelegate",
-      "target": "flutterappdelegate",
-      "confidence_score": 1.0
+      "target": "flutterappdelegate"
     },
     {
       "relation": "inherits",
@@ -3250,9 +3448,9 @@
       "source_file": "ios/Runner/AppDelegate.swift",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_appdelegate_appdelegate",
-      "target": "flutterimplicitenginedelegate",
-      "confidence_score": 1.0
+      "target": "flutterimplicitenginedelegate"
     },
     {
       "relation": "method",
@@ -3260,9 +3458,9 @@
       "source_file": "ios/Runner/AppDelegate.swift",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_appdelegate_appdelegate",
-      "target": "runner_appdelegate_appdelegate_application",
-      "confidence_score": 1.0
+      "target": "runner_appdelegate_appdelegate_application"
     },
     {
       "relation": "method",
@@ -3270,9 +3468,9 @@
       "source_file": "ios/Runner/AppDelegate.swift",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_appdelegate_appdelegate",
-      "target": "runner_appdelegate_appdelegate_didinitializeimplicitflutterengine",
-      "confidence_score": 1.0
+      "target": "runner_appdelegate_appdelegate_didinitializeimplicitflutterengine"
     },
     {
       "relation": "contains",
@@ -3280,9 +3478,9 @@
       "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ios_runner_generatedpluginregistrant_m",
-      "target": "runner_generatedpluginregistrant_generatedpluginregistrant",
-      "confidence_score": 1.0
+      "target": "runner_generatedpluginregistrant_generatedpluginregistrant"
     },
     {
       "relation": "method",
@@ -3290,9 +3488,9 @@
       "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_generatedpluginregistrant_generatedpluginregistrant",
-      "target": "runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry",
-      "confidence_score": 1.0
+      "target": "runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry"
     },
     {
       "relation": "contains",
@@ -3300,9 +3498,9 @@
       "source_file": "ios/Runner/SceneDelegate.swift",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ios_runner_scenedelegate_swift",
-      "target": "runner_scenedelegate_scenedelegate",
-      "confidence_score": 1.0
+      "target": "runner_scenedelegate_scenedelegate"
     },
     {
       "relation": "inherits",
@@ -3310,9 +3508,9 @@
       "source_file": "ios/Runner/SceneDelegate.swift",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_scenedelegate_scenedelegate",
-      "target": "flutterscenedelegate",
-      "confidence_score": 1.0
+      "target": "flutterscenedelegate"
     },
     {
       "relation": "contains",
@@ -3320,9 +3518,9 @@
       "source_file": "ios/RunnerTests/RunnerTests.swift",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ios_runnertests_runnertests_swift",
-      "target": "runnertests_runnertests_runnertests",
-      "confidence_score": 1.0
+      "target": "runnertests_runnertests_runnertests"
     },
     {
       "relation": "inherits",
@@ -3330,9 +3528,9 @@
       "source_file": "ios/RunnerTests/RunnerTests.swift",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runnertests_runnertests_runnertests",
-      "target": "xctestcase",
-      "confidence_score": 1.0
+      "target": "xctestcase"
     },
     {
       "relation": "method",
@@ -3340,9 +3538,9 @@
       "source_file": "ios/RunnerTests/RunnerTests.swift",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runnertests_runnertests_runnertests",
-      "target": "runnertests_runnertests_runnertests_testexample",
-      "confidence_score": 1.0
+      "target": "runnertests_runnertests_runnertests_testexample"
     },
     {
       "relation": "defines",
@@ -3638,6 +3836,16 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_feature_placeholder_dart",
+      "target": "package_flutter_material_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/shared/widgets/macro_ring.dart",
       "source_location": null,
       "weight": 1.0,
@@ -3748,20 +3956,20 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_file": "test/models/fridge_item_test.dart",
       "source_location": null,
       "weight": 1.0,
-      "source": "lib_features_fridge_fridge_screen_dart",
+      "source": "test_models_fridge_item_test_dart",
       "target": "package_recipemate_core_models_fridge_item_dart"
     },
     {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "test/models/fridge_item_test.dart",
+      "source_file": "lib/features/fridge/fridge_screen.dart",
       "source_location": null,
       "weight": 1.0,
-      "source": "test_models_fridge_item_test_dart",
+      "source": "lib_features_fridge_fridge_screen_dart",
       "target": "package_recipemate_core_models_fridge_item_dart"
     },
     {
@@ -3798,6 +4006,26 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/recipe_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_recipe_card_dart",
+      "target": "package_recipemate_core_models_recipe_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test/models/recipe_test.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "test_models_recipe_test_dart",
+      "target": "package_recipemate_core_models_recipe_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
       "source_location": null,
       "weight": 1.0,
@@ -3822,26 +4050,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_recommendations_recommendations_screen_dart",
-      "target": "package_recipemate_core_models_recipe_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/shared/widgets/recipe_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_shared_widgets_recipe_card_dart",
-      "target": "package_recipemate_core_models_recipe_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/models/recipe_test.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_models_recipe_test_dart",
       "target": "package_recipemate_core_models_recipe_dart"
     },
     {
@@ -4358,150 +4566,70 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/app_text_field.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_app_text_field_dart",
+      "target": "package_google_fonts_google_fonts_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/diet_badge.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_diet_badge_dart",
+      "target": "package_google_fonts_google_fonts_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_feature_placeholder_dart",
+      "target": "package_google_fonts_google_fonts_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/macro_ring.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_macro_ring_dart",
+      "target": "package_google_fonts_google_fonts_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/match_bar.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_match_bar_dart",
+      "target": "package_google_fonts_google_fonts_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/recipe_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_recipe_card_dart",
+      "target": "package_google_fonts_google_fonts_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/core/theme/app_theme.dart",
       "source_location": null,
       "weight": 1.0,
       "source": "lib_core_theme_app_theme_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_add_recipe_add_recipe_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/auth/auth_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_auth_auth_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/collections/collections_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_collections_collections_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_cooking_mode_cooking_mode_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/explore/explore_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_explore_explore_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/favorites/favorites_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_favorites_favorites_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_fridge_fridge_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/home/home_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_home_home_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/onboarding/onboarding_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_onboarding_onboarding_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_product_product_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/profile/profile_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_profile_profile_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_recipe_details_recipe_details_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/recommendations/recommendations_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_recommendations_recommendations_screen_dart",
-      "target": "package_recipemate_core_theme_app_colors_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_scanner_scanner_screen_dart",
       "target": "package_recipemate_core_theme_app_colors_dart"
     },
     {
@@ -4548,6 +4676,16 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_feature_placeholder_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/shared/widgets/macro_ring.dart",
       "source_location": null,
       "weight": 1.0,
@@ -4572,6 +4710,146 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_shared_widgets_recipe_card_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_add_recipe_add_recipe_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_auth_auth_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_collections_collections_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_cooking_mode_cooking_mode_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_explore_explore_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/favorites/favorites_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_favorites_favorites_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_fridge_fridge_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/home/home_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_home_home_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_onboarding_onboarding_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_product_product_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_profile_profile_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recipe_details_recipe_details_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recommendations/recommendations_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recommendations_recommendations_screen_dart",
+      "target": "package_recipemate_core_theme_app_colors_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_scanner_scanner_screen_dart",
       "target": "package_recipemate_core_theme_app_colors_dart"
     },
     {
@@ -4602,6 +4880,36 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_core_theme_app_theme_dart",
+      "target": "package_recipemate_core_theme_app_text_styles_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/app_buttons.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_app_buttons_dart",
+      "target": "package_recipemate_core_theme_app_text_styles_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/app_text_field.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_app_text_field_dart",
+      "target": "package_recipemate_core_theme_app_text_styles_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_feature_placeholder_dart",
       "target": "package_recipemate_core_theme_app_text_styles_dart"
     },
     {
@@ -4742,26 +5050,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_scanner_scanner_screen_dart",
-      "target": "package_recipemate_core_theme_app_text_styles_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/shared/widgets/app_buttons.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_shared_widgets_app_buttons_dart",
-      "target": "package_recipemate_core_theme_app_text_styles_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/shared/widgets/app_text_field.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_shared_widgets_app_text_field_dart",
       "target": "package_recipemate_core_theme_app_text_styles_dart"
     },
     {
@@ -4822,6 +5110,36 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_add_recipe_add_recipe_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_add_recipe_add_recipe_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_add_recipe_add_recipe_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_add_recipe_add_recipe_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_addrecipescreenstate"
     },
     {
@@ -4853,16 +5171,6 @@
       "weight": 1.0,
       "source": "lib_features_add_recipe_add_recipe_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_snackbar"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/add_recipe/add_recipe_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_add_recipe_add_recipe_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_add_recipe_add_recipe_screen_dart_build"
     },
     {
       "relation": "defines",
@@ -4912,7 +5220,17 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_auth_auth_screen_dart",
-      "target": "package_recipemate_shared_widgets_app_buttons_dart"
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_collections_collections_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
     },
     {
       "relation": "imports",
@@ -4922,47 +5240,7 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_cooking_mode_cooking_mode_screen_dart",
-      "target": "package_recipemate_shared_widgets_app_buttons_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/onboarding/onboarding_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_onboarding_onboarding_screen_dart",
-      "target": "package_recipemate_shared_widgets_app_buttons_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_product_product_screen_dart",
-      "target": "package_recipemate_shared_widgets_app_buttons_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_recipe_details_recipe_details_screen_dart",
-      "target": "package_recipemate_shared_widgets_app_buttons_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/auth/auth_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_auth_auth_screen_dart",
-      "target": "package_recipemate_shared_widgets_app_text_field_dart"
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
     },
     {
       "relation": "imports",
@@ -4972,7 +5250,97 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_explore_explore_screen_dart",
-      "target": "package_recipemate_shared_widgets_app_text_field_dart"
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/favorites/favorites_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_favorites_favorites_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_fridge_fridge_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/home/home_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_home_home_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_onboarding_onboarding_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_product_product_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_profile_profile_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recipe_details_recipe_details_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recommendations/recommendations_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recommendations_recommendations_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_scanner_scanner_screen_dart",
+      "target": "package_recipemate_shared_widgets_feature_placeholder_dart"
     },
     {
       "relation": "defines",
@@ -4983,6 +5351,46 @@
       "weight": 1.0,
       "source": "lib_features_auth_auth_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_authscreen"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_auth_auth_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_auth_auth_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_auth_auth_screen_dart",
+      "target": "package_recipemate_shared_widgets_app_buttons_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/auth_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_auth_auth_screen_dart",
+      "target": "package_recipemate_shared_widgets_app_text_field_dart"
     },
     {
       "relation": "defines",
@@ -5022,16 +5430,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_auth_auth_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/auth/auth_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_auth_auth_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_auth_auth_screen_dart_scaffold"
     },
     {
@@ -5062,6 +5460,26 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_collections_collections_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_collections_collections_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/collections/collections_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_collections_collections_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_collectionsscreenstate"
     },
     {
@@ -5073,16 +5491,6 @@
       "weight": 1.0,
       "source": "lib_features_collections_collections_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_deletecollection"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/collections/collections_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_collections_collections_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_collections_collections_screen_dart_build"
     },
     {
       "relation": "defines",
@@ -5142,6 +5550,36 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_cooking_mode_cooking_mode_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_cooking_mode_cooking_mode_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_cooking_mode_cooking_mode_screen_dart",
+      "target": "package_recipemate_shared_widgets_app_buttons_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_cooking_mode_cooking_mode_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_cookingmodescreenstate"
     },
     {
@@ -5173,16 +5611,6 @@
       "weight": 1.0,
       "source": "lib_features_cooking_mode_cooking_mode_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_resettimer"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/cooking_mode/cooking_mode_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_cooking_mode_cooking_mode_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_cooking_mode_cooking_mode_screen_dart_build"
     },
     {
       "relation": "defines",
@@ -5245,124 +5673,14 @@
       "target": "package_recipemate_core_data_mock_data_dart"
     },
     {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/widget_test.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_widget_test_dart",
-      "target": "dart_async"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/widgets/recipe_card_test.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_widgets_recipe_card_test_dart",
-      "target": "dart_async"
-    },
-    {
-      "relation": "imports",
+      "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/explore/explore_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_explore_explore_screen_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/favorites/favorites_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_favorites_favorites_screen_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_fridge_fridge_screen_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/home/home_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_home_home_screen_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/profile/profile_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_profile_profile_screen_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_recipe_details_recipe_details_screen_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/recommendations/recommendations_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_recommendations_recommendations_screen_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/models/fridge_item_test.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_models_fridge_item_test_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/models/recipe_test.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_models_recipe_test_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/widgets/recipe_card_test.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_widgets_recipe_card_test_dart",
-      "target": "package_recipemate_core_data_mock_data_dart"
+      "target": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_explorescreen"
     },
     {
       "relation": "defines",
@@ -5372,7 +5690,37 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_explore_explore_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_explorescreen"
+      "target": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_explore_explore_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_explore_explore_screen_dart",
+      "target": "package_recipemate_shared_widgets_app_text_field_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/explore/explore_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_explore_explore_screen_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
     },
     {
       "relation": "defines",
@@ -5393,16 +5741,6 @@
       "weight": 1.0,
       "source": "lib_features_explore_explore_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_dispose"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/explore/explore_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_explore_explore_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_explore_explore_screen_dart_build"
     },
     {
       "relation": "defines",
@@ -5455,46 +5793,6 @@
       "target": "package_recipemate_shared_widgets_recipe_card_dart"
     },
     {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/favorites/favorites_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_favorites_favorites_screen_dart",
-      "target": "package_recipemate_shared_widgets_recipe_card_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/home/home_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_home_home_screen_dart",
-      "target": "package_recipemate_shared_widgets_recipe_card_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/recommendations/recommendations_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_recommendations_recommendations_screen_dart",
-      "target": "package_recipemate_shared_widgets_recipe_card_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "test/widgets/recipe_card_test.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "test_widgets_recipe_card_test_dart",
-      "target": "package_recipemate_shared_widgets_recipe_card_dart"
-    },
-    {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -5513,6 +5811,36 @@
       "weight": 1.0,
       "source": "lib_features_favorites_favorites_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/favorites/favorites_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_favorites_favorites_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_favorites_favorites_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/favorites/favorites_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_favorites_favorites_screen_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/favorites/favorites_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_favorites_favorites_screen_dart",
+      "target": "package_recipemate_shared_widgets_recipe_card_dart"
     },
     {
       "relation": "defines",
@@ -5572,6 +5900,36 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_fridge_fridge_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_fridge_fridge_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_fridge_fridge_screen_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/fridge/fridge_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_fridge_fridge_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_fridgescreenstate"
     },
     {
@@ -5613,16 +5971,6 @@
       "weight": 1.0,
       "source": "lib_features_fridge_fridge_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_snackbar"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/fridge/fridge_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_fridge_fridge_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_fridge_fridge_screen_dart_build"
     },
     {
       "relation": "defines",
@@ -5702,6 +6050,36 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_home_home_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_home_home_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/home/home_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_home_home_screen_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/home/home_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_home_home_screen_dart",
+      "target": "package_recipemate_shared_widgets_recipe_card_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/home/home_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_home_home_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_home_home_screen_dart_scaffold"
     },
     {
@@ -5752,6 +6130,36 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_onboarding_onboarding_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_onboarding_onboarding_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_onboarding_onboarding_screen_dart",
+      "target": "package_recipemate_shared_widgets_app_buttons_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/onboarding/onboarding_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_onboarding_onboarding_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate"
     },
     {
@@ -5773,16 +6181,6 @@
       "weight": 1.0,
       "source": "lib_features_onboarding_onboarding_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_onnext"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/onboarding/onboarding_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_onboarding_onboarding_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_onboarding_onboarding_screen_dart_build"
     },
     {
       "relation": "defines",
@@ -5842,6 +6240,36 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_product_product_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_product_product_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_product_product_screen_dart",
+      "target": "package_recipemate_shared_widgets_app_buttons_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/product/product_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_product_product_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_productscreenstate"
     },
     {
@@ -5863,16 +6291,6 @@
       "weight": 1.0,
       "source": "lib_features_product_product_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_snackbar"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/product/product_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_product_product_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_product_product_screen_dart_build"
     },
     {
       "relation": "defines",
@@ -5953,6 +6371,26 @@
       "weight": 1.0,
       "source": "lib_features_profile_profile_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_profile_profile_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_profile_profile_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/profile/profile_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_profile_profile_screen_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
     },
     {
       "relation": "defines",
@@ -6045,24 +6483,14 @@
       "target": "package_recipemate_shared_widgets_diet_badge_dart"
     },
     {
-      "relation": "imports",
+      "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_recipe_details_recipe_details_screen_dart",
-      "target": "package_recipemate_shared_widgets_diet_badge_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/shared/widgets/recipe_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_shared_widgets_recipe_card_dart",
-      "target": "package_recipemate_shared_widgets_diet_badge_dart"
+      "target": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_recipedetailsscreen"
     },
     {
       "relation": "defines",
@@ -6072,7 +6500,47 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_recipe_details_recipe_details_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_recipedetailsscreen"
+      "target": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recipe_details_recipe_details_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recipe_details_recipe_details_screen_dart",
+      "target": "package_recipemate_shared_widgets_app_buttons_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recipe_details_recipe_details_screen_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recipe_details_recipe_details_screen_dart",
+      "target": "package_recipemate_shared_widgets_diet_badge_dart"
     },
     {
       "relation": "defines",
@@ -6093,16 +6561,6 @@
       "weight": 1.0,
       "source": "lib_features_recipe_details_recipe_details_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_initstate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/recipe_details/recipe_details_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_recipe_details_recipe_details_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_recipe_details_recipe_details_screen_dart_build"
     },
     {
       "relation": "defines",
@@ -6202,6 +6660,36 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_recommendations_recommendations_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_recommendations_recommendations_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recommendations/recommendations_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recommendations_recommendations_screen_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recommendations/recommendations_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recommendations_recommendations_screen_dart",
+      "target": "package_recipemate_shared_widgets_recipe_card_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/recommendations/recommendations_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_recommendations_recommendations_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_recommendations_recommendations_screen_dart_scaffold"
     },
     {
@@ -6242,6 +6730,26 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_features_scanner_scanner_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_scanner_scanner_screen_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_featureplaceholder"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/scanner/scanner_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_features_scanner_scanner_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_scannerscreenstate"
     },
     {
@@ -6273,16 +6781,6 @@
       "weight": 1.0,
       "source": "lib_features_scanner_scanner_screen_dart",
       "target": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_openmanualentry"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/features/scanner/scanner_screen.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "lib_features_scanner_scanner_screen_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_features_scanner_scanner_screen_dart_build"
     },
     {
       "relation": "defines",
@@ -6352,7 +6850,7 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_shared_widgets_app_buttons_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_app_buttons_dart_tonalbutton"
+      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_app_buttons_dart_outlinebuttonwidget"
     },
     {
       "relation": "defines",
@@ -6362,7 +6860,7 @@
       "source_location": null,
       "weight": 1.0,
       "source": "lib_shared_widgets_app_buttons_dart",
-      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_app_buttons_dart_outlinebuttonwidget"
+      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_app_buttons_dart_tonalbutton"
     },
     {
       "relation": "defines",
@@ -6503,6 +7001,56 @@
       "weight": 1.0,
       "source": "lib_shared_widgets_diet_badge_dart",
       "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_diet_badge_dart_container"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_feature_placeholder_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_featureplaceholder"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_feature_placeholder_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_feature_placeholder_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_scaffold"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_feature_placeholder_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_sizedbox"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/feature_placeholder.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_feature_placeholder_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_feature_placeholder_dart_icon"
     },
     {
       "relation": "defines",
@@ -6655,6 +7203,16 @@
       "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_recipe_card_dart_icon"
     },
     {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/recipe_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_recipe_card_dart",
+      "target": "c_users_adem_desktop_recipemate_lib_shared_widgets_recipe_card_dart_text"
+    },
+    {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -6663,6 +7221,16 @@
       "weight": 1.0,
       "source": "lib_shared_widgets_recipe_card_dart",
       "target": "package_recipemate_shared_widgets_match_bar_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/shared/widgets/recipe_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_shared_widgets_recipe_card_dart",
+      "target": "package_recipemate_shared_widgets_diet_badge_dart"
     },
     {
       "relation": "imports",
@@ -6822,6 +7390,16 @@
       "source_location": null,
       "weight": 1.0,
       "source": "test_widget_test_dart",
+      "target": "dart_async"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test/widget_test.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "test_widget_test_dart",
       "target": "dart_io"
     },
     {
@@ -6853,6 +7431,16 @@
       "weight": 1.0,
       "source": "test_widget_test_dart",
       "target": "package_recipemate_main_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test/widgets/recipe_card_test.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "test_widgets_recipe_card_test_dart",
+      "target": "dart_async"
     },
     {
       "relation": "imports",
@@ -6923,6 +7511,36 @@
       "weight": 1.0,
       "source": "test_models_fridge_item_test_dart",
       "target": "c_users_adem_desktop_recipemate_test_models_fridge_item_test_dart_main"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test/models/fridge_item_test.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "test_models_fridge_item_test_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test/models/recipe_test.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "test_models_recipe_test_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test/widgets/recipe_card_test.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "test_widgets_recipe_card_test_dart",
+      "target": "package_recipemate_core_data_mock_data_dart"
     },
     {
       "relation": "defines",
@@ -7085,14 +7703,24 @@
       "target": "c_users_adem_desktop_recipemate_test_widgets_recipe_card_test_dart_main"
     },
     {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test/widgets/recipe_card_test.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "test_widgets_recipe_card_test_dart",
+      "target": "package_recipemate_shared_widgets_recipe_card_dart"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "windows/flutter/generated_plugin_registrant.cc",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_flutter_generated_plugin_registrant_cc",
-      "target": "flutter_generated_plugin_registrant_registerplugins",
-      "confidence_score": 1.0
+      "target": "flutter_generated_plugin_registrant_registerplugins"
     },
     {
       "relation": "calls",
@@ -7111,9 +7739,9 @@
       "source_file": "windows/runner/flutter_window.cpp",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_flutter_window_cpp",
-      "target": "runner_flutter_window_flutterwindow",
-      "confidence_score": 1.0
+      "target": "runner_flutter_window_flutterwindow"
     },
     {
       "relation": "contains",
@@ -7121,9 +7749,9 @@
       "source_file": "windows/runner/flutter_window.cpp",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_flutter_window_cpp",
-      "target": "runner_flutter_window_oncreate",
-      "confidence_score": 1.0
+      "target": "runner_flutter_window_oncreate"
     },
     {
       "relation": "contains",
@@ -7131,9 +7759,9 @@
       "source_file": "windows/runner/flutter_window.cpp",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_flutter_window_cpp",
-      "target": "runner_flutter_window_ondestroy",
-      "confidence_score": 1.0
+      "target": "runner_flutter_window_ondestroy"
     },
     {
       "relation": "contains",
@@ -7141,9 +7769,9 @@
       "source_file": "windows/runner/flutter_window.cpp",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_flutter_window_cpp",
-      "target": "runner_flutter_window_messagehandler",
-      "confidence_score": 1.0
+      "target": "runner_flutter_window_messagehandler"
     },
     {
       "relation": "contains",
@@ -7151,9 +7779,9 @@
       "source_file": "windows/runner/flutter_window.h",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_flutter_window_h",
-      "target": "runner_flutter_window_flutterwindow",
-      "confidence_score": 1.0
+      "target": "runner_flutter_window_flutterwindow"
     },
     {
       "relation": "calls",
@@ -7183,9 +7811,9 @@
       "source_file": "windows/runner/main.cpp",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_main_cpp",
-      "target": "runner_main_wwinmain",
-      "confidence_score": 1.0
+      "target": "runner_main_wwinmain"
     },
     {
       "relation": "calls",
@@ -7215,9 +7843,9 @@
       "source_file": "windows/runner/utils.cpp",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_utils_cpp",
-      "target": "runner_utils_createandattachconsole",
-      "confidence_score": 1.0
+      "target": "runner_utils_createandattachconsole"
     },
     {
       "relation": "contains",
@@ -7225,9 +7853,9 @@
       "source_file": "windows/runner/utils.cpp",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_utils_cpp",
-      "target": "runner_utils_getcommandlinearguments",
-      "confidence_score": 1.0
+      "target": "runner_utils_getcommandlinearguments"
     },
     {
       "relation": "contains",
@@ -7235,9 +7863,9 @@
       "source_file": "windows/runner/utils.cpp",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_utils_cpp",
-      "target": "runner_utils_utf8fromutf16",
-      "confidence_score": 1.0
+      "target": "runner_utils_utf8fromutf16"
     },
     {
       "relation": "calls",
@@ -7246,9 +7874,9 @@
       "source_file": "windows/runner/utils.cpp",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_utils_getcommandlinearguments",
-      "target": "runner_utils_utf8fromutf16",
-      "confidence_score": 1.0
+      "target": "runner_utils_utf8fromutf16"
     },
     {
       "relation": "contains",
@@ -7256,9 +7884,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_scale",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_scale"
     },
     {
       "relation": "contains",
@@ -7266,9 +7894,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_enablefulldpisupportifavailable",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_enablefulldpisupportifavailable"
     },
     {
       "relation": "contains",
@@ -7276,9 +7904,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_windowclassregistrar",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_windowclassregistrar"
     },
     {
       "relation": "contains",
@@ -7286,9 +7914,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_getwindowclass",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_getwindowclass"
     },
     {
       "relation": "contains",
@@ -7296,9 +7924,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_unregisterwindowclass",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_unregisterwindowclass"
     },
     {
       "relation": "contains",
@@ -7306,9 +7934,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_win32window",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_win32window"
     },
     {
       "relation": "contains",
@@ -7316,9 +7944,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_create",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_create"
     },
     {
       "relation": "contains",
@@ -7326,9 +7954,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_show",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_show"
     },
     {
       "relation": "contains",
@@ -7336,9 +7964,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_wndproc",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_wndproc"
     },
     {
       "relation": "contains",
@@ -7346,9 +7974,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_messagehandler",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_messagehandler"
     },
     {
       "relation": "contains",
@@ -7356,9 +7984,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L224",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_destroy",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_destroy"
     },
     {
       "relation": "contains",
@@ -7366,9 +7994,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L236",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_getthisfromhandle",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_getthisfromhandle"
     },
     {
       "relation": "contains",
@@ -7376,9 +8004,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_setchildcontent",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_setchildcontent"
     },
     {
       "relation": "contains",
@@ -7386,9 +8014,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L252",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_getclientarea",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_getclientarea"
     },
     {
       "relation": "contains",
@@ -7396,9 +8024,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L258",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_gethandle",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_gethandle"
     },
     {
       "relation": "contains",
@@ -7406,9 +8034,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L262",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_setquitonclose",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_setquitonclose"
     },
     {
       "relation": "contains",
@@ -7416,9 +8044,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L266",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_oncreate",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_oncreate"
     },
     {
       "relation": "contains",
@@ -7426,9 +8054,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L271",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_ondestroy",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_ondestroy"
     },
     {
       "relation": "contains",
@@ -7436,9 +8064,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L275",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "windows_runner_win32_window_cpp",
-      "target": "runner_win32_window_updatetheme",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_updatetheme"
     },
     {
       "relation": "calls",
@@ -7447,9 +8075,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_create",
-      "target": "runner_win32_window_scale",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_scale"
     },
     {
       "relation": "calls",
@@ -7458,9 +8086,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_wndproc",
-      "target": "runner_win32_window_enablefulldpisupportifavailable",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_enablefulldpisupportifavailable"
     },
     {
       "relation": "method",
@@ -7468,9 +8096,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_windowclassregistrar",
-      "target": "runner_win32_window_windowclassregistrar_windowclassregistrar",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_windowclassregistrar_windowclassregistrar"
     },
     {
       "relation": "calls",
@@ -7479,9 +8107,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_create",
-      "target": "runner_win32_window_getwindowclass",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_getwindowclass"
     },
     {
       "relation": "calls",
@@ -7490,9 +8118,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_destroy",
-      "target": "runner_win32_window_unregisterwindowclass",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_unregisterwindowclass"
     },
     {
       "relation": "calls",
@@ -7501,9 +8129,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_win32window",
-      "target": "runner_win32_window_destroy",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_destroy"
     },
     {
       "relation": "calls",
@@ -7512,9 +8140,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_create",
-      "target": "runner_win32_window_destroy",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_destroy"
     },
     {
       "relation": "calls",
@@ -7523,9 +8151,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_create",
-      "target": "runner_win32_window_updatetheme",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_updatetheme"
     },
     {
       "relation": "calls",
@@ -7534,9 +8162,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_create",
-      "target": "runner_win32_window_oncreate",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_oncreate"
     },
     {
       "relation": "calls",
@@ -7545,9 +8173,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_wndproc",
-      "target": "runner_win32_window_getthisfromhandle",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_getthisfromhandle"
     },
     {
       "relation": "calls",
@@ -7556,9 +8184,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_wndproc",
-      "target": "runner_win32_window_messagehandler",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_messagehandler"
     },
     {
       "relation": "calls",
@@ -7567,9 +8195,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_messagehandler",
-      "target": "runner_win32_window_destroy",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_destroy"
     },
     {
       "relation": "calls",
@@ -7578,9 +8206,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_messagehandler",
-      "target": "runner_win32_window_getclientarea",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_getclientarea"
     },
     {
       "relation": "calls",
@@ -7589,9 +8217,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L217",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_messagehandler",
-      "target": "runner_win32_window_updatetheme",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_updatetheme"
     },
     {
       "relation": "calls",
@@ -7600,9 +8228,9 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L225",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_destroy",
-      "target": "runner_win32_window_ondestroy",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_ondestroy"
     },
     {
       "relation": "calls",
@@ -7611,10 +8239,11 @@
       "source_file": "windows/runner/win32_window.cpp",
       "source_location": "L244",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "runner_win32_window_setchildcontent",
-      "target": "runner_win32_window_getclientarea",
-      "confidence_score": 1.0
+      "target": "runner_win32_window_getclientarea"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "776952a5044a5ec5065ee18b5584e67062f34cfb"
 }

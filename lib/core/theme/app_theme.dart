@@ -3,6 +3,7 @@ import 'package:recipemate/core/theme/app_colors.dart';
 import 'package:recipemate/core/theme/app_text_styles.dart';
 
 /// Central Material 3 theme configuration for RecipeMate.
+/// 100% aligned with `docs/design/RecipeMate.html`.
 abstract final class AppTheme {
   static ThemeData get lightTheme {
     const colorScheme = ColorScheme(
@@ -10,11 +11,11 @@ abstract final class AppTheme {
       primary: AppColors.primary,
       onPrimary: Colors.white,
       primaryContainer: AppColors.softGreen,
-      onPrimaryContainer: AppColors.primaryDark,
+      onPrimaryContainer: AppColors.tonalGreenText,
       secondary: AppColors.sage,
       onSecondary: AppColors.textPrimary,
       secondaryContainer: AppColors.softGreenLight,
-      onSecondaryContainer: AppColors.primaryDark,
+      onSecondaryContainer: AppColors.tonalGreenText,
       tertiary: AppColors.orangeAccent,
       onTertiary: Colors.white,
       tertiaryContainer: AppColors.orangeContainer,
@@ -33,10 +34,10 @@ abstract final class AppTheme {
     return ThemeData(
       useMaterial3: true,
       colorScheme: colorScheme,
-      scaffoldBackgroundColor: AppColors.scaffoldBackground,
+      scaffoldBackgroundColor: AppColors.cream,
       fontFamily: 'Inter',
       appBarTheme: AppBarTheme(
-        backgroundColor: AppColors.scaffoldBackground,
+        backgroundColor: AppColors.cream,
         foregroundColor: AppColors.textPrimary,
         elevation: 0,
         scrolledUnderElevation: 0,
@@ -58,7 +59,8 @@ abstract final class AppTheme {
           backgroundColor: AppColors.primary,
           foregroundColor: Colors.white,
           elevation: 0,
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+          minimumSize: const Size(0, 52),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           textStyle: AppTextStyles.button,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
@@ -68,8 +70,9 @@ abstract final class AppTheme {
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           foregroundColor: AppColors.primary,
+          minimumSize: const Size(0, 52),
           side: const BorderSide(color: AppColors.primary, width: 1.5),
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           textStyle: AppTextStyles.button.copyWith(color: AppColors.primary),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
@@ -93,20 +96,20 @@ abstract final class AppTheme {
         ),
         hintStyle: AppTextStyles.caption.copyWith(color: AppColors.textMuted),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(14),
           borderSide: const BorderSide(color: AppColors.borderSubtle),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(14),
           borderSide: const BorderSide(color: AppColors.borderSubtle),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(14),
           borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
         ),
         errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
-          borderSide: const BorderSide(color: AppColors.error),
+          borderRadius: BorderRadius.circular(14),
+          borderSide: const BorderSide(color: AppColors.error, width: 1.5),
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
@@ -117,7 +120,7 @@ abstract final class AppTheme {
           if (states.contains(WidgetState.selected)) {
             return const IconThemeData(color: AppColors.primary);
           }
-          return const IconThemeData(color: AppColors.greyIcon);
+          return const IconThemeData(color: AppColors.iconGrey);
         }),
         labelTextStyle: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {

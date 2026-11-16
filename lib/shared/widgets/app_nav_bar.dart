@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:recipemate/core/theme/app_colors.dart';
 
 /// 5-item bottom navigation bar for RecipeMate.
+/// Material 3 NavigationBar with softGreen pill indicator.
 class AppNavBar extends StatelessWidget {
   const AppNavBar({required this.currentIndex, required this.onTap, super.key});
 
@@ -14,6 +15,7 @@ class AppNavBar extends StatelessWidget {
       selectedIndex: currentIndex,
       onDestinationSelected: onTap,
       backgroundColor: AppColors.card,
+      surfaceTintColor: Colors.transparent,
       indicatorColor: AppColors.softGreen,
       destinations: const [
         NavigationDestination(
