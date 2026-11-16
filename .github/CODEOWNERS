@@ -1,0 +1,24 @@
+# Codeowners for RecipeMate
+# Core & Shared
+/lib/core/ @Adem-elwafi
+/lib/shared/ @Adem-elwafi
+
+# Adem: Fridge, Scanner, Product & AI Recommendations
+/lib/features/fridge/ @Adem-elwafi
+/lib/features/scanner/ @Adem-elwafi
+/lib/features/product/ @Adem-elwafi
+/lib/features/recommendations/ @Adem-elwafi
+
+# Molka: Home, Explore, Recipe Details & Cooking Mode
+/lib/features/home/ @molka
+/lib/features/explore/ @molka
+/lib/features/recipe_details/ @molka
+/lib/features/cooking_mode/ @molka
+
+# Farah: Onboarding, Auth, Profile, Favorites, Collections & Add Recipe
+/lib/features/onboarding/ @farah
+/lib/features/auth/ @farah
+/lib/features/profile/ @farah
+/lib/features/favorites/ @farah
+/lib/features/collections/ @farah
+/lib/features/add_recipe/ @farah

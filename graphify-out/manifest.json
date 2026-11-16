@@ -1,0 +1,410 @@
+{
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\build.gradle.kts": {
+    "mtime": 1794832254.666799,
+    "hash": "803fe22651fbe96ed401eb0b66a492d1"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\gradlew": {
+    "mtime": 1794832256.0327756,
+    "hash": "7f1cd7eb3f75a1dc85cd37753972a6e2"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\settings.gradle.kts": {
+    "mtime": 1794832254.889627,
+    "hash": "a34513cd87cef855195771f6a457a218"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\app\\build.gradle.kts": {
+    "mtime": 1794832254.6245244,
+    "hash": "23a56a45953c1d0e90b21682c1c68ef8"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\app\\src\\main\\java\\io\\flutter\\plugins\\GeneratedPluginRegistrant.java": {
+    "mtime": 1794832311.8554022,
+    "hash": "7085e128d571577b756a56edcf071110"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\app\\src\\main\\kotlin\\com\\recipemate\\recipemate\\MainActivity.kt": {
+    "mtime": 1794832254.6496143,
+    "hash": "da6d743464231b58add568495978d493"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Flutter\\ephemeral\\flutter_lldb_helper.py": {
+    "mtime": 1794832258.191017,
+    "hash": "98fc75412162af387e2e3461e4e58094"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Flutter\\ephemeral\\Packages\\FlutterGeneratedPluginSwiftPackage\\Package.swift": {
+    "mtime": 1794832258.3191466,
+    "hash": "c3ca67f6d9d27f78ca451a7112e4c386"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Flutter\\ephemeral\\Packages\\FlutterGeneratedPluginSwiftPackage\\Sources\\FlutterGeneratedPluginSwiftPackage\\FlutterGeneratedPluginSwiftPackage.swift": {
+    "mtime": 1794832258.3145738,
+    "hash": "e6366d8685ad56268730656aa0a6e00c"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\AppDelegate.swift": {
+    "mtime": 1791229814.3788962,
+    "hash": "9e1de9c329a3fe4931876063de95132b"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\GeneratedPluginRegistrant.h": {
+    "mtime": 1794832258.2990413,
+    "hash": "decb9041b5e91a07e66f4664e5dac408"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\GeneratedPluginRegistrant.m": {
+    "mtime": 1794832311.881112,
+    "hash": "f803e1a502d87f89fc13a2646f6054d0"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Runner-Bridging-Header.h": {
+    "mtime": 1791229814.3902295,
+    "hash": "7ad7b5cea096132de13ba526b2b9efbe"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\SceneDelegate.swift": {
+    "mtime": 1791229814.3902295,
+    "hash": "0c3e86af131f6a9e547c80b5ed058914"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\RunnerTests\\RunnerTests.swift": {
+    "mtime": 1794832255.512371,
+    "hash": "24e5d095048eb86c30423f4e04b6e57b"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\main.dart": {
+    "mtime": 1794833222.6839318,
+    "hash": "3f81b421415a85f24c47a00357f58177"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\data\\mock_data.dart": {
+    "mtime": 1794833222.354573,
+    "hash": "b6ca9b1b56ffa217be7218873f7b1bea"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\models\\fridge_item.dart": {
+    "mtime": 1794833222.3647451,
+    "hash": "af893cc88ab592b46775b9966d20c6c7"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\models\\ingredient.dart": {
+    "mtime": 1794833222.3674884,
+    "hash": "f9f240fa6f4b42ff79ffb707cf6222bc"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\models\\recipe.dart": {
+    "mtime": 1794833222.3709211,
+    "hash": "467fb87bc1b979c2e5407be99150b204"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\models\\user_profile.dart": {
+    "mtime": 1794833151.795257,
+    "hash": "ac7783615fa390123a59e1e94add5127"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\router\\app_router.dart": {
+    "mtime": 1794833222.386933,
+    "hash": "0b5d6a5f98b3246f10b3feb2f68f475e"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\theme\\app_colors.dart": {
+    "mtime": 1794832501.7766337,
+    "hash": "ce3b47e44c246e8598cdc18ba9f0a462"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\theme\\app_text_styles.dart": {
+    "mtime": 1794833222.3966234,
+    "hash": "aa6efc5bc32f6574fb7c841b578e5da3"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\core\\theme\\app_theme.dart": {
+    "mtime": 1794833222.4031906,
+    "hash": "aab529b63d7bdef58a13b8913c72a512"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\add_recipe\\add_recipe_screen.dart": {
+    "mtime": 1794833222.4150875,
+    "hash": "cd7a6c8ca5058e7f1e7747046942010d"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\auth\\auth_screen.dart": {
+    "mtime": 1794833222.4398625,
+    "hash": "c878dc4a65f1b6b41e24798e785711c8"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\collections\\collections_screen.dart": {
+    "mtime": 1794833222.4588664,
+    "hash": "8c2805203d82df2a42e4da34f44504c6"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\cooking_mode\\cooking_mode_screen.dart": {
+    "mtime": 1794833222.4863381,
+    "hash": "db66832c611241368a5a2ec878102715"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\explore\\explore_screen.dart": {
+    "mtime": 1794833222.5070403,
+    "hash": "0d317a98b9a6e1baae9c134a48de8158"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\favorites\\favorites_screen.dart": {
+    "mtime": 1794832791.282979,
+    "hash": "7841b988a40e5c64ee2fc7f1dd1ade52"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\fridge\\fridge_screen.dart": {
+    "mtime": 1794832839.3508778,
+    "hash": "c4cee440a0e733824274a41900b80b04"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\home\\home_screen.dart": {
+    "mtime": 1794833222.5652926,
+    "hash": "7d57568c6273bafe9d2a93bab1809ab0"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\onboarding\\onboarding_screen.dart": {
+    "mtime": 1794833222.577299,
+    "hash": "ce669834c3f52eea08b5f0085c43da9a"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\product\\product_screen.dart": {
+    "mtime": 1794833222.5992308,
+    "hash": "01958bfbb92ac7812246b73c190c2372"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\profile\\profile_screen.dart": {
+    "mtime": 1794833222.6161222,
+    "hash": "e7f83e80b365219caa28b08d522d460b"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\recipe_details\\recipe_details_screen.dart": {
+    "mtime": 1794833222.6437304,
+    "hash": "00debe0a5560ed38f80019afdbc72bf7"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\recommendations\\recommendations_screen.dart": {
+    "mtime": 1794833222.6574812,
+    "hash": "6ec06ea01148871b7d2416a05d5fa540"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\features\\scanner\\scanner_screen.dart": {
+    "mtime": 1794833222.6687443,
+    "hash": "f05a6c210b3e4d775526b2d860b7ab5f"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\app_buttons.dart": {
+    "mtime": 1794833222.6984172,
+    "hash": "4e2298462335c7cbcef91601df4734a4"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\app_nav_bar.dart": {
+    "mtime": 1794833222.7014804,
+    "hash": "1da11aa38a7d2c33fdb6479d9bd4a746"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\app_text_field.dart": {
+    "mtime": 1794833222.7059731,
+    "hash": "9a0fc12ecf0880c002eb6a5ca50d778c"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\diet_badge.dart": {
+    "mtime": 1794833222.7099128,
+    "hash": "59430e80b1b46970938b3df33e61f668"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\macro_ring.dart": {
+    "mtime": 1794833222.7148151,
+    "hash": "7db59db564a763c925ac489f45162f7b"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\match_bar.dart": {
+    "mtime": 1794833288.078905,
+    "hash": "f584eb654712607428433b987eb38f50"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\lib\\shared\\widgets\\recipe_card.dart": {
+    "mtime": 1794833305.0301795,
+    "hash": "3d6b26d89f09163bd3753dcac34e5679"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\test\\widget_test.dart": {
+    "mtime": 1794833222.7674198,
+    "hash": "3d9fb6d57a154f02128e6e7056a3f45b"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\test\\models\\fridge_item_test.dart": {
+    "mtime": 1794832911.6796784,
+    "hash": "51320335d545d95f9cab9d175fa16fbe"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\test\\models\\recipe_test.dart": {
+    "mtime": 1794833222.7562003,
+    "hash": "3eb343b4402c19ed2268ee06f1c68ead"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\test\\widgets\\match_bar_test.dart": {
+    "mtime": 1794833222.7741997,
+    "hash": "afab8e085f356a000fc85a2a0c8da905"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\test\\widgets\\recipe_card_test.dart": {
+    "mtime": 1794833222.7794878,
+    "hash": "5b9e46d24df9d19ce9f643ecd4c15680"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\flutter\\generated_plugin_registrant.cc": {
+    "mtime": 1794832258.2919915,
+    "hash": "a8f91348d8d9090f22ec69d597c41e1f"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\flutter\\generated_plugin_registrant.h": {
+    "mtime": 1794832258.2909915,
+    "hash": "0ea33875f9f8e118f9c2ded03e2e2835"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\runner\\flutter_window.cpp": {
+    "mtime": 1791229814.4342387,
+    "hash": "2f463f9b7da67a2d692a012f9ea85e0c"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\runner\\flutter_window.h": {
+    "mtime": 1791229814.4342387,
+    "hash": "7defcc89d4a26d56e801241d624d48fb"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\runner\\main.cpp": {
+    "mtime": 1794832255.771299,
+    "hash": "2244cc82826b7f9edda0744ce669e499"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\runner\\resource.h": {
+    "mtime": 1791229814.4342387,
+    "hash": "1ade5dd15e613479a15e8832ed276f2b"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\runner\\utils.cpp": {
+    "mtime": 1791229814.4342387,
+    "hash": "e18900a4c2c2962ad732d3b83f0396b9"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\runner\\utils.h": {
+    "mtime": 1791229814.4342387,
+    "hash": "fd81e143f5614eb6fd75efe539002853"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\runner\\win32_window.cpp": {
+    "mtime": 1791229814.4342387,
+    "hash": "571eb8234dbc2661be03aa5f2a4d2fca"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\runner\\win32_window.h": {
+    "mtime": 1791229814.4342387,
+    "hash": "7569387d58711ab975940f4df3b4bcda"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\AGENTS.md": {
+    "mtime": 1794832483.6222744,
+    "hash": "7156865577eb22f60306b168a41e3c53"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\analysis_options.yaml": {
+    "mtime": 1794833003.4342642,
+    "hash": "53a52383851b9673c4c7c8d0d6d7e08b"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\CLAUDE.md": {
+    "mtime": 1794832493.0847287,
+    "hash": "2c6c96e53cd2dc9d0a42894ab30fff00"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\CONTRIBUTING.md": {
+    "mtime": 1794832453.3925433,
+    "hash": "040fe55b9f2506bc3ca6603e1fb25c91"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\pubspec.yaml": {
+    "mtime": 1794832411.928158,
+    "hash": "765bec6b082d4b209cf0414470696120"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\README.md": {
+    "mtime": 1794832469.2747316,
+    "hash": "e7f42003d7726fc062c500405f952e47"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\graphify-out\\converted\\RecipeMate_Plan_de_travail_d57f511d.md": {
+    "mtime": 1794833354.10021,
+    "hash": "0c003ef808867a4f7096b4e3bfc6bfb0"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\docs\\design\\RecipeMate.html": {
+    "mtime": 1794302885.3213725,
+    "hash": "b11f4bb09d0cf362996b0f2eb61be920"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\README.md": {
+    "mtime": 1791229814.3902295,
+    "hash": "f7ee1b402881509d197f34963e569927"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\web\\index.html": {
+    "mtime": 1794832255.647395,
+    "hash": "c0cf61ae7d852a6ea03afb3339f0f3ce"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\CMakeLists.txt": {
+    "mtime": 1794832255.6963835,
+    "hash": "1497947b465565d0648834eea77d482f"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\flutter\\CMakeLists.txt": {
+    "mtime": 1791229814.4342387,
+    "hash": "bbf66fed5180bd9ae8198b8d7c4a0001"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\windows\\runner\\CMakeLists.txt": {
+    "mtime": 1791229814.4342387,
+    "hash": "028602ab9754bffe716659ada7590d29"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png": {
+    "mtime": 1791229814.365407,
+    "hash": "13e9c72ec37fac220397aa819fa1ef2d"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png": {
+    "mtime": 1791229814.3664024,
+    "hash": "6270344430679711b81476e29878caa7"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png": {
+    "mtime": 1791229814.367403,
+    "hash": "a0a8db5985280b3679d99a820ae2db79"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png": {
+    "mtime": 1791229814.3686047,
+    "hash": "afe1b655b9f32da22f9a4301bb8e6ba8"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png": {
+    "mtime": 1791229814.3686047,
+    "hash": "57838d52c318faff743130c3fcfae0c6"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-1024x1024@1x.png": {
+    "mtime": 1794316846.181744,
+    "hash": "c785f8932297af4acd5f5ccb7630f01c"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-20x20@1x.png": {
+    "mtime": 1794316846.2058964,
+    "hash": "a2f8558fb1d42514111fbbb19fb67314"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-20x20@2x.png": {
+    "mtime": 1794316845.7339394,
+    "hash": "2247a840b6ee72b8a069208af170e5b1"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-20x20@3x.png": {
+    "mtime": 1794316846.2350209,
+    "hash": "1b3b1538136316263c7092951e923e9d"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-29x29@1x.png": {
+    "mtime": 1794316846.3075984,
+    "hash": "be8887071dd7ec39cb754d236aa9584f"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-29x29@2x.png": {
+    "mtime": 1794316844.8584664,
+    "hash": "043119ef4faa026ff82bd03f241e5338"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-29x29@3x.png": {
+    "mtime": 1794316846.21595,
+    "hash": "2b1452c4c1bda6177b4fbbb832df217f"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-40x40@1x.png": {
+    "mtime": 1794316844.9123313,
+    "hash": "2247a840b6ee72b8a069208af170e5b1"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-40x40@2x.png": {
+    "mtime": 1794316846.2694228,
+    "hash": "8245359312aea1b0d2412f79a07b0ca5"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-40x40@3x.png": {
+    "mtime": 1794316844.9408543,
+    "hash": "5b3c0902200ce596e9848f22e1f0fe0e"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-60x60@2x.png": {
+    "mtime": 1794316845.978011,
+    "hash": "5b3c0902200ce596e9848f22e1f0fe0e"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-60x60@3x.png": {
+    "mtime": 1794316844.8479457,
+    "hash": "e419d22a37bc40ba185aca1acb6d4ac6"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-76x76@1x.png": {
+    "mtime": 1794316845.7068381,
+    "hash": "36c0d7a7132bdde18898ffdfcfcdc4d2"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-76x76@2x.png": {
+    "mtime": 1794316846.325181,
+    "hash": "643842917530acf4c5159ae851b0baf2"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-83.5x83.5@2x.png": {
+    "mtime": 1794316846.255046,
+    "hash": "665cb5e3c5729da6d639d26eff47a503"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\LaunchImage.png": {
+    "mtime": 1794316844.8326879,
+    "hash": "978c1bee49d7ad5fc1a4d81099b13e18"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\LaunchImage@2x.png": {
+    "mtime": 1794316844.799472,
+    "hash": "978c1bee49d7ad5fc1a4d81099b13e18"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\LaunchImage@3x.png": {
+    "mtime": 1794316844.7869256,
+    "hash": "978c1bee49d7ad5fc1a4d81099b13e18"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\web\\favicon.png": {
+    "mtime": 1791229814.418233,
+    "hash": "5dcef449791fa27946b3d35ad8803796"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\web\\icons\\Icon-192.png": {
+    "mtime": 1791229814.418233,
+    "hash": "ac9a721a12bbc803b44f645561ecb1e1"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\web\\icons\\Icon-512.png": {
+    "mtime": 1791229814.418233,
+    "hash": "96e752610906ba2a93c65f8abe1645f1"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\web\\icons\\Icon-maskable-192.png": {
+    "mtime": 1794316847.3922312,
+    "hash": "c457ef57daa1d16f64b27b786ec2ea3c"
+  },
+  "C:\\Users\\Adem\\Desktop\\RecipeMate\\web\\icons\\Icon-maskable-512.png": {
+    "mtime": 1794316847.3882084,
+    "hash": "301a7604d45b3e739efc881eb04896ea"
+  }
+}

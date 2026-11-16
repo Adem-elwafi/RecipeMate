@@ -1,0 +1,10 @@
+# RecipeMate AI Agent Instructions
+# See AGENTS.md for the complete specification.
+
+- All UI strings MUST be in French (fr-FR).
+- All code, symbols, variables and comments are in English.
+- Use Material 3 design tokens from `lib/core/theme/` (`AppColors`, `AppTextStyles`, `AppTheme`).
+- Use Riverpod (`flutter_riverpod`) for state management.
+- Use GoRouter (`go_router`) for declarative navigation.
+- Strictly respect feature ownership boundaries (Adem, Molka, Farah).
+- Always ensure `dart format .`, `flutter analyze`, and `flutter test` pass with 0 errors.

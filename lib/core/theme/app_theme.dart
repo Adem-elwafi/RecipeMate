@@ -1,0 +1,139 @@
+import 'package:flutter/material.dart';
+import 'package:recipemate/core/theme/app_colors.dart';
+import 'package:recipemate/core/theme/app_text_styles.dart';
+
+/// Central Material 3 theme configuration for RecipeMate.
+abstract final class AppTheme {
+  static ThemeData get lightTheme {
+    const colorScheme = ColorScheme(
+      brightness: Brightness.light,
+      primary: AppColors.primary,
+      onPrimary: Colors.white,
+      primaryContainer: AppColors.softGreen,
+      onPrimaryContainer: AppColors.primaryDark,
+      secondary: AppColors.sage,
+      onSecondary: AppColors.textPrimary,
+      secondaryContainer: AppColors.softGreenLight,
+      onSecondaryContainer: AppColors.primaryDark,
+      tertiary: AppColors.orangeAccent,
+      onTertiary: Colors.white,
+      tertiaryContainer: AppColors.orangeContainer,
+      onTertiaryContainer: AppColors.orangeText,
+      error: AppColors.error,
+      onError: Colors.white,
+      errorContainer: AppColors.errorContainer,
+      onErrorContainer: AppColors.error,
+      surface: AppColors.card,
+      onSurface: AppColors.textPrimary,
+      surfaceContainerHighest: AppColors.cream,
+      outline: AppColors.border,
+      outlineVariant: AppColors.borderSubtle,
+    );
+
+    return ThemeData(
+      useMaterial3: true,
+      colorScheme: colorScheme,
+      scaffoldBackgroundColor: AppColors.scaffoldBackground,
+      fontFamily: 'Inter',
+      appBarTheme: AppBarTheme(
+        backgroundColor: AppColors.scaffoldBackground,
+        foregroundColor: AppColors.textPrimary,
+        elevation: 0,
+        scrolledUnderElevation: 0,
+        centerTitle: false,
+        titleTextStyle: AppTextStyles.title,
+        iconTheme: const IconThemeData(color: AppColors.textPrimary),
+      ),
+      cardTheme: const CardThemeData(
+        color: AppColors.card,
+        elevation: 0,
+        margin: EdgeInsets.zero,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(20)),
+          side: BorderSide(color: AppColors.borderSubtle),
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primary,
+          foregroundColor: Colors.white,
+          elevation: 0,
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+          textStyle: AppTextStyles.button,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          foregroundColor: AppColors.primary,
+          side: const BorderSide(color: AppColors.primary, width: 1.5),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+          textStyle: AppTextStyles.button.copyWith(color: AppColors.primary),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+        ),
+      ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          foregroundColor: AppColors.primary,
+          textStyle: AppTextStyles.buttonSmall.copyWith(
+            color: AppColors.primary,
+          ),
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: AppColors.card,
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 14,
+        ),
+        hintStyle: AppTextStyles.caption.copyWith(color: AppColors.textMuted),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.borderSubtle),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.borderSubtle),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.error),
+        ),
+      ),
+      navigationBarTheme: NavigationBarThemeData(
+        backgroundColor: AppColors.card,
+        elevation: 8,
+        indicatorColor: AppColors.softGreen,
+        iconTheme: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
+            return const IconThemeData(color: AppColors.primary);
+          }
+          return const IconThemeData(color: AppColors.greyIcon);
+        }),
+        labelTextStyle: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
+            return AppTextStyles.captionMedium.copyWith(
+              color: AppColors.primary,
+              fontWeight: FontWeight.w600,
+            );
+          }
+          return AppTextStyles.caption.copyWith(color: AppColors.textSecondary);
+        }),
+      ),
+      dividerTheme: const DividerThemeData(
+        color: AppColors.borderSubtle,
+        thickness: 1,
+        space: 1,
+      ),
+    );
+  }
+}
