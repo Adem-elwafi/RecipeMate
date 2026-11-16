@@ -177,7 +177,7 @@ class FeaturePlaceholder extends StatelessWidget {
                         const SizedBox(width: 6),
                         Flexible(
                           child: Text(
-                            'En attente d’implémentation',
+                            "En attente d'implémentation",
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.inter(
