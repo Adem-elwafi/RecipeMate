@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:recipemate/core/theme/app_colors.dart';
 import 'package:recipemate/core/theme/app_text_styles.dart';
@@ -188,6 +189,29 @@ class FeaturePlaceholder extends StatelessWidget {
                           ),
                         ),
                       ],
+                    ),
+                  ),
+
+                  const SizedBox(height: 20),
+                  const Divider(height: 1, color: AppColors.borderSubtle),
+                  const SizedBox(height: 12),
+
+                  // Button to view Design System Playground
+                  TextButton.icon(
+                    onPressed: () => context.push('/playground'),
+                    icon: const Icon(
+                      Icons.palette_outlined,
+                      size: 18,
+                      color: AppColors.primary,
+                    ),
+                    label: Text(
+                      'Voir le catalogue des composants (Playground)',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.inter(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.primary,
+                      ),
                     ),
                   ),
                 ],

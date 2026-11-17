@@ -9,6 +9,7 @@ import 'package:recipemate/features/favorites/favorites_screen.dart';
 import 'package:recipemate/features/fridge/fridge_screen.dart';
 import 'package:recipemate/features/home/home_screen.dart';
 import 'package:recipemate/features/onboarding/onboarding_screen.dart';
+import 'package:recipemate/features/playground/playground_screen.dart';
 import 'package:recipemate/features/product/product_screen.dart';
 import 'package:recipemate/features/profile/profile_screen.dart';
 import 'package:recipemate/features/recipe_details/recipe_details_screen.dart';
@@ -159,6 +160,13 @@ final GoRouter appRouter = GoRouter(
       parentNavigatorKey: _rootNavigatorKey,
       path: '/add-recipe',
       builder: (context, state) => const AddRecipeScreen(),
+    ),
+
+    // Design System Playground
+    GoRoute(
+      parentNavigatorKey: _rootNavigatorKey,
+      path: '/playground',
+      builder: (context, state) => const PlaygroundScreen(),
     ),
   ],
 );
