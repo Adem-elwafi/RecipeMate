@@ -56,7 +56,11 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
               children: [
                 Row(
                   children: [
-                    const Icon(Icons.auto_awesome, color: Colors.white, size: 22),
+                    const Icon(
+                      Icons.auto_awesome,
+                      color: Colors.white,
+                      size: 22,
+                    ),
                     const SizedBox(width: 8),
                     Text(
                       'Design System RecipeMate',
@@ -151,10 +155,7 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
     );
   }
 
-  Widget _buildSectionHeader({
-    required String title,
-    required IconData icon,
-  }) {
+  Widget _buildSectionHeader({required String title, required IconData icon}) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: Row(
@@ -264,7 +265,10 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
           const Divider(height: 24),
           Text('Titre · Poppins 22 semibold', style: AppTextStyles.title),
           const Divider(height: 24),
-          Text('Sous-titre · Poppins 17 semibold', style: AppTextStyles.subtitle),
+          Text(
+            'Sous-titre · Poppins 17 semibold',
+            style: AppTextStyles.subtitle,
+          ),
           const Divider(height: 24),
           Text(
             'Corps · Inter 15 — Une salade fraîche, croquante et riche en protéines.',
@@ -309,17 +313,11 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
           Row(
             children: [
               Expanded(
-                child: TonalButton(
-                  label: 'Bouton Tonal',
-                  onPressed: () {},
-                ),
+                child: TonalButton(label: 'Bouton Tonal', onPressed: () {}),
               ),
               const SizedBox(width: 12),
               const Expanded(
-                child: PrimaryButton(
-                  label: 'Désactivé',
-                  onPressed: null,
-                ),
+                child: PrimaryButton(label: 'Désactivé', onPressed: null),
               ),
             ],
           ),
@@ -355,7 +353,10 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
           AppTextField(
             controller: _textController,
             hintText: 'Rechercher une recette ou un ingrédient...',
-            prefixIcon: const Icon(Icons.search_rounded, color: AppColors.primary),
+            prefixIcon: const Icon(
+              Icons.search_rounded,
+              color: AppColors.primary,
+            ),
             onChanged: (val) => setState(() => _inputText = val),
           ),
           if (_inputText.isNotEmpty) ...[

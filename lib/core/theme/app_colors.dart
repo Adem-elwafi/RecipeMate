@@ -56,4 +56,23 @@ abstract final class AppColors {
   static const Color macroProtein = Color(0xFFA8C982);
   static const Color macroCarbs = Color(0xFFE9A65A);
   static const Color macroFat = Color(0xFF858B7D);
+  static const Color macroSugars = Color(0xFFF3D3A8);
+  static const Color macroSalt = Color(0xFFC9C3B4);
+
+  // Additional exact tokens from docs/design/RecipeMate.html
+  static const Color orangeSoft = Color(0xFFF7D3A6);
+  static const Color chipBorder = Color(0xFFE4DFD2);
+  static const Color freshBadgeBg = Color(0xFFEEF3E6);
+  static const Color neutralBadgeBg = Color(0xFFF2EFE7);
+  static const Color forestGreen = Color(0xFF2F4A27);
+  static const Color scannerHint = Color(0xFFD6D9CF);
+  static const Color sheetHandle = Color(0xFFD9D4C6);
+  static const Color outlineMuted = Color(0xFFDCD7CA);
+  static const Color productHeroBg = Color(0xFFE8F0F7);
+  static const Color dividerLight = Color(0xFFF0ECE2);
+  static const Color allergenText = Color(0xFF7A4A10);
+  static const Color scannerMockBgMid = Color(0xFF4A4D45);
+  static const Color scannerMockBgDark = Color(0xFF2A2C27);
+  static const Color scannerMockCard = Color(0xFFF4F1E8);
+  static const Color scannerMockBar = Color(0xFFDDD8CB);
 }

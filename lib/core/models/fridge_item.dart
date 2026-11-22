@@ -11,6 +11,7 @@ class FridgeItem {
     required this.quantity,
     required this.unit,
     required this.expirationDate,
+    this.hasExpirationDate = true,
     DateTime? addedDate,
   }) : addedDate = addedDate ?? expirationDate;
 
@@ -19,6 +20,7 @@ class FridgeItem {
   final double quantity;
   final String unit;
   final DateTime expirationDate;
+  final bool hasExpirationDate;
   final DateTime addedDate;
 
   /// Number of days remaining before expiration.
@@ -35,13 +37,16 @@ class FridgeItem {
 
   /// Whether the item expires in 3 days or fewer and is not yet expired.
   bool get isExpiringSoon =>
-      daysUntilExpiration >= 0 && daysUntilExpiration <= 3;
+      hasExpirationDate && daysUntilExpiration >= 0 && daysUntilExpiration <= 3;
 
   /// Whether the item has already passed its expiration date.
-  bool get isExpired => daysUntilExpiration < 0;
+  bool get isExpired => hasExpirationDate && daysUntilExpiration < 0;
 
   /// Human-friendly French expiration label.
   String get expirationLabel {
+    if (!hasExpirationDate) {
+      return 'Sans date';
+    }
     final days = daysUntilExpiration;
     if (days < 0) {
       final abs = days.abs();
@@ -56,8 +61,29 @@ class FridgeItem {
     return 'Expire dans $days jours';
   }
 
+  /// Compact French expiration label matching `06 · Mon frigo`.
+  String get shortExpirationLabel {
+    if (!hasExpirationDate) {
+      return 'Sans date';
+    }
+    final days = daysUntilExpiration;
+    if (days < 0) {
+      return 'Périmé';
+    }
+    if (days == 0) {
+      return "Expire aujourd'hui";
+    }
+    if (days == 1) {
+      return 'Expire demain';
+    }
+    return 'Expire dans $days j';
+  }
+
   /// Formatted date in French (e.g. 18 nov. 2026).
   String get formattedDate {
+    if (!hasExpirationDate) {
+      return 'Sans date';
+    }
     return DateFormat('d MMM yyyy', 'fr_FR').format(expirationDate);
   }
 
@@ -67,6 +93,7 @@ class FridgeItem {
     double? quantity,
     String? unit,
     DateTime? expirationDate,
+    bool? hasExpirationDate,
     DateTime? addedDate,
   }) {
     return FridgeItem(
@@ -75,6 +102,7 @@ class FridgeItem {
       quantity: quantity ?? this.quantity,
       unit: unit ?? this.unit,
       expirationDate: expirationDate ?? this.expirationDate,
+      hasExpirationDate: hasExpirationDate ?? this.hasExpirationDate,
       addedDate: addedDate ?? this.addedDate,
     );
   }
