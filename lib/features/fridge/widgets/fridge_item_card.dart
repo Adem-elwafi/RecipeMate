@@ -24,6 +24,7 @@ class FridgeItemCard extends StatelessWidget {
       item.ingredient.category,
     );
     final (badgeBg, badgeTextColor) = _expirationBadgeColors(item);
+    final imageUrl = item.ingredient.imageUrl?.trim();
 
     return Container(
       padding: const EdgeInsets.fromLTRB(10, 10, 8, 10),
@@ -33,14 +34,11 @@ class FridgeItemCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Container(
-            width: 52,
-            height: 52,
-            decoration: BoxDecoration(
-              color: thumbBg,
-              borderRadius: BorderRadius.circular(14),
-            ),
-            child: Icon(icon, size: 24, color: thumbIconColor),
+          _buildThumbnail(
+            imageUrl: imageUrl,
+            icon: icon,
+            thumbBg: thumbBg,
+            thumbIconColor: thumbIconColor,
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -118,6 +116,40 @@ class FridgeItemCard extends StatelessWidget {
             onPressed: onDelete,
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildThumbnail({
+    required String? imageUrl,
+    required IconData icon,
+    required Color thumbBg,
+    required Color thumbIconColor,
+  }) {
+    final fallbackBox = Container(
+      width: 52,
+      height: 52,
+      decoration: BoxDecoration(
+        color: thumbBg,
+        borderRadius: BorderRadius.circular(14),
+      ),
+      child: Icon(icon, size: 24, color: thumbIconColor),
+    );
+
+    if (imageUrl == null || imageUrl.isEmpty) {
+      return fallbackBox;
+    }
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(14),
+      child: Image.network(
+        imageUrl,
+        width: 52,
+        height: 52,
+        fit: BoxFit.cover,
+        loadingBuilder: (context, child, loadingProgress) =>
+            loadingProgress == null ? child : fallbackBox,
+        errorBuilder: (_, _, _) => fallbackBox,
       ),
     );
   }

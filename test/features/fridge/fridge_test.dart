@@ -486,5 +486,61 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('RecommendationsRoute'), findsOneWidget);
     });
+
+    testWidgets(
+      'FridgeItemCard displays network image when imageUrl is present',
+      (tester) async {
+        final itemWithImage = FridgeItem(
+          id: 'fi_el_mordjene',
+          ingredient: const Ingredient(
+            id: 'off_6132500711040',
+            name: 'El Mordjene Crème De Noisettes Grillées',
+            category: IngredientCategory.other,
+            imageUrl:
+                'https://images.openfoodfacts.org/images/products/demo.jpg',
+          ),
+          quantity: 700,
+          unit: 'g',
+          expirationDate: DateTime.now().add(const Duration(days: 14)),
+        );
+
+        await tester.pumpWidget(
+          MaterialApp(
+            home: Scaffold(
+              body: FridgeItemCard(
+                item: itemWithImage,
+                onEdit: () {},
+                onDelete: () {},
+              ),
+            ),
+          ),
+        );
+
+        expect(find.byType(Image), findsOneWidget);
+
+        final itemWithoutImage = FridgeItem(
+          id: 'fi_no_img',
+          ingredient: MockData.ingFeta,
+          quantity: 180,
+          unit: 'g',
+          expirationDate: DateTime.now().add(const Duration(days: 2)),
+        );
+
+        await tester.pumpWidget(
+          MaterialApp(
+            home: Scaffold(
+              body: FridgeItemCard(
+                item: itemWithoutImage,
+                onEdit: () {},
+                onDelete: () {},
+              ),
+            ),
+          ),
+        );
+
+        expect(find.byType(Image), findsNothing);
+        expect(find.byIcon(Icons.egg_outlined), findsOneWidget);
+      },
+    );
   });
 }
