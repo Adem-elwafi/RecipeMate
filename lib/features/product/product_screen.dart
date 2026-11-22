@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipemate/shared/widgets/feature_placeholder.dart';
+import 'package:recipemate/shared/widgets/secondary_app_bar.dart';
 
 /// Screen placeholder for Fiche Produit.
 /// Owned by Adem (Phase 2).
@@ -17,7 +18,8 @@ class ProductScreen extends StatelessWidget {
       description:
           'Détails OpenFoodFacts, Nutri-Score et ajout direct au frigo.',
       extraDetail: barcode != null ? 'Code-barres : $barcode' : null,
-      showBackButton: true,
+      // Point B : page secondaire avec flèche retour et titre explicite.
+      appBar: const SecondaryAppBar(title: 'Fiche produit'),
     );
   }
 }

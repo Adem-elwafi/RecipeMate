@@ -58,6 +58,37 @@ void main() {
       expect(updated.calories, equals(original.calories));
     });
 
+    test('les métadonnées E11 (catégorie, difficulté, régimes, fibres)', () {
+      const recipe = Recipe(
+        id: 'rec_e11',
+        title: 'Salade',
+        description: 'Description',
+        imageUrl: '',
+        prepTimeMinutes: 10,
+        cookTimeMinutes: 0,
+        calories: 120,
+        proteinGrams: 5,
+        carbsGrams: 12,
+        fatGrams: 3,
+        fiberGrams: 4,
+        category: 'Entrées',
+        difficulty: 'Moyen',
+        dietTags: <String>['Vegan', 'Sans gluten'],
+        ingredients: [],
+        instructions: ['Mélanger'],
+      );
+
+      expect(recipe.category, equals('Entrées'));
+      expect(recipe.difficulty, equals('Moyen'));
+      expect(recipe.dietTags, equals(<String>['Vegan', 'Sans gluten']));
+      expect(recipe.fiberGrams, equals(4));
+
+      final updated = recipe.copyWith(difficulty: 'Facile');
+      expect(updated.difficulty, equals('Facile'));
+      expect(updated.category, equals('Entrées'));
+      expect(updated.fiberGrams, equals(4));
+    });
+
     test('RecipeIngredient displayText format', () {
       const ingredient = Ingredient(
         id: 'ing_oil',

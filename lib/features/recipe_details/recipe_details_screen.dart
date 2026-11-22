@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipemate/shared/widgets/feature_placeholder.dart';
+import 'package:recipemate/shared/widgets/secondary_app_bar.dart';
 
 /// Screen placeholder for Détail de la recette.
 /// Owned by Molka.
@@ -16,7 +17,8 @@ class RecipeDetailsScreen extends StatelessWidget {
       icon: Icons.restaurant_outlined,
       description: 'Fiche complète, ingrédients, calcul des portions, étapes de préparation.',
       extraDetail: recipeId != null ? 'Recette ID : $recipeId' : null,
-      showBackButton: true,
+      // Point B : page secondaire avec flèche retour et titre explicite.
+      appBar: const SecondaryAppBar(title: 'Détail de la recette'),
     );
   }
 }

@@ -29,17 +29,23 @@ class RecipeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final secondaryText = isDark
+        ? AppColors.softGreen
+        : AppColors.textSecondary;
+
     return Container(
       width: width,
       decoration: BoxDecoration(
-        color: AppColors.card,
+        color: colors.surface,
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: AppColors.borderSubtle),
-        boxShadow: const [
+        border: Border.all(color: colors.outlineVariant),
+        boxShadow: <BoxShadow>[
           BoxShadow(
-            color: Color(0x14292D27), // rgba(41, 45, 39, 0.08)
+            color: colors.onSurface.withValues(alpha: 0.08),
             blurRadius: 20,
-            offset: Offset(0, 6),
+            offset: const Offset(0, 6),
           ),
         ],
       ),
@@ -105,7 +111,7 @@ class RecipeCard extends StatelessWidget {
                       height: 22,
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.92),
+                        color: colors.surface.withValues(alpha: 0.92),
                         borderRadius: BorderRadius.circular(7),
                       ),
                       alignment: Alignment.center,
@@ -116,7 +122,7 @@ class RecipeCard extends StatelessWidget {
                         style: GoogleFonts.inter(
                           fontSize: 11,
                           fontWeight: FontWeight.w600,
-                          color: AppColors.tonalGreenText,
+                          color: colors.onPrimaryContainer,
                         ),
                       ),
                     ),
@@ -127,7 +133,7 @@ class RecipeCard extends StatelessWidget {
                     top: 12,
                     right: 12,
                     child: Material(
-                      color: Colors.white.withValues(alpha: 0.9),
+                      color: colors.surface.withValues(alpha: 0.9),
                       shape: const CircleBorder(),
                       child: InkWell(
                         customBorder: const CircleBorder(),
@@ -163,7 +169,7 @@ class RecipeCard extends StatelessWidget {
                       style: GoogleFonts.poppins(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: AppColors.textPrimary,
+                        color: colors.onSurface,
                         height: 1.25,
                       ),
                     ),
@@ -172,10 +178,10 @@ class RecipeCard extends StatelessWidget {
                     // Metrics: Time & Calories
                     Row(
                       children: [
-                        const Icon(
+                        Icon(
                           Icons.schedule_rounded,
                           size: 14,
-                          color: AppColors.textSecondary,
+                          color: secondaryText,
                         ),
                         const SizedBox(width: 4),
                         Text(
@@ -183,14 +189,14 @@ class RecipeCard extends StatelessWidget {
                           style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
-                            color: AppColors.textSecondary,
+                            color: secondaryText,
                           ),
                         ),
                         const SizedBox(width: 10),
-                        const Text(
+                        Text(
                           '·',
                           style: TextStyle(
-                            color: AppColors.textSecondary,
+                            color: secondaryText,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -200,7 +206,7 @@ class RecipeCard extends StatelessWidget {
                           style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
-                            color: AppColors.textSecondary,
+                            color: secondaryText,
                           ),
                         ),
                       ],

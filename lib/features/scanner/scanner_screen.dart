@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipemate/shared/widgets/feature_placeholder.dart';
+import 'package:recipemate/shared/widgets/secondary_app_bar.dart';
 
 /// Screen placeholder for Scanner code-barres.
 /// Owned by Adem (Phase 2).
@@ -14,7 +15,8 @@ class ScannerScreen extends StatelessWidget {
       icon: Icons.qr_code_scanner_outlined,
       description:
           'Scanner caméra mobile_scanner avec détection et saisie manuelle.',
-      showBackButton: true,
+      // Point B : page secondaire avec flèche retour et titre explicite.
+      appBar: SecondaryAppBar(title: 'Scanner code-barres'),
     );
   }
 }

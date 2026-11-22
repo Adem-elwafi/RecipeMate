@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" role="img" aria-label="RecipeMate Mark">
+  <path d="M24 40C14 40 9 32 10 22 20 21 28 26 28 36" fill="#A8C982"/>
+  <path d="M24 40c0-12 6-22 16-26-1 14-6 24-16 26Z" fill="#527C43"/>
+  <path d="M24 40c2-9 7-16 13-21" stroke="#DDEBCB" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="16" cy="12" r="3.2" fill="#E9A65A"/>
+</svg>

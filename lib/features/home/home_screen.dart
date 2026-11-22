@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipemate/shared/widgets/feature_placeholder.dart';
+import 'package:recipemate/shared/widgets/recipemate_app_bar.dart';
 
 /// Screen placeholder for Accueil (Home).
 /// Owned by Molka.
@@ -13,6 +14,8 @@ class HomeScreen extends StatelessWidget {
       owner: 'Molka',
       icon: Icons.home_outlined,
       description: 'Tableau de bord, suivi des macros, recettes rapides et alerte anti-gaspillage.',
+      // Point C : en-tête commun aux onglets racines.
+      appBar: RecipeMateAppBar(),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipemate/shared/widgets/feature_placeholder.dart';
+import 'package:recipemate/shared/widgets/recipemate_app_bar.dart';
 
 /// Screen placeholder for Mon Frigo.
 /// Owned by Adem (Phase 2).
@@ -13,6 +14,8 @@ class FridgeScreen extends StatelessWidget {
       owner: 'Adem (Phase 2)',
       icon: Icons.kitchen_outlined,
       description: 'Gestion des ingrédients, tri par péremption, indicateur anti-gaspillage.',
+      // Point C : en-tête commun aux onglets racines.
+      appBar: RecipeMateAppBar(),
     );
   }
 }

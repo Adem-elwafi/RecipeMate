@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:recipemate/core/theme/app_colors.dart';
 import 'package:recipemate/core/theme/app_text_styles.dart';
 
 /// Styled text field matching RecipeMate inputs.
 /// Aligned with `docs/design/RecipeMate.html`:
 /// - Height: 50-52px, Radius: 14px
-/// - Border: 1.5px solid `#527C43` (focused) / `#EEE9DD` (unfocused)
-/// - Background: `#FFFFFF`
+/// - Border: 1.5px solid primary / subtle outline
+/// - Colors come from Theme.of(context) so dark mode works everywhere.
 class AppTextField extends StatelessWidget {
   const AppTextField({
     super.key,
@@ -40,6 +38,8 @@ class AppTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
@@ -47,10 +47,8 @@ class AppTextField extends StatelessWidget {
         if (labelText != null) ...[
           Text(
             labelText!,
-            style: GoogleFonts.inter(
-              fontSize: 13,
-              fontWeight: FontWeight.w600,
-              color: AppColors.textPrimary,
+            style: AppTextStyles.captionMedium.copyWith(
+              color: colors.onSurface,
             ),
           ),
           const SizedBox(height: 6),
@@ -64,44 +62,35 @@ class AppTextField extends StatelessWidget {
           validator: validator,
           maxLines: maxLines,
           autofocus: autofocus,
-          style: AppTextStyles.body,
+          style: AppTextStyles.body.copyWith(color: colors.onSurface),
           decoration: InputDecoration(
             hintText: hintText,
             hintStyle: AppTextStyles.caption.copyWith(
-              color: AppColors.textMuted,
+              color: colors.onSurface.withValues(alpha: 0.6),
             ),
             prefixIcon: prefixIcon,
             suffixIcon: suffixIcon,
             filled: true,
-            fillColor: AppColors.card,
+            fillColor: colors.surface,
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 14,
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: const BorderSide(
-                color: AppColors.borderSubtle,
-                width: 1.5,
-              ),
+              borderSide: BorderSide(color: colors.outlineVariant, width: 1.5),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: const BorderSide(
-                color: AppColors.borderSubtle,
-                width: 1.5,
-              ),
+              borderSide: BorderSide(color: colors.outlineVariant, width: 1.5),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: const BorderSide(
-                color: AppColors.primary,
-                width: 1.5,
-              ),
+              borderSide: BorderSide(color: colors.primary, width: 1.5),
             ),
             errorBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: const BorderSide(color: AppColors.error, width: 1.5),
+              borderSide: BorderSide(color: colors.error, width: 1.5),
             ),
           ),
         ),
