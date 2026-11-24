@@ -9,7 +9,7 @@ import 'package:recipemate/shared/widgets/match_bar.dart';
 /// Reusable recipe card widget matching `docs/design/RecipeMate.html`:
 /// - 18px border-radius, white background, shadow `rgba(41,45,39,.08)`
 /// - Image container with 14px radius
-/// - "Healthy" badge in top-left (rgba(255,255,255,0.92), text `#3F6233`, 11px font-weight 600, radius 7px)
+/// - "Healthy" badge in top-left (rgba(255,255,255,0.92), text `#292D27`, 11px font-weight 600, radius 7px)
 /// - Poppins 14px title
 /// - Time and kcal in Inter 12px `#5E6457`
 /// - Optional MatchBar below
@@ -122,8 +122,8 @@ class RecipeCard extends StatelessWidget {
                                 : Icons.favorite_border_rounded,
                             size: 18,
                             color: recipe.isFavorite
-                                ? AppColors.error
-                                : AppColors.favoriteIcon,
+                                ? AppColors.orangeAccent
+                                : AppColors.greyIcon,
                           ),
                         ),
                       ),

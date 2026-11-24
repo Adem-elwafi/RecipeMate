@@ -127,7 +127,7 @@ class OutlineButtonWidget extends StatelessWidget {
   }
 }
 
-/// Tonal button with soft green `#DDEBCB` background and dark green `#3F6233` text.
+/// Tonal button with soft green `#DDEBCB` background and `#292D27` text.
 /// Height: 48px, Radius: 14px, Text: Inter 14px w600.
 class TonalButton extends StatelessWidget {
   const TonalButton({
@@ -185,7 +185,7 @@ class TonalButton extends StatelessWidget {
   }
 }
 
-/// Favorite action button with warm container `#FCEFDF` and warm accent icon `#C97A22`.
+/// Favorite action button with cream container and palette orange/grey icon.
 /// Size: 48x48px (or custom size), Radius: 14px.
 class FavoriteButton extends StatelessWidget {
   const FavoriteButton({
@@ -199,12 +199,11 @@ class FavoriteButton extends StatelessWidget {
   final VoidCallback onToggle;
   final double size;
 
-  static const Color favoriteOrange = AppColors.favoriteIcon;
+  static const Color favoriteOrange = AppColors.orangeAccent;
 
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
-    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       width: size,
       height: size,
@@ -222,11 +221,7 @@ class FavoriteButton extends StatelessWidget {
               isFavorite
                   ? Icons.favorite_rounded
                   : Icons.favorite_border_rounded,
-              color: isFavorite
-                  ? colors.error
-                  : isDark
-                  ? colors.tertiary
-                  : favoriteOrange,
+              color: isFavorite ? favoriteOrange : AppColors.greyIcon,
               size: size * 0.46,
             ),
           ),

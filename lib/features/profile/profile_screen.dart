@@ -472,7 +472,7 @@ class _ProfileHeader extends StatelessWidget {
                               ? Text(
                                   initials,
                                   style: AppTextStyles.title.copyWith(
-                                    color: AppColors.tonalGreenText,
+                                    color: AppColors.textPrimary,
                                     fontWeight: FontWeight.w700,
                                   ),
                                 )
@@ -486,7 +486,7 @@ class _ProfileHeader extends StatelessWidget {
                                       child: Text(
                                         initials,
                                         style: AppTextStyles.title.copyWith(
-                                          color: AppColors.tonalGreenText,
+                                          color: AppColors.textPrimary,
                                           fontWeight: FontWeight.w700,
                                         ),
                                       ),

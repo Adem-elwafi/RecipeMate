@@ -58,7 +58,7 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
                   children: [
                     const Icon(
                       Icons.auto_awesome,
-                      color: Colors.white,
+                      color: AppColors.card,
                       size: 22,
                     ),
                     const SizedBox(width: 8),
@@ -67,7 +67,7 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
                       style: GoogleFonts.poppins(
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
-                        color: Colors.white,
+                        color: AppColors.card,
                       ),
                     ),
                   ],
@@ -189,7 +189,6 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
       ('Orange Accent', AppColors.orangeAccent, '#E9A65A'),
       ('Orange Texte', AppColors.orangeText, '#9A5A12'),
       ('Erreur', AppColors.error, '#B3261E'),
-      ('Erreur Fond', AppColors.errorContainer, '#FBEDEB'),
     ];
 
     return Container(
@@ -232,14 +231,16 @@ class _PlaygroundScreenState extends State<PlaygroundScreen> {
                   style: GoogleFonts.inter(
                     fontSize: 11,
                     fontWeight: FontWeight.w600,
-                    color: isLight ? AppColors.textPrimary : Colors.white,
+                    color: isLight ? AppColors.textPrimary : AppColors.card,
                   ),
                 ),
                 Text(
                   hex,
                   style: GoogleFonts.inter(
                     fontSize: 10,
-                    color: isLight ? AppColors.textSecondary : Colors.white70,
+                    color: isLight
+                        ? AppColors.textSecondary
+                        : AppColors.textPrimary.withValues(alpha: 0.7),
                   ),
                 ),
               ],

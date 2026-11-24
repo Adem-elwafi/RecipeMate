@@ -41,7 +41,7 @@ abstract final class OnboardingIllustrations {
               color: AppColors.cream,
               boxShadow: <BoxShadow>[
                 BoxShadow(
-                  color: AppColors.primaryDark.withValues(alpha: 0.25),
+                  color: AppColors.primary.withValues(alpha: 0.25),
                   blurRadius: 18,
                   offset: const Offset(0, 8),
                 ),
@@ -64,7 +64,7 @@ abstract final class OnboardingIllustrations {
           const Positioned(
             right: 56,
             top: 78,
-            child: _Leaf(color: AppColors.primaryLight),
+            child: _Leaf(color: AppColors.primary),
           ),
           const Positioned(
             left: 84,
@@ -86,7 +86,7 @@ abstract final class OnboardingIllustrations {
         borderRadius: BorderRadius.circular(28),
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: AppColors.primaryDark.withValues(alpha: 0.25),
+            color: AppColors.primary.withValues(alpha: 0.25),
             blurRadius: 18,
             offset: const Offset(0, 8),
           ),
@@ -104,7 +104,7 @@ abstract final class OnboardingIllustrations {
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Icon(Icons.apple, color: AppColors.error, size: 34),
+                  Icon(Icons.apple, color: AppColors.sage, size: 34),
                   Icon(Icons.eco, color: AppColors.orangeAccent, size: 34),
                   Icon(Icons.spa, color: AppColors.primary, size: 34),
                 ],

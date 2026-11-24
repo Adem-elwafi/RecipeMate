@@ -108,6 +108,28 @@ void main() {
       );
       expect(fieldTheme.colorScheme.surface, AppColors.card);
       expect(fieldTheme.colorScheme.surfaceContainerHighest, AppColors.cream);
+      expect(fieldTheme.colorScheme.primary, AppColors.primary);
+      expect(fieldTheme.colorScheme.onSurface, AppColors.textPrimary);
+      expect(fieldTheme.colorScheme.onSurfaceVariant, AppColors.textSecondary);
+
+      final input = fieldTheme.inputDecorationTheme;
+      expect(input.fillColor, AppColors.card);
+      expect(
+        (input.focusedBorder! as OutlineInputBorder).borderSide.color,
+        AppColors.primary,
+      );
+
+      final googleButton = tester.widget<OutlinedButton>(
+        find.byType(OutlinedButton),
+      );
+      expect(
+        googleButton.style!.foregroundColor!.resolve(<WidgetState>{}),
+        AppColors.textPrimary,
+      );
+      expect(
+        googleButton.style!.side!.resolve(<WidgetState>{})!.color,
+        AppColors.borderSubtle,
+      );
     });
 
     testWidgets('affiche le formulaire de mot de passe oublié', (tester) async {

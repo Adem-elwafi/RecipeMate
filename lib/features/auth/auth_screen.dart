@@ -320,8 +320,9 @@ class _AuthFormState extends ConsumerState<_AuthForm> {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.errorContainer,
+                color: AppColors.card,
                 borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: AppColors.error),
               ),
               child: Text(
                 _errorMessage!,
@@ -342,7 +343,7 @@ class _AuthFormState extends ConsumerState<_AuthForm> {
               child: Text(
                 _infoMessage!,
                 style: AppTextStyles.caption.copyWith(
-                  color: AppColors.tonalGreenText,
+                  color: AppColors.textPrimary,
                 ),
               ),
             ),
@@ -366,6 +367,11 @@ class _AuthFormState extends ConsumerState<_AuthForm> {
               label: const Text('Continuer avec Google'),
               style: OutlinedButton.styleFrom(
                 minimumSize: const Size(0, 52),
+                foregroundColor: AppColors.textPrimary,
+                side: const BorderSide(
+                  color: AppColors.borderSubtle,
+                  width: 1.5,
+                ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),

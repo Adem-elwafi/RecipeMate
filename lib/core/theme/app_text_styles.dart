@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 /// Typography tokens for RecipeMate directly aligned with `docs/design/RecipeMate.html`.
-/// Poppins for headings & display titles.
+/// Poppins Bold for titles/display, Poppins Medium for subtitles/section headers.
 /// Inter for body, captions, labels, and buttons.
 ///
 /// Les couleurs de texte ne sont PAS fixées ici : elles viennent du
@@ -28,19 +28,19 @@ abstract final class AppTextStyles {
 
   static TextStyle get title => GoogleFonts.poppins(
     fontSize: 22,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w700,
     height: 1.3,
   );
 
   static TextStyle get subtitle => GoogleFonts.poppins(
     fontSize: 17,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
     height: 1.35,
   );
 
   static TextStyle get sectionHeader => GoogleFonts.poppins(
     fontSize: 16,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
     height: 1.35,
   );
 

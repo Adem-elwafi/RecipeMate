@@ -6,14 +6,14 @@ import 'package:recipemate/core/theme/app_colors.dart';
 /// Aligned with `docs/design/RecipeMate.html`:
 /// - Height: 26-28px
 /// - Border radius: 8px (or 99px for pill style)
-/// - Background: `#DDEBCB` (or `#EEF3E6`)
-/// - Text: `#3F6233`, font-size: 12px, font-weight: 600
+/// - Background: `#DDEBCB`
+/// - Text: `#292D27`, font-size: 12px, font-weight: 600
 class DietBadge extends StatelessWidget {
   const DietBadge({
     required this.label,
     super.key,
     this.backgroundColor = AppColors.softGreen,
-    this.textColor = AppColors.tonalGreenText,
+    this.textColor = AppColors.textPrimary,
     this.isSmall = false,
     this.isPill = false,
   });
@@ -30,7 +30,7 @@ class DietBadge extends StatelessWidget {
     final effectiveBackground = backgroundColor == AppColors.softGreen
         ? colors.primaryContainer
         : backgroundColor;
-    final effectiveText = textColor == AppColors.tonalGreenText
+    final effectiveText = textColor == AppColors.textPrimary
         ? colors.onPrimaryContainer
         : textColor;
     return Container(
