@@ -27,19 +27,14 @@ final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(
   debugLabel: 'root',
 );
 
-/// Après l'onboarding, on utilise la même logique que le splash (point 10) :
-/// le flag local n'ouvre l'accueil que si la session Firebase est réelle.
-Future<void> _goAfterOnboarding(BuildContext context) async {
-  final destination = await StartupResolver.resolve();
-  if (!context.mounted) {
-    return;
-  }
-  context.go(switch (destination) {
-    SplashDestination.onboarding => '/onboarding',
-    SplashDestination.auth => '/auth',
-    SplashDestination.home => '/',
-  });
-}
+/// Paths of the shell routes (bottom bar branches).
+const appShellPaths = <String>[
+  '/',
+  '/explore',
+  '/fridge',
+  '/recommendations',
+  '/profile',
+];
 
 /// Central GoRouter configuration for RecipeMate.
 final GoRouter appRouter = GoRouter(
@@ -73,6 +68,7 @@ final GoRouter appRouter = GoRouter(
           body: navigationShell,
           bottomNavigationBar: AppNavBar(
             currentIndex: navigationShell.currentIndex,
+            location: state.uri.path,
             onTap: (index) => navigationShell.goBranch(
               index,
               initialLocation: index == navigationShell.currentIndex,

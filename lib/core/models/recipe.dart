@@ -1,3 +1,4 @@
+
 import 'package:flutter/foundation.dart';
 import 'package:recipemate/core/models/ingredient.dart';
 
@@ -19,8 +20,6 @@ class Recipe {
     required this.instructions,
     this.dietBadges = const [],
     this.allergens = const [],
-    // Point B2 : champs explicites du document `recipes/{recipeId}`. Les valeurs
-    // par défaut gardent la compatibilité avec les recettes déjà créées.
     this.category = '',
     this.difficulty = 'Facile',
     this.dietTags = const <String>[],
@@ -29,7 +28,6 @@ class Recipe {
     this.rating = 4.8,
     this.matchPercentage,
     this.isFavorite = false,
-    // Point B2 : métadonnées du document `recipes/{recipeId}`.
     this.authorId = '',
     this.ingredientKeywords = const <String>[],
     this.isPublic = true,
@@ -45,52 +43,54 @@ class Recipe {
   final double proteinGrams;
   final double carbsGrams;
   final double fatGrams;
+
   final List<String> dietBadges;
   final List<String> allergens;
 
-  /// Catégorie choisie dans le formulaire (Entrées, Plats, Desserts...).
+  /// Recipe category.
   final String category;
 
-  /// Difficulté : Facile, Moyen ou Difficile.
+  /// Difficulty: Facile, Moyen or Difficile.
   final String difficulty;
 
-  /// Tags de régime (Végétarien, Vegan, Sans gluten, Keto...), sans la
-  /// catégorie qui reste uniquement dans [category].
+  /// Diet tags.
   final List<String> dietTags;
 
-  /// Fibres par portion, en grammes (0 quand non renseigné).
+  /// Fiber per serving, in grams.
   final double fiberGrams;
 
   final List<RecipeIngredient> ingredients;
   final List<String> instructions;
+
   final int servings;
   final double rating;
-
-  /// Optional fridge ingredients match score (0.0 to 1.0 or 0 to 100).
   final double? matchPercentage;
-
   final bool isFavorite;
 
-  /// UID de l'auteur (également écrit dans `authorId` dans Firestore).
+  /// Author UID in Firestore.
   final String authorId;
 
-  /// Mots-clés normalisés des ingrédients, utilisés par la recherche frigo.
+  /// Normalized ingredient keywords for fridge search.
   final List<String> ingredientKeywords;
 
-  /// Une recette publique est visible par les autres utilisateurs.
+  /// Whether the recipe is publicly visible.
   final bool isPublic;
 
   /// Total preparation and cooking duration in minutes.
   int get totalTimeMinutes => prepTimeMinutes + cookTimeMinutes;
 
-  /// Formatted total time (e.g. "25 min" or "1 h 15 min").
+  /// Formatted total time.
   String get formattedTotalTime {
     if (totalTimeMinutes < 60) {
       return '$totalTimeMinutes min';
     }
+
     final hours = totalTimeMinutes ~/ 60;
     final mins = totalTimeMinutes % 60;
-    return mins == 0 ? '${hours}h' : '${hours}h ${mins}min';
+
+    return mins == 0
+        ? '${hours}h'
+        : '${hours}h ${mins}min';
   }
 
   Recipe copyWith({
@@ -144,7 +144,8 @@ class Recipe {
       matchPercentage: matchPercentage ?? this.matchPercentage,
       isFavorite: isFavorite ?? this.isFavorite,
       authorId: authorId ?? this.authorId,
-      ingredientKeywords: ingredientKeywords ?? this.ingredientKeywords,
+      ingredientKeywords:
+          ingredientKeywords ?? this.ingredientKeywords,
       isPublic: isPublic ?? this.isPublic,
     );
   }
