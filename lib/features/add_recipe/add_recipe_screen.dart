@@ -605,6 +605,13 @@ class _AddRecipeScreenState extends ConsumerState<AddRecipeScreen> {
                     .toList(),
               ),
               const SizedBox(height: 28),
+              // Indicateur visible pendant l'upload ImgBB/Storage puis
+              // l'enregistrement Firestore.
+              if (_isSaving)
+                const Padding(
+                  padding: EdgeInsets.only(bottom: 12),
+                  child: LinearProgressIndicator(minHeight: 3),
+                ),
               ElevatedButton.icon(
                 onPressed: _isSaving ? null : _save,
                 icon: const Icon(Icons.check),

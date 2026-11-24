@@ -3,7 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:recipemate/core/config/app_assets.dart';
+import 'package:recipemate/core/theme/app_colors.dart';
+import 'package:recipemate/core/theme/app_theme.dart';
 import 'package:recipemate/features/auth/auth_screen.dart';
+
 import '../../helpers/svg_asset_finder.dart';
 
 void main() {
@@ -82,6 +85,29 @@ void main() {
         find.text('Les mots de passe ne correspondent pas.'),
         findsOneWidget,
       );
+    });
+
+    testWidgets('reste clair même quand le thème sombre est actif', (
+      tester,
+    ) async {
+      await tester.pumpWidget(
+        ProviderScope(
+          child: MaterialApp(
+            theme: AppTheme.darkTheme,
+            home: const AuthScreen(),
+          ),
+        ),
+      );
+
+      expect(
+        tester.widget<Scaffold>(find.byType(Scaffold)).backgroundColor,
+        AppColors.cream,
+      );
+      final fieldTheme = Theme.of(
+        tester.element(fieldWithHint('vous@exemple.com')),
+      );
+      expect(fieldTheme.colorScheme.surface, AppColors.card);
+      expect(fieldTheme.colorScheme.surfaceContainerHighest, AppColors.cream);
     });
 
     testWidgets('affiche le formulaire de mot de passe oublié', (tester) async {

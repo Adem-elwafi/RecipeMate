@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:recipemate/core/services/imgbb_service.dart';
 
 /// Sélection et envoi des images (avatars et photos de recettes).
 ///
@@ -10,11 +11,17 @@ import 'package:image_picker/image_picker.dart';
 /// ce qui évite d'exiger le plan Blaze. Les photos de recettes utilisent
 /// Firebase Storage (point B2) et produisent une vraie URL HTTPS `imageUrl`.
 class StorageService {
-  StorageService({this._picker});
+  StorageService({this._picker, this.imgbbService});
 
   final ImagePicker? _picker;
 
+  /// Service ImgBB optionnel : sans clé API, il reste non configuré et les
+  /// anciens mécanismes (Base64 / Firebase Storage) conservent la main.
+  final ImgBBService? imgbbService;
+
   ImagePicker get _pickerInstance => _picker ?? ImagePicker();
+
+  ImgBBService get _imgbb => imgbbService ?? ImgBBService();
 
   Future<XFile?> pickImage(ImageSource source) {
     return _pickerInstance.pickImage(
@@ -52,12 +59,59 @@ class StorageService {
     return 'data:$contentType;base64,$base64String';
   }
 
+  /// Photo de profil : ImgBB quand la clé est configurée, sinon l'ancienne
+  /// vignette Base64 stockée dans Firestore. Les anciennes URL ne sont jamais
+  /// supprimées : seul le champ `photoUrl` est remplacé après un nouvel upload.
+  Future<String> uploadProfileImage({
+    required XFile file,
+    required String uid,
+  }) async {
+    final imgbb = _imgbb;
+    if (imgbb.isConfigured) {
+      try {
+        return await imgbb.uploadImage(
+          file: file,
+          name: 'profile_${uid}_${DateTime.now().microsecondsSinceEpoch}',
+        );
+      } on ImgBBException catch (error, stackTrace) {
+        debugPrint(
+          '[ImgBB] photo de profil impossible, repli Base64 : $error\n$stackTrace',
+        );
+      }
+    }
+    return uploadImage(file: file, folder: 'profile_images', fileName: uid);
+  }
+
   /// Point B2 : upload réel dans `recipe_images/{uid}/{fileName}`.
   ///
-  /// En cas d'erreur de configuration Storage (plan Spark non activé, bucket
-  /// absent), on retombe sur la vignette Base64 pour ne jamais perdre la
-  /// saisie de l'utilisateur. L'erreur complète reste dans les logs.
+  /// ImgBB est utilisé en priorité dès que la clé est configurée. Sans clé ou
+  /// en cas d'erreur ImgBB, l'ancien chemin Firebase Storage est conservé, puis
+  /// le repli Base64 si Storage n'est pas disponible. Aucune URL existante
+  /// n'est supprimée.
   Future<String> uploadRecipeImage({
+    required XFile file,
+    required String uid,
+    required String fileName,
+  }) async {
+    final imgbb = _imgbb;
+    if (imgbb.isConfigured) {
+      try {
+        return await imgbb.uploadImage(
+          file: file,
+          name: 'recipe_${uid}_$fileName',
+        );
+      } on ImgBBException catch (error, stackTrace) {
+        debugPrint(
+          '[ImgBB] image de recette impossible, repli Storage : '
+          '$error\n$stackTrace',
+        );
+      }
+    }
+    return _uploadRecipeToStorage(file: file, uid: uid, fileName: fileName);
+  }
+
+  /// Ancien comportement Firebase Storage, conservé sans modification métier.
+  Future<String> _uploadRecipeToStorage({
     required XFile file,
     required String uid,
     required String fileName,

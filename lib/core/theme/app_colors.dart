@@ -22,6 +22,12 @@ abstract final class AppColors {
   static const Color darkBg = Color(0xFF1C1F1A);
   static const Color darkCard = Color(0xFF262A23);
 
+  // Ombres douces des cartes (valeurs alpha des couleurs de la palette).
+  static const Color cardShadow = Color(0x14292D27); // rgba(41, 45, 39, 0.08)
+  static const Color primaryShadow = Color(
+    0x28527C43,
+  ); // rgba(82, 124, 67, 0.16)
+
   // Typography & Neutral
   static const Color textPrimary = Color(0xFF292D27);
   static const Color textSecondary = Color(0xFF5E6457);
@@ -35,6 +41,8 @@ abstract final class AppColors {
   static const Color orangeAccent = Color(0xFFE9A65A);
   static const Color orangeText = Color(0xFF9A5A12);
   static const Color orangeContainer = Color(0xFFFCEFDF);
+  // Icône favori : nuance exacte de la maquette `docs/design/RecipeMate.html`.
+  static const Color favoriteIcon = Color(0xFFC97A22);
 
   // Semantic Status
   static const Color error = Color(0xFFB3261E);

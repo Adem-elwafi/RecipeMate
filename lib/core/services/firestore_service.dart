@@ -119,12 +119,13 @@ class FirestoreService {
     required String uid,
     String? displayName,
     String? email,
+    String? photoUrl,
   }) {
     return _userDoc(uid).set(<String, Object?>{
       'displayName': displayName,
       'name': displayName ?? '',
       'email': email ?? '',
-      'photoUrl': null,
+      'photoUrl': photoUrl,
       'age': null,
       'weight': null,
       'height': null,
@@ -142,7 +143,7 @@ class FirestoreService {
       'carbsGoal': null,
       'fatGoal': null,
       'createdAt': FieldValue.serverTimestamp(),
-    });
+    }, SetOptions(merge: true));
   }
 
   Future<void> deleteUserProfile(String uid) => _userDoc(uid).delete();

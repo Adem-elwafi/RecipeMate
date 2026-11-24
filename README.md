@@ -159,6 +159,27 @@ La connexion Google utilise `google_sign_in ^7` et Firebase Authentication. Le c
    Sur Android, `GOOGLE_WEB_CLIENT_ID` sert de `serverClientId` (obligatoire pour obtenir le token d'identité) ; sur iOS, c'est `GOOGLE_IOS_CLIENT_ID` qui est utilisé comme `clientId`. Sans ces variables, le plugin lit automatiquement `google-services.json` / `GoogleService-Info.plist`.
 
 5. **Diagnostic** : les exceptions Google/Firebase complètes sont écrites dans la console (`[Google/Firebase]`, `[Google]`, `[Auth]`) avec la pile d'appels. Les messages utilisateurs distinguent une annulation, une configuration client incomplète (SHA-1/SHA-256), un fournisseur désactivé et une erreur réseau.
+6. **Initialisation unique** : `google_sign_in` 7.2 exige un seul `initialize()` terminé avant toute autre méthode. Il est désormais centralisé dans `AuthService._initializeGoogleIfNeeded()` ; `FirebaseService` ne l'appelle plus au démarrage. Une annulation ne déclenche aucune connexion Firebase et aucun message de succès.
+
+### Hébergement des images (ImgBB)
+
+Le service `lib/core/services/imgbb_service.dart` utilise l'endpoint officiel `https://api.imgbb.com/1/upload`. Il est optionnel et réutilisable.
+
+1. Obtenir une clé sur https://api.imgbb.com/ (compte puis *API Keys*). **Ne jamais la committer.**
+2. Fournir la clé au lancement (ou au build) :
+   ```bash
+   flutter run --dart-define=IMGBB_API_KEY={votre_clé}
+   # ou
+   flutter build apk --dart-define=IMGBB_API_KEY={votre_clé}
+   ```
+   Pour Android Studio, ajouter la même valeur dans *Run/Debug Configurations → Additional run args*.
+3. Sans cette variable, `ImgBBService.isConfigured` vaut `false` : la photo de profil retombe sur la vignette Base64 dans Firestore et les images de recettes continuent d'utiliser Firebase Storage puis le repli Base64. Les anciennes URL ne sont pas supprimées.
+4. Screens utilisant le service : photo de profil (`ProfileScreen`) et photo ajoutée à une recette (`AddRecipeScreen`), via `StorageService`. Les cartes de recettes (`RecipeCard`) affichent les URL ImgBB, les URL Storage et les anciennes vignettes Base64, avec une image de remplacement si l'URL est invalide.
+5. Sécurité : une clé incluse dans une application Flutter peut être extraite du binaire. Pour une protection réelle, faire transiter l'upload par un backend/proxy qui détient la clé ImgBB côté serveur.
+
+### Thème clair / sombre
+
+Le thème est piloté uniquement par `themeModeProvider` (Riverpod) et `MaterialApp.router` dans `lib/main.dart`. Le choix est persisté avec `SharedPreferences`. Les couleurs des écrans viennent de `Theme.of(context).colorScheme` : le mode sombre s'applique donc aux cartes, champs, boutons, NavigationBar, profil, favoris, collections et formulaires. Les écrans d'authentification restent volontairement en thème clair via `Theme(data: AppTheme.lightTheme)`.
 
 ### Données Firestore & Storage
 

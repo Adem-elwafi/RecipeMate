@@ -1,6 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:recipemate/firebase_options.dart';
 
 /// Initializes Firebase once for the whole application.
@@ -29,11 +28,10 @@ abstract final class FirebaseService {
         await Firebase.initializeApp(options: options);
       }
 
-      // google_sign_in_web does not support authenticate(); on Chrome the
-      // Google connection is handled by FirebaseAuth.signInWithPopup().
-      if (!kIsWeb) {
-        await GoogleSignIn.instance.initialize();
-      }
+      // Google Sign-In 7 impose un `initialize()` unique : il est désormais
+      // centralisé dans AuthService (appelé au premier signIn/signOut) pour
+      // éviter la double initialisation qui rendait le comportement indéfini.
+      // Sur Web, FirebaseAuth.signInWithPopup() suffit (pas de plugin natif).
       isAvailable = true;
     } on Object catch (error) {
       debugPrint('Initialisation Firebase impossible : $error');

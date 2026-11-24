@@ -8,6 +8,7 @@ import 'package:recipemate/core/providers/app_providers.dart';
 import 'package:recipemate/core/services/auth_error_mapper.dart';
 import 'package:recipemate/core/theme/app_colors.dart';
 import 'package:recipemate/core/theme/app_text_styles.dart';
+import 'package:recipemate/core/theme/app_theme.dart';
 import 'package:recipemate/features/auth/utils/auth_validators.dart';
 import 'package:recipemate/shared/widgets/app_buttons.dart';
 import 'package:recipemate/shared/widgets/app_text_field.dart';
@@ -36,29 +37,36 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
       _AuthMode.forgotPassword => 'Réinitialiser le mot de passe',
     };
 
-    return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.surfaceContainerHighest,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              const _AuthLogo(),
-              const SizedBox(height: 20),
-              Text(title, style: AppTextStyles.titleLarge),
-              const SizedBox(height: 6),
-              Text(
-                'Mangez sainement. Cuisinez malin.',
-                style: AppTextStyles.bodySecondary,
-              ),
-              const SizedBox(height: 28),
-              _AuthForm(
-                key: ValueKey<_AuthMode>(_mode),
-                mode: _mode,
-                onModeChanged: _changeMode,
-              ),
-            ],
+    // Les écrans d'authentification (connexion, inscription, mot de passe
+    // oublié/réinitialisé) restent clairs même si le thème sombre est actif :
+    // la maquette impose fond crème, champs blancs, boutons verts et focus vert.
+    // Seule l'apparence est forcée : aucune disposition ni interaction ne change.
+    return Theme(
+      data: AppTheme.lightTheme,
+      child: Scaffold(
+        backgroundColor: AppColors.cream,
+        body: SafeArea(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                const _AuthLogo(),
+                const SizedBox(height: 20),
+                Text(title, style: AppTextStyles.titleLarge),
+                const SizedBox(height: 6),
+                Text(
+                  'Mangez sainement. Cuisinez malin.',
+                  style: AppTextStyles.bodySecondary,
+                ),
+                const SizedBox(height: 28),
+                _AuthForm(
+                  key: ValueKey<_AuthMode>(_mode),
+                  mode: _mode,
+                  onModeChanged: _changeMode,
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -222,6 +230,9 @@ class _AuthFormState extends ConsumerState<_AuthForm> {
         uid: user.uid,
         displayName: defaultName,
         email: user.email,
+        // Nouveau compte Google : on conserve la photo fournie par Google.
+        // Pour une inscription e-mail/mot de passe, la valeur reste null.
+        photoUrl: user.photoURL,
       );
     } else {
       await firestore.saveUserProfile(

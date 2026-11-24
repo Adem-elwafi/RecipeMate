@@ -22,13 +22,14 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     final Widget child = isLoading
-        ? const SizedBox(
+        ? SizedBox(
             width: 20,
             height: 20,
             child: CircularProgressIndicator(
               strokeWidth: 2.2,
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+              valueColor: AlwaysStoppedAnimation<Color>(colors.onPrimary),
             ),
           )
         : Row(
@@ -41,7 +42,7 @@ class PrimaryButton extends StatelessWidget {
               ],
               Text(
                 label,
-                style: AppTextStyles.button.copyWith(color: Colors.white),
+                style: AppTextStyles.button.copyWith(color: colors.onPrimary),
               ),
             ],
           );
@@ -51,8 +52,8 @@ class PrimaryButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: isLoading ? null : onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary,
-          foregroundColor: Colors.white,
+          backgroundColor: colors.primary,
+          foregroundColor: colors.onPrimary,
           elevation: 0,
           padding: const EdgeInsets.symmetric(horizontal: 24),
           shape: RoundedRectangleBorder(
@@ -88,14 +89,15 @@ class OutlineButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     final button = SizedBox(
       height: 52,
       child: OutlinedButton(
         onPressed: onPressed,
         style: OutlinedButton.styleFrom(
-          foregroundColor: AppColors.primary,
-          backgroundColor: Colors.white,
-          side: const BorderSide(color: AppColors.primary, width: 1.5),
+          foregroundColor: colors.primary,
+          backgroundColor: colors.surface,
+          side: BorderSide(color: colors.primary, width: 1.5),
           padding: const EdgeInsets.symmetric(horizontal: 22),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
@@ -111,7 +113,7 @@ class OutlineButtonWidget extends StatelessWidget {
             ],
             Text(
               label,
-              style: AppTextStyles.button.copyWith(color: AppColors.primary),
+              style: AppTextStyles.button.copyWith(color: colors.primary),
             ),
           ],
         ),
@@ -143,13 +145,14 @@ class TonalButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     final button = SizedBox(
       height: 48,
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.softGreen,
-          foregroundColor: AppColors.tonalGreenText,
+          backgroundColor: colors.primaryContainer,
+          foregroundColor: colors.onPrimaryContainer,
           elevation: 0,
           padding: const EdgeInsets.symmetric(horizontal: 20),
           shape: RoundedRectangleBorder(
@@ -161,13 +164,13 @@ class TonalButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             if (icon != null) ...[
-              Icon(icon, size: 18, color: AppColors.tonalGreenText),
+              Icon(icon, size: 18, color: colors.onPrimaryContainer),
               const SizedBox(width: 8),
             ],
             Text(
               label,
               style: AppTextStyles.tonalButton.copyWith(
-                color: AppColors.tonalGreenText,
+                color: colors.onPrimaryContainer,
               ),
             ),
           ],
@@ -196,15 +199,17 @@ class FavoriteButton extends StatelessWidget {
   final VoidCallback onToggle;
   final double size;
 
-  static const Color favoriteOrange = Color(0xFFC97A22);
+  static const Color favoriteOrange = AppColors.favoriteIcon;
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       width: size,
       height: size,
       decoration: BoxDecoration(
-        color: AppColors.orangeContainer,
+        color: colors.tertiaryContainer,
         borderRadius: BorderRadius.circular(14),
       ),
       child: Material(
@@ -217,7 +222,11 @@ class FavoriteButton extends StatelessWidget {
               isFavorite
                   ? Icons.favorite_rounded
                   : Icons.favorite_border_rounded,
-              color: favoriteOrange,
+              color: isFavorite
+                  ? colors.error
+                  : isDark
+                  ? colors.tertiary
+                  : favoriteOrange,
               size: size * 0.46,
             ),
           ),

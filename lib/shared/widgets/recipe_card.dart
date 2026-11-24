@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:recipemate/core/models/recipe.dart';
@@ -68,36 +70,10 @@ class RecipeCard extends StatelessWidget {
                       child: SizedBox(
                         height: 120,
                         width: double.infinity,
-                        child: Image.network(
-                          recipe.imageUrl,
-                          fit: BoxFit.cover,
-                          errorBuilder: (context, error, stackTrace) =>
-                              const ColoredBox(
-                                color: AppColors.softGreen,
-                                child: Center(
-                                  child: Icon(
-                                    Icons.restaurant_rounded,
-                                    size: 40,
-                                    color: AppColors.primary,
-                                  ),
-                                ),
-                              ),
-                          loadingBuilder: (context, child, loadingProgress) {
-                            if (loadingProgress == null) return child;
-                            return const ColoredBox(
-                              color: AppColors.softGreenLight,
-                              child: Center(
-                                child: SizedBox(
-                                  width: 24,
-                                  height: 24,
-                                  child: CircularProgressIndicator(
-                                    strokeWidth: 2,
-                                    color: AppColors.primary,
-                                  ),
-                                ),
-                              ),
-                            );
-                          },
+                        child: _RecipeImage(
+                          imageUrl: recipe.imageUrl,
+                          fallbackColor: colors.primaryContainer,
+                          foregroundColor: colors.onPrimaryContainer,
                         ),
                       ),
                     ),
@@ -147,7 +123,7 @@ class RecipeCard extends StatelessWidget {
                             size: 18,
                             color: recipe.isFavorite
                                 ? AppColors.error
-                                : const Color(0xFFC97A22),
+                                : AppColors.favoriteIcon,
                           ),
                         ),
                       ),
@@ -227,6 +203,83 @@ class RecipeCard extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Affiche une URL ImgBB/Firebase Storage, une vignette Base64 historique ou
+/// une image de remplacement si l'URL est vide/invalide.
+class _RecipeImage extends StatelessWidget {
+  const _RecipeImage({
+    required this.imageUrl,
+    required this.fallbackColor,
+    required this.foregroundColor,
+  });
+
+  final String imageUrl;
+  final Color fallbackColor;
+  final Color foregroundColor;
+
+  ImageProvider? _provider(String url) {
+    final trimmed = url.trim();
+    if (trimmed.isEmpty) {
+      return null;
+    }
+    if (trimmed.startsWith('data:')) {
+      final commaIndex = trimmed.indexOf(',');
+      if (commaIndex == -1) {
+        return null;
+      }
+      try {
+        return MemoryImage(base64Decode(trimmed.substring(commaIndex + 1)));
+      } on Object {
+        return null;
+      }
+    }
+    final uri = Uri.tryParse(trimmed);
+    if (uri == null || (uri.scheme != 'http' && uri.scheme != 'https')) {
+      return null;
+    }
+    return NetworkImage(trimmed);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final provider = _provider(imageUrl);
+    if (provider == null) {
+      return _placeholder();
+    }
+    return Image(
+      image: provider,
+      fit: BoxFit.cover,
+      errorBuilder: (_, __, ___) => _placeholder(),
+      loadingBuilder: (context, child, loadingProgress) {
+        if (loadingProgress == null) {
+          return child;
+        }
+        return ColoredBox(
+          color: fallbackColor,
+          child: Center(
+            child: SizedBox(
+              width: 24,
+              height: 24,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                color: foregroundColor,
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _placeholder() {
+    return ColoredBox(
+      color: fallbackColor,
+      child: Center(
+        child: Icon(Icons.restaurant_rounded, size: 40, color: foregroundColor),
       ),
     );
   }

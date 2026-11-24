@@ -26,11 +26,18 @@ class DietBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    final effectiveBackground = backgroundColor == AppColors.softGreen
+        ? colors.primaryContainer
+        : backgroundColor;
+    final effectiveText = textColor == AppColors.tonalGreenText
+        ? colors.onPrimaryContainer
+        : textColor;
     return Container(
       height: isSmall ? 24.0 : 26.0,
       padding: const EdgeInsets.symmetric(horizontal: 10),
       decoration: BoxDecoration(
-        color: backgroundColor,
+        color: effectiveBackground,
         borderRadius: BorderRadius.circular(isPill ? 99 : 8),
       ),
       alignment: Alignment.center,
@@ -39,7 +46,7 @@ class DietBadge extends StatelessWidget {
         style: GoogleFonts.inter(
           fontSize: isSmall ? 11 : 12,
           fontWeight: FontWeight.w600,
-          color: textColor,
+          color: effectiveText,
         ),
       ),
     );

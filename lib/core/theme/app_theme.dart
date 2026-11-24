@@ -113,23 +113,25 @@ abstract final class AppTheme {
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        backgroundColor: AppColors.card,
+        backgroundColor: colorScheme.surface,
         elevation: 8,
-        indicatorColor: AppColors.softGreen,
+        indicatorColor: colorScheme.primaryContainer,
         iconTheme: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
-            return const IconThemeData(color: AppColors.primary);
+            return IconThemeData(color: colorScheme.onPrimaryContainer);
           }
-          return const IconThemeData(color: AppColors.iconGrey);
+          return IconThemeData(color: colorScheme.onSurfaceVariant);
         }),
         labelTextStyle: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
             return AppTextStyles.captionMedium.copyWith(
-              color: AppColors.primary,
+              color: colorScheme.onPrimaryContainer,
               fontWeight: FontWeight.w600,
             );
           }
-          return AppTextStyles.caption.copyWith(color: AppColors.textSecondary);
+          return AppTextStyles.caption.copyWith(
+            color: colorScheme.onSurfaceVariant,
+          );
         }),
       ),
       dividerTheme: const DividerThemeData(
@@ -256,23 +258,25 @@ abstract final class AppTheme {
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        backgroundColor: AppColors.darkCard,
+        backgroundColor: colorScheme.surface,
         elevation: 8,
-        indicatorColor: AppColors.primaryDark,
+        indicatorColor: colorScheme.primaryContainer,
         iconTheme: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
-            return const IconThemeData(color: AppColors.softGreen);
+            return IconThemeData(color: colorScheme.onPrimaryContainer);
           }
-          return const IconThemeData(color: AppColors.textMuted);
+          return IconThemeData(color: colorScheme.onSurfaceVariant);
         }),
         labelTextStyle: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
             return AppTextStyles.captionMedium.copyWith(
-              color: AppColors.softGreen,
+              color: colorScheme.onPrimaryContainer,
               fontWeight: FontWeight.w600,
             );
           }
-          return AppTextStyles.caption.copyWith(color: AppColors.textMuted);
+          return AppTextStyles.caption.copyWith(
+            color: colorScheme.onSurfaceVariant,
+          );
         }),
       ),
       dividerTheme: DividerThemeData(

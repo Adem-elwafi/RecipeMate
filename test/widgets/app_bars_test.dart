@@ -6,6 +6,7 @@ import 'package:recipemate/core/theme/app_colors.dart';
 import 'package:recipemate/core/theme/app_theme.dart';
 import 'package:recipemate/shared/widgets/recipemate_app_bar.dart';
 import 'package:recipemate/shared/widgets/secondary_app_bar.dart';
+
 import '../helpers/svg_asset_finder.dart';
 
 void main() {

@@ -113,9 +113,15 @@ class AuthService {
 
   /// Initialise le singleton Google une seule fois avec les client IDs
   /// injectés, ou avec la configuration native si aucun n'est fourni.
+  ///
+  /// `google_sign_in` 7.2 documente explicitement qu'un second `initialize()`
+  /// (ou un appel avant la fin du premier) entre dans un comportement
+  /// indéterminé : c'est la cause technique principale de la connexion Google
+  /// qui échouait en production. Ce futur statique est la seule source de
+  /// vérité, partagée par toutes les instances de [AuthService].
   Future<void> _initializeGoogleIfNeeded() async {
     // Un faux GoogleSignIn injecté dans les tests n'a pas besoin du singleton.
-    if (_googleSignIn != null) {
+    if (_googleSignIn != null || kIsWeb) {
       return;
     }
     final pending = _googleInitialization;
@@ -133,6 +139,8 @@ class AuthService {
     try {
       await future;
     } on Object {
+      // Une configuration invalide doit pouvoir être retentée après que
+      // l'utilisateur a corrigé le client ID / les empreintes.
       _googleInitialization = null;
       rethrow;
     }

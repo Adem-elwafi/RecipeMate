@@ -10,7 +10,6 @@ import 'package:recipemate/core/theme/app_colors.dart';
 import 'package:recipemate/core/theme/app_text_styles.dart';
 import 'package:recipemate/shared/widgets/app_snack_bar.dart';
 import 'package:recipemate/shared/widgets/app_text_field.dart';
-import 'package:recipemate/shared/widgets/recipemate_app_bar.dart';
 
 /// Écran Profil (Farah).
 ///
@@ -25,6 +24,8 @@ class ProfileScreen extends ConsumerStatefulWidget {
 }
 
 class _ProfileScreenState extends ConsumerState<ProfileScreen> {
+  bool _isUploadingPhoto = false;
+
   ImageProvider? _getProfileImageProvider(String? photoUrl) {
     if (photoUrl == null || photoUrl.isEmpty) {
       return null;
@@ -51,13 +52,12 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       if (picked == null || !mounted) {
         return;
       }
+      if (mounted) {
+        setState(() => _isUploadingPhoto = true);
+      }
       final url = await ref
           .read(storageServiceProvider)
-          .uploadImage(
-            file: picked,
-            folder: 'profile_images',
-            fileName: profile.id,
-          );
+          .uploadProfileImage(file: picked, uid: profile.id);
       // Point 5/6 : chaque sauvegarde écrit réellement dans Firestore.
       await ref
           .read(firestoreServiceProvider)
@@ -65,6 +65,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       _showMessage('Photo de profil mise à jour avec succès.');
     } on Object catch (error) {
       _showMessage('Envoi de la photo impossible. Réessayez. ($error)');
+    } finally {
+      if (mounted) {
+        setState(() => _isUploadingPhoto = false);
+      }
     }
   }
 
@@ -72,7 +76,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
-      backgroundColor: AppColors.card,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
       ),
@@ -106,7 +110,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       // Point 9 : titre présent même hors ligne pour rester cohérent.
       return Scaffold(
         appBar: AppBar(title: const Text('Mon profil')),
-        backgroundColor: AppColors.cream,
+        backgroundColor: Theme.of(context).colorScheme.surfaceContainerHighest,
         body: Center(
           child: ElevatedButton(
             onPressed: () => context.go('/auth'),
@@ -124,10 +128,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     final recipesCount = userRecipesAsync.value?.length ?? 0;
 
     return Scaffold(
-      // Point C : en-tête commun sur l'onglet Profil ; l'icône profil est
-      // masquée puisqu'on est déjà sur cette page.
-      appBar: const RecipeMateAppBar(showProfile: false),
-      backgroundColor: AppColors.cream,
+      backgroundColor: Theme.of(context).colorScheme.surfaceContainerHighest,
       body: SafeArea(
         child: profileAsync.when(
           loading: () => const Center(child: CircularProgressIndicator()),
@@ -144,6 +145,14 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               favoritesCount: favoritesCount,
               recipesCount: recipesCount,
               imageProvider: _getProfileImageProvider(profile.photoUrl),
+              isUploadingPhoto: _isUploadingPhoto,
+              onBack: () {
+                if (context.canPop()) {
+                  context.pop();
+                } else {
+                  context.go('/');
+                }
+              },
               onEdit: () => _showEditProfileSheet(context, profile),
               onPhoto: () => _changePhoto(profile),
               // Point B : ces pages sont secondaires, on les empile avec push
@@ -169,6 +178,8 @@ class _ProfileContent extends StatelessWidget {
     required this.favoritesCount,
     required this.recipesCount,
     required this.imageProvider,
+    required this.isUploadingPhoto,
+    required this.onBack,
     required this.onEdit,
     required this.onPhoto,
     required this.onSettings,
@@ -182,6 +193,8 @@ class _ProfileContent extends StatelessWidget {
   final int favoritesCount;
   final int recipesCount;
   final ImageProvider? imageProvider;
+  final bool isUploadingPhoto;
+  final VoidCallback onBack;
   final VoidCallback onEdit;
   final VoidCallback onPhoto;
   final VoidCallback onSettings;
@@ -192,237 +205,388 @@ class _ProfileContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final displayName = _valueOrPlaceholder(profile.name);
     final colors = Theme.of(context).colorScheme;
-    return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          // Point C : l'ancien bandeau RecipeMate + réglages est retiré du
-          // corps de la page : il est désormais fourni par RecipeMateAppBar
-          // dans le Scaffold, sans duplication.
-
-          // Carte de profil.
-          Container(
-            padding: const EdgeInsets.all(24),
-            decoration: BoxDecoration(
-              color: AppColors.card,
-              borderRadius: BorderRadius.circular(28),
-              border: Border.all(color: AppColors.border),
-            ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        _ProfileHeader(
+          profile: profile,
+          imageProvider: imageProvider,
+          isUploadingPhoto: isUploadingPhoto,
+          onBack: onBack,
+          onEdit: onEdit,
+          onPhoto: onPhoto,
+        ),
+        Expanded(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Stack(
-                  alignment: Alignment.bottomRight,
+                // Statistiques réelles (plus de valeurs inventées).
+                Row(
                   children: <Widget>[
-                    CircleAvatar(
-                      radius: 50,
-                      backgroundColor: AppColors.softGreen,
-                      backgroundImage: imageProvider,
-                      child: imageProvider == null
-                          ? const Icon(
-                              Icons.person,
-                              size: 50,
-                              color: AppColors.primary,
-                            )
-                          : null,
+                    Expanded(
+                      child: _StatCard(
+                        icon: Icons.restaurant_menu_rounded,
+                        iconColor: AppColors.primary,
+                        value: '$recipesCount',
+                        label: 'Recettes',
+                      ),
                     ),
-                    GestureDetector(
-                      onTap: onPhoto,
-                      child: Container(
-                        padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          color: AppColors.primary,
-                          shape: BoxShape.circle,
-                          border: Border.all(color: Colors.white, width: 2),
-                        ),
-                        child: const Icon(
-                          Icons.camera_alt_rounded,
-                          size: 16,
-                          color: Colors.white,
-                        ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: _StatCard(
+                        icon: Icons.favorite_rounded,
+                        iconColor: AppColors.error,
+                        value: '$favoritesCount',
+                        label: 'Favoris',
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 14),
-                Text(displayName, style: AppTextStyles.title),
-                const SizedBox(height: 4),
-                Text(
-                  _valueOrPlaceholder(profile.email),
-                  style: AppTextStyles.caption,
+                const SizedBox(height: 16),
+
+                // Informations personnelles.
+                _InfoCard(
+                  title: 'Informations personnelles',
+                  rows: <MapEntry<String, String>>[
+                    MapEntry('Âge', _ageLabel(profile.age)),
+                    MapEntry('Poids', _weightLabel(profile.weight)),
+                    MapEntry('Taille', _heightLabel(profile.height)),
+                    MapEntry('Objectif', _valueOrPlaceholder(profile.goal)),
+                  ],
                 ),
-                const SizedBox(height: 12),
-                // Point 5 : bio vide → message explicite, jamais d'exemple.
-                Text(
-                  _valueOrPlaceholder(profile.bio),
-                  style: AppTextStyles.caption,
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 20),
-                OutlinedButton.icon(
-                  onPressed: onEdit,
-                  icon: const Icon(Icons.edit_outlined, size: 18),
-                  label: const Text('Modifier le profil'),
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: AppColors.textPrimary,
-                    side: const BorderSide(color: AppColors.border),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
+                const SizedBox(height: 16),
+
+                // Régime alimentaire.
+                _InfoCard(
+                  title: 'Régime alimentaire',
+                  rows: <MapEntry<String, String>>[
+                    MapEntry('Régimes', _listLabel(profile.diets)),
+                    MapEntry('Allergies', _listLabel(profile.allergies)),
+                    MapEntry(
+                      'Ingrédients exclus',
+                      _listLabel(profile.excludedIngredients),
                     ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+
+                // Objectifs nutritionnels (point 5 : Non renseigné si absents).
+                Container(
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: colors.surface,
+                    borderRadius: BorderRadius.circular(28),
+                    border: Border.all(color: colors.outlineVariant),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Objectifs nutritionnels',
+                        style: AppTextStyles.subtitle,
+                      ),
+                      const SizedBox(height: 12),
+                      _MacroRow(
+                        label: 'Calories',
+                        value: profile.calorieGoal == null
+                            ? 'Non renseigné'
+                            : '${profile.calorieGoal} kcal / jour',
+                      ),
+                      _MacroRow(
+                        label: 'Protéines',
+                        value: _gramLabel(profile.proteinGoal),
+                      ),
+                      _MacroRow(
+                        label: 'Glucides',
+                        value: _gramLabel(profile.carbsGoal),
+                      ),
+                      _MacroRow(
+                        label: 'Lipides',
+                        value: _gramLabel(profile.fatGoal),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 16),
+
+                // Points B1/B2 : ces écrans existaient déjà dans le routeur mais
+                // aucun bouton ne permettait d'y accéder. On regroupe les trois
+                // entrées dans une carte claire, cohérente avec le reste du profil.
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      'Ma bibliothèque',
+                      style: AppTextStyles.subtitle.copyWith(
+                        color: colors.onSurface,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Card(
+                      color: colors.surface,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: <Widget>[
+                          _SettingTile(
+                            icon: Icons.favorite_border_rounded,
+                            title: 'Mes favoris',
+                            subtitle: 'Recettes enregistrées',
+                            onTap: onFavorites,
+                            showDivider: true,
+                          ),
+                          _SettingTile(
+                            icon: Icons.folder_outlined,
+                            title: 'Mes collections',
+                            subtitle: 'Dossiers personnalisés',
+                            onTap: onCollections,
+                            showDivider: true,
+                          ),
+                          _SettingTile(
+                            icon: Icons.add_circle_outline_rounded,
+                            title: 'Ajouter une recette',
+                            subtitle: 'Créer une recette personnelle',
+                            onTap: onAddRecipe,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+
+                // Point A6 : une seule carte claire, deux lignes et un séparateur
+                // fin, au lieu de deux blocs noirs espacés.
+                Card(
+                  color: colors.surface,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: <Widget>[
+                      _SettingTile(
+                        icon: Icons.settings_outlined,
+                        title: 'Paramètres',
+                        subtitle: 'Apparence, sécurité et compte',
+                        onTap: onSettings,
+                        showDivider: true,
+                      ),
+                      _SettingTile(
+                        icon: Icons.alarm_outlined,
+                        title: 'Mes rappels',
+                        subtitle: 'Rappels de repas et péremptions',
+                        onTap: onReminders,
+                      ),
+                    ],
                   ),
                 ),
               ],
             ),
           ),
-          const SizedBox(height: 16),
+        ),
+      ],
+    );
+  }
+}
 
-          // Statistiques réelles (plus de valeurs inventées).
-          Row(
-            children: <Widget>[
-              Expanded(
-                child: _StatCard(
-                  icon: Icons.restaurant_menu_rounded,
-                  iconColor: AppColors.primary,
-                  value: '$recipesCount',
-                  label: 'Recettes',
-                ),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: _StatCard(
-                  icon: Icons.favorite_rounded,
-                  iconColor: AppColors.error,
-                  value: '$favoritesCount',
-                  label: 'Favoris',
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 16),
+/// En-tête demandé pour « Mon profil » : barre translucide, identité réelle
+/// de l'utilisateur connecté et bouton « Modifier le profil » pleine largeur.
+/// Les sections situées en dessous restent dans `_ProfileContent`.
+class _ProfileHeader extends StatelessWidget {
+  const _ProfileHeader({
+    required this.profile,
+    required this.imageProvider,
+    required this.isUploadingPhoto,
+    required this.onBack,
+    required this.onEdit,
+    required this.onPhoto,
+  });
 
-          // Informations personnelles.
-          _InfoCard(
-            title: 'Informations personnelles',
-            rows: <MapEntry<String, String>>[
-              MapEntry('Âge', _ageLabel(profile.age)),
-              MapEntry('Poids', _weightLabel(profile.weight)),
-              MapEntry('Taille', _heightLabel(profile.height)),
-              MapEntry('Objectif', _valueOrPlaceholder(profile.goal)),
-            ],
-          ),
-          const SizedBox(height: 16),
+  final UserProfile profile;
+  final ImageProvider? imageProvider;
+  final bool isUploadingPhoto;
+  final VoidCallback onBack;
+  final VoidCallback onEdit;
+  final VoidCallback onPhoto;
 
-          // Régime alimentaire.
-          _InfoCard(
-            title: 'Régime alimentaire',
-            rows: <MapEntry<String, String>>[
-              MapEntry('Régimes', _listLabel(profile.diets)),
-              MapEntry('Allergies', _listLabel(profile.allergies)),
-              MapEntry(
-                'Ingrédients exclus',
-                _listLabel(profile.excludedIngredients),
-              ),
-            ],
-          ),
-          const SizedBox(height: 16),
+  @override
+  Widget build(BuildContext context) {
+    final name = _valueOrPlaceholder(profile.name);
+    final email = _valueOrPlaceholder(profile.email);
+    final initials = _initials(profile.name.isNotEmpty ? profile.name : email);
 
-          // Objectifs nutritionnels (point 5 : Non renseigné si absents).
+    return Container(
+      key: const Key('profile_header'),
+      decoration: const BoxDecoration(
+        color: AppColors.primary,
+        borderRadius: BorderRadius.vertical(bottom: Radius.circular(28)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
           Container(
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              color: AppColors.card,
-              borderRadius: BorderRadius.circular(28),
-              border: Border.all(color: AppColors.border),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            height: 56,
+            color: AppColors.card.withValues(alpha: 0.14),
+            child: Row(
               children: <Widget>[
-                Text('Objectifs nutritionnels', style: AppTextStyles.subtitle),
-                const SizedBox(height: 12),
-                _MacroRow(
-                  label: 'Calories',
-                  value: profile.calorieGoal == null
-                      ? 'Non renseigné'
-                      : '${profile.calorieGoal} kcal / jour',
+                SizedBox(
+                  width: 56,
+                  child: IconButton(
+                    key: const Key('profile_back_button'),
+                    tooltip: 'Retour',
+                    onPressed: onBack,
+                    icon: const Icon(
+                      Icons.arrow_back_rounded,
+                      color: AppColors.card,
+                    ),
+                  ),
                 ),
-                _MacroRow(
-                  label: 'Protéines',
-                  value: _gramLabel(profile.proteinGoal),
+                Expanded(
+                  child: Text(
+                    'Mon profil',
+                    textAlign: TextAlign.center,
+                    style: AppTextStyles.title.copyWith(
+                      color: AppColors.card,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
                 ),
-                _MacroRow(
-                  label: 'Glucides',
-                  value: _gramLabel(profile.carbsGoal),
-                ),
-                _MacroRow(label: 'Lipides', value: _gramLabel(profile.fatGoal)),
+                const SizedBox(width: 56),
               ],
             ),
           ),
-          const SizedBox(height: 16),
-
-          // Points B1/B2 : ces écrans existaient déjà dans le routeur mais
-          // aucun bouton ne permettait d'y accéder. On regroupe les trois
-          // entrées dans une carte claire, cohérente avec le reste du profil.
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                'Ma bibliothèque',
-                style: AppTextStyles.subtitle.copyWith(color: colors.onSurface),
-              ),
-              const SizedBox(height: 10),
-              Card(
-                color: colors.surface,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: <Widget>[
-                    _SettingTile(
-                      icon: Icons.favorite_border_rounded,
-                      title: 'Mes favoris',
-                      subtitle: 'Recettes enregistrées',
-                      onTap: onFavorites,
-                      showDivider: true,
-                    ),
-                    _SettingTile(
-                      icon: Icons.folder_outlined,
-                      title: 'Mes collections',
-                      subtitle: 'Dossiers personnalisés',
-                      onTap: onCollections,
-                      showDivider: true,
-                    ),
-                    _SettingTile(
-                      icon: Icons.add_circle_outline_rounded,
-                      title: 'Ajouter une recette',
-                      subtitle: 'Créer une recette personnelle',
-                      onTap: onAddRecipe,
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 16),
-
-          // Point A6 : une seule carte claire, deux lignes et un séparateur
-          // fin, au lieu de deux blocs noirs espacés.
-          Card(
-            color: colors.surface,
+          Padding(
+            padding: const EdgeInsets.fromLTRB(24, 20, 24, 24),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                _SettingTile(
-                  icon: Icons.settings_outlined,
-                  title: 'Paramètres',
-                  subtitle: 'Apparence, sécurité et compte',
-                  onTap: onSettings,
-                  showDivider: true,
+                Row(
+                  children: <Widget>[
+                    Stack(
+                      alignment: Alignment.bottomRight,
+                      children: <Widget>[
+                        CircleAvatar(
+                          radius: 38,
+                          backgroundColor: AppColors.sage,
+                          child: imageProvider == null
+                              ? Text(
+                                  initials,
+                                  style: AppTextStyles.title.copyWith(
+                                    color: AppColors.tonalGreenText,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                )
+                              : ClipOval(
+                                  child: Image(
+                                    image: imageProvider!,
+                                    width: 76,
+                                    height: 76,
+                                    fit: BoxFit.cover,
+                                    errorBuilder: (_, __, ___) => Center(
+                                      child: Text(
+                                        initials,
+                                        style: AppTextStyles.title.copyWith(
+                                          color: AppColors.tonalGreenText,
+                                          fontWeight: FontWeight.w700,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                        ),
+                        GestureDetector(
+                          key: const Key('profile_photo_button'),
+                          onTap: isUploadingPhoto ? null : onPhoto,
+                          child: Container(
+                            padding: const EdgeInsets.all(7),
+                            decoration: BoxDecoration(
+                              color: AppColors.primary,
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: AppColors.card,
+                                width: 2,
+                              ),
+                            ),
+                            child: isUploadingPhoto
+                                ? const SizedBox(
+                                    width: 16,
+                                    height: 16,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2,
+                                      valueColor: AlwaysStoppedAnimation<Color>(
+                                        AppColors.card,
+                                      ),
+                                    ),
+                                  )
+                                : const Icon(
+                                    Icons.camera_alt_rounded,
+                                    size: 16,
+                                    color: AppColors.card,
+                                  ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            name,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTextStyles.subtitle.copyWith(
+                              color: AppColors.card,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            email,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTextStyles.caption.copyWith(
+                              color: AppColors.softGreen,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
-                _SettingTile(
-                  icon: Icons.alarm_outlined,
-                  title: 'Mes rappels',
-                  subtitle: 'Rappels de repas et péremptions',
-                  onTap: onReminders,
+                if (profile.bio.trim().isNotEmpty) ...<Widget>[
+                  const SizedBox(height: 12),
+                  Text(
+                    profile.bio.trim(),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTextStyles.caption.copyWith(
+                      color: AppColors.card.withValues(alpha: 0.86),
+                    ),
+                  ),
+                ],
+                const SizedBox(height: 20),
+                OutlinedButton.icon(
+                  key: const Key('edit_profile_button'),
+                  onPressed: onEdit,
+                  icon: const Icon(
+                    Icons.edit_outlined,
+                    size: 18,
+                    color: AppColors.card,
+                  ),
+                  label: Text(
+                    'Modifier le profil',
+                    style: AppTextStyles.button.copyWith(color: AppColors.card),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: AppColors.card,
+                    side: const BorderSide(color: AppColors.card, width: 1.2),
+                    minimumSize: const Size(double.infinity, 48),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -431,6 +595,17 @@ class _ProfileContent extends StatelessWidget {
       ),
     );
   }
+}
+
+String _initials(String value) {
+  final parts = value.trim().split(RegExp(r'\s+')).where((p) => p.isNotEmpty);
+  if (parts.isEmpty) {
+    return '?';
+  }
+  return parts
+      .take(2)
+      .map((part) => part.characters.first.toUpperCase())
+      .join();
 }
 
 String _valueOrPlaceholder(String? value) =>
@@ -465,19 +640,25 @@ class _StatCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
       decoration: BoxDecoration(
-        color: AppColors.card,
+        color: colors.surface,
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: AppColors.border),
+        border: Border.all(color: colors.outlineVariant),
       ),
       child: Column(
         children: <Widget>[
           Icon(icon, color: iconColor, size: 22),
           const SizedBox(height: 8),
           Text(value, style: AppTextStyles.title),
-          Text(label, style: AppTextStyles.caption),
+          Text(
+            label,
+            style: AppTextStyles.caption.copyWith(
+              color: colors.onSurfaceVariant,
+            ),
+          ),
         ],
       ),
     );
@@ -492,13 +673,19 @@ class _MacroRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Text(label, style: AppTextStyles.captionMedium),
-          Text(value, style: AppTextStyles.caption),
+          Text(
+            value,
+            style: AppTextStyles.caption.copyWith(
+              color: colors.onSurfaceVariant,
+            ),
+          ),
         ],
       ),
     );
@@ -513,12 +700,13 @@ class _InfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: AppColors.card,
+        color: colors.surface,
         borderRadius: BorderRadius.circular(28),
-        border: Border.all(color: AppColors.border),
+        border: Border.all(color: colors.outlineVariant),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -760,6 +948,7 @@ class _EditProfileFormState extends ConsumerState<_EditProfileForm> {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return SingleChildScrollView(
       child: Form(
         key: _formKey,
@@ -856,8 +1045,8 @@ class _EditProfileFormState extends ConsumerState<_EditProfileForm> {
             ElevatedButton(
               onPressed: _isSaving ? null : _save,
               style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary,
-                foregroundColor: Colors.white,
+                backgroundColor: colors.primary,
+                foregroundColor: colors.onPrimary,
                 minimumSize: const Size(double.infinity, 52),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
@@ -867,7 +1056,7 @@ class _EditProfileFormState extends ConsumerState<_EditProfileForm> {
                 _isSaving
                     ? 'Enregistrement...'
                     : 'Enregistrer les modifications',
-                style: AppTextStyles.button.copyWith(color: Colors.white),
+                style: AppTextStyles.button.copyWith(color: colors.onPrimary),
               ),
             ),
             const SizedBox(height: 16),

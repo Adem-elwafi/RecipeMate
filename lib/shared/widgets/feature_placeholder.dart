@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:recipemate/core/theme/app_colors.dart';
 import 'package:recipemate/core/theme/app_text_styles.dart';
 
 /// Clean, elegant placeholder widget for screens awaiting feature implementation.
@@ -38,18 +37,19 @@ class FeaturePlaceholder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Scaffold(
-      backgroundColor: AppColors.cream,
+      backgroundColor: colors.surfaceContainerHighest,
       appBar:
           appBar ??
           (showBackButton
               ? AppBar(
-                  backgroundColor: AppColors.cream,
+                  backgroundColor: colors.surfaceContainerHighest,
                   elevation: 0,
                   leading: IconButton(
-                    icon: const Icon(
+                    icon: Icon(
                       Icons.arrow_back_rounded,
-                      color: AppColors.textPrimary,
+                      color: colors.onSurface,
                     ),
                     onPressed: () {
                       if (Navigator.of(context).canPop()) {
@@ -67,14 +67,14 @@ class FeaturePlaceholder extends StatelessWidget {
               constraints: const BoxConstraints(maxWidth: 400),
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 28),
               decoration: BoxDecoration(
-                color: AppColors.card,
+                color: colors.surface,
                 borderRadius: BorderRadius.circular(24),
-                border: Border.all(color: AppColors.borderSubtle),
-                boxShadow: const [
+                border: Border.all(color: colors.outlineVariant),
+                boxShadow: <BoxShadow>[
                   BoxShadow(
-                    color: Color(0x14292D27), // rgba(41, 45, 39, 0.08)
+                    color: colors.onSurface.withValues(alpha: 0.08),
                     blurRadius: 24,
-                    offset: Offset(0, 8),
+                    offset: const Offset(0, 8),
                   ),
                 ],
               ),
@@ -86,18 +86,18 @@ class FeaturePlaceholder extends StatelessWidget {
                     width: 64,
                     height: 64,
                     decoration: BoxDecoration(
-                      color: AppColors.primary,
+                      color: colors.primary,
                       borderRadius: BorderRadius.circular(20),
-                      boxShadow: const [
+                      boxShadow: <BoxShadow>[
                         BoxShadow(
-                          color: Color(0x28527C43),
+                          color: colors.primary.withValues(alpha: 0.16),
                           blurRadius: 16,
-                          offset: Offset(0, 6),
+                          offset: const Offset(0, 6),
                         ),
                       ],
                     ),
                     child: Center(
-                      child: Icon(icon, size: 32, color: Colors.white),
+                      child: Icon(icon, size: 32, color: colors.onPrimary),
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -115,7 +115,7 @@ class FeaturePlaceholder extends StatelessWidget {
                     height: 28,
                     padding: const EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
-                      color: AppColors.softGreen,
+                      color: colors.primaryContainer,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     alignment: Alignment.center,
@@ -124,7 +124,7 @@ class FeaturePlaceholder extends StatelessWidget {
                       style: GoogleFonts.inter(
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
-                        color: AppColors.tonalGreenText,
+                        color: colors.onPrimaryContainer,
                       ),
                     ),
                   ),
@@ -136,7 +136,7 @@ class FeaturePlaceholder extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: AppTextStyles.bodySecondary.copyWith(
                       height: 1.5,
-                      color: AppColors.textSecondary,
+                      color: colors.onSurfaceVariant,
                     ),
                   ),
 
@@ -149,16 +149,16 @@ class FeaturePlaceholder extends StatelessWidget {
                         vertical: 6,
                       ),
                       decoration: BoxDecoration(
-                        color: AppColors.cream,
+                        color: colors.surfaceContainerHighest,
                         borderRadius: BorderRadius.circular(8),
-                        border: Border.all(color: AppColors.borderSubtle),
+                        border: Border.all(color: colors.outlineVariant),
                       ),
                       child: Text(
                         extraDetail!,
                         style: GoogleFonts.inter(
                           fontSize: 12,
                           fontWeight: FontWeight.w500,
-                          color: AppColors.textSecondary,
+                          color: colors.onSurfaceVariant,
                         ),
                       ),
                     ),
@@ -173,16 +173,16 @@ class FeaturePlaceholder extends StatelessWidget {
                       vertical: 6,
                     ),
                     decoration: BoxDecoration(
-                      color: AppColors.orangeContainer,
+                      color: colors.tertiaryContainer,
                       borderRadius: BorderRadius.circular(99),
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(
+                        Icon(
                           Icons.construction_rounded,
                           size: 14,
-                          color: AppColors.orangeText,
+                          color: colors.onTertiaryContainer,
                         ),
                         const SizedBox(width: 6),
                         Flexible(
@@ -193,7 +193,7 @@ class FeaturePlaceholder extends StatelessWidget {
                             style: GoogleFonts.inter(
                               fontSize: 12,
                               fontWeight: FontWeight.w600,
-                              color: AppColors.orangeText,
+                              color: colors.onTertiaryContainer,
                             ),
                           ),
                         ),
@@ -202,16 +202,16 @@ class FeaturePlaceholder extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 20),
-                  const Divider(height: 1, color: AppColors.borderSubtle),
+                  Divider(height: 1, color: colors.outlineVariant),
                   const SizedBox(height: 12),
 
                   // Button to view Design System Playground
                   TextButton.icon(
                     onPressed: () => context.push('/playground'),
-                    icon: const Icon(
+                    icon: Icon(
                       Icons.palette_outlined,
                       size: 18,
-                      color: AppColors.primary,
+                      color: colors.primary,
                     ),
                     label: Text(
                       'Voir le catalogue des composants (Playground)',
@@ -219,7 +219,7 @@ class FeaturePlaceholder extends StatelessWidget {
                       style: GoogleFonts.inter(
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
-                        color: AppColors.primary,
+                        color: colors.primary,
                       ),
                     ),
                   ),

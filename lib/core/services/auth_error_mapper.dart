@@ -61,6 +61,16 @@ abstract final class AuthErrorMapper {
       };
     }
     if (error is GoogleSignInException) {
+      final description = error.description?.toLowerCase() ?? '';
+      if (description.contains('network') ||
+          description.contains('internet') ||
+          description.contains('timeout')) {
+        return 'Pas de connexion Internet. Vérifiez votre réseau.';
+      }
+      if (description.contains('no account') ||
+          description.contains('aucun compte')) {
+        return 'Aucun compte Google n’est disponible sur cet appareil.';
+      }
       return switch (error.code) {
         GoogleSignInExceptionCode.canceled => 'Connexion Google annulée.',
         GoogleSignInExceptionCode.interrupted =>

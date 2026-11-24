@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:recipemate/core/config/app_assets.dart';
 import 'package:recipemate/core/services/startup_resolver.dart';
 import 'package:recipemate/features/splash/splash_screen.dart';
+
 import '../../helpers/svg_asset_finder.dart';
 
 void main() {

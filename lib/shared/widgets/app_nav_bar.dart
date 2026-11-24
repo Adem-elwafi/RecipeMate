@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:recipemate/core/theme/app_colors.dart';
 
 /// 5-item bottom navigation bar for RecipeMate.
 /// Material 3 NavigationBar with softGreen pill indicator.
@@ -11,39 +10,37 @@ class AppNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return NavigationBar(
       selectedIndex: currentIndex,
       onDestinationSelected: onTap,
-      backgroundColor: AppColors.card,
+      backgroundColor: colors.surface,
       surfaceTintColor: Colors.transparent,
-      indicatorColor: AppColors.softGreen,
-      destinations: const [
+      indicatorColor: colors.primaryContainer,
+      destinations: const <NavigationDestination>[
         NavigationDestination(
           icon: Icon(Icons.home_outlined),
-          selectedIcon: Icon(Icons.home_rounded, color: AppColors.primary),
+          selectedIcon: Icon(Icons.home_rounded),
           label: 'Accueil',
         ),
         NavigationDestination(
           icon: Icon(Icons.search_rounded),
-          selectedIcon: Icon(Icons.search_rounded, color: AppColors.primary),
+          selectedIcon: Icon(Icons.search_rounded),
           label: 'Explorer',
         ),
         NavigationDestination(
           icon: Icon(Icons.kitchen_outlined),
-          selectedIcon: Icon(Icons.kitchen_rounded, color: AppColors.primary),
+          selectedIcon: Icon(Icons.kitchen_rounded),
           label: 'Mon frigo',
         ),
         NavigationDestination(
           icon: Icon(Icons.auto_awesome_outlined),
-          selectedIcon: Icon(
-            Icons.auto_awesome_rounded,
-            color: AppColors.primary,
-          ),
+          selectedIcon: Icon(Icons.auto_awesome_rounded),
           label: 'Recettes IA',
         ),
         NavigationDestination(
           icon: Icon(Icons.person_outline_rounded),
-          selectedIcon: Icon(Icons.person_rounded, color: AppColors.primary),
+          selectedIcon: Icon(Icons.person_rounded),
           label: 'Profil',
         ),
       ],

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:recipemate/core/theme/app_colors.dart';
 
 /// Progress bar indicating the percentage of recipe ingredients
 /// available in the user's fridge.
@@ -30,6 +29,7 @@ class MatchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
@@ -44,18 +44,14 @@ class MatchBar extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.poppins(
-                    color: AppColors.primary,
+                    color: colors.primary,
                     fontSize: 14,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
               ),
               const SizedBox(width: 6),
-              const Icon(
-                Icons.check_circle_rounded,
-                size: 16,
-                color: AppColors.primary,
-              ),
+              Icon(Icons.check_circle_rounded, size: 16, color: colors.primary),
             ],
           ),
           const SizedBox(height: 6),
@@ -65,8 +61,8 @@ class MatchBar extends StatelessWidget {
           child: LinearProgressIndicator(
             value: _clampedFraction,
             minHeight: height,
-            backgroundColor: AppColors.softGreen,
-            valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
+            backgroundColor: colors.primaryContainer,
+            valueColor: AlwaysStoppedAnimation<Color>(colors.primary),
           ),
         ),
       ],

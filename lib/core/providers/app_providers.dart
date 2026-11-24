@@ -7,6 +7,7 @@ import 'package:recipemate/core/models/user_profile.dart';
 import 'package:recipemate/core/services/auth_service.dart';
 import 'package:recipemate/core/services/favorites_service.dart';
 import 'package:recipemate/core/services/firestore_service.dart';
+import 'package:recipemate/core/services/imgbb_service.dart';
 import 'package:recipemate/core/services/notification_service.dart';
 import 'package:recipemate/core/services/storage_service.dart';
 
@@ -17,8 +18,10 @@ final firestoreServiceProvider = Provider<FirestoreService>(
   (ref) => FirestoreService(),
 );
 
+final imgbbServiceProvider = Provider<ImgBBService>((ref) => ImgBBService());
+
 final storageServiceProvider = Provider<StorageService>(
-  (ref) => StorageService(),
+  (ref) => StorageService(imgbbService: ref.watch(imgbbServiceProvider)),
 );
 
 /// Point 4/7 : service de notifications locales.

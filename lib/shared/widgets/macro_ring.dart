@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:recipemate/core/theme/app_colors.dart';
 
 /// Circular progress ring displaying nutritional macro intake vs daily target.
 /// Aligned with `docs/design/RecipeMate.html`:
@@ -37,6 +36,7 @@ class MacroRing extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -53,7 +53,7 @@ class MacroRing extends StatelessWidget {
                 child: CircularProgressIndicator(
                   value: 1.0,
                   strokeWidth: strokeWidth,
-                  color: AppColors.borderSubtle,
+                  color: colors.outlineVariant,
                 ),
               ),
               // Active progress
@@ -67,12 +67,12 @@ class MacroRing extends StatelessWidget {
                   color: color,
                 ),
               ),
-              // Inner 48px white circle with center text
+              // Cercle intérieur allocé au surface courant (clair ou sombre).
               Container(
                 width: size - (strokeWidth * 2),
                 height: size - (strokeWidth * 2),
-                decoration: const BoxDecoration(
-                  color: Colors.white,
+                decoration: BoxDecoration(
+                  color: colors.surface,
                   shape: BoxShape.circle,
                 ),
                 alignment: Alignment.center,
@@ -81,7 +81,7 @@ class MacroRing extends StatelessWidget {
                   style: GoogleFonts.inter(
                     fontSize: 13,
                     fontWeight: FontWeight.w700,
-                    color: AppColors.textPrimary,
+                    color: colors.onSurface,
                   ),
                 ),
               ),
@@ -94,7 +94,7 @@ class MacroRing extends StatelessWidget {
           style: GoogleFonts.inter(
             fontSize: 12,
             fontWeight: FontWeight.w400,
-            color: AppColors.textSecondary,
+            color: colors.onSurfaceVariant,
           ),
         ),
       ],
