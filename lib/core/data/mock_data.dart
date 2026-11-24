@@ -1,3 +1,4 @@
+import 'package:recipemate/core/models/difficulty.dart';
 import 'package:recipemate/core/models/fridge_item.dart';
 import 'package:recipemate/core/models/ingredient.dart';
 import 'package:recipemate/core/models/recipe.dart';
@@ -111,6 +112,25 @@ abstract final class MockData {
     defaultUnit: 'g',
   );
 
+  /// All known ingredients, for API mappings.
+  static List<Ingredient> get allIngredients => <Ingredient>[
+    ingChicken,
+    ingFeta,
+    ingCherryTomatoes,
+    ingCucumber,
+    ingAvocado,
+    ingSalmon,
+    ingSpinach,
+    ingEggs,
+    ingGreekYogurt,
+    ingChickpeas,
+    ingCoconutMilk,
+    ingOats,
+    ingBerries,
+    ingOliveOil,
+    ingRice,
+  ];
+
   /// Initial fridge stock with expiration dates
   static List<FridgeItem> get initialFridgeItems {
     final now = DateTime.now();
@@ -193,6 +213,7 @@ abstract final class MockData {
       rating: 4.9,
       matchPercentage: 0.88,
       isFavorite: true,
+      difficulty: Difficulty.easy,
       ingredients: [
         RecipeIngredient(ingredient: ingChicken, quantity: 200, unit: 'g'),
         RecipeIngredient(ingredient: ingFeta, quantity: 80, unit: 'g'),
@@ -233,6 +254,7 @@ abstract final class MockData {
       rating: 4.8,
       matchPercentage: 0.75,
       isFavorite: false,
+      difficulty: Difficulty.medium,
       ingredients: [
         RecipeIngredient(ingredient: ingSalmon, quantity: 120, unit: 'g'),
         RecipeIngredient(ingredient: ingAvocado, quantity: 1, unit: 'pièce'),
@@ -263,6 +285,7 @@ abstract final class MockData {
       rating: 4.7,
       matchPercentage: 0.60,
       isFavorite: true,
+      difficulty: Difficulty.easy,
       ingredients: [
         RecipeIngredient(ingredient: ingOats, quantity: 50, unit: 'g'),
         RecipeIngredient(ingredient: ingGreekYogurt, quantity: 100, unit: 'g'),
@@ -291,6 +314,7 @@ abstract final class MockData {
       rating: 4.9,
       matchPercentage: 0.82,
       isFavorite: false,
+      difficulty: Difficulty.medium,
       ingredients: [
         RecipeIngredient(ingredient: ingChickpeas, quantity: 250, unit: 'g'),
         RecipeIngredient(ingredient: ingCoconutMilk, quantity: 200, unit: 'ml'),
@@ -326,6 +350,7 @@ abstract final class MockData {
       rating: 4.8,
       matchPercentage: 0.95,
       isFavorite: true,
+      difficulty: Difficulty.easy,
       ingredients: [
         RecipeIngredient(ingredient: ingEggs, quantity: 3, unit: 'pièce'),
         RecipeIngredient(ingredient: ingSpinach, quantity: 60, unit: 'g'),

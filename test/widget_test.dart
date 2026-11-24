@@ -185,9 +185,10 @@ void main() {
   testWidgets('App root smoke test renders without crash', (tester) async {
     await tester.pumpWidget(const ProviderScope(child: RecipeMateApp()));
 
-    // Initial frame renders home screen placeholder
+    // Initial frame renders the Molka dashboard
+    expect(find.text('Bonjour, Adem !'), findsOneWidget);
+    expect(find.text('Recette du jour'), findsWidgets);
     expect(find.text('Accueil'), findsWidgets);
-    expect(find.text('Responsable : Molka'), findsOneWidget);
     expect(find.text('Mon frigo'), findsOneWidget);
   });
 }

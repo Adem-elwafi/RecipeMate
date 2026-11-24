@@ -21,6 +21,15 @@ final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(
   debugLabel: 'root',
 );
 
+/// Paths of the shell routes (bottom bar branches).
+const appShellPaths = <String>[
+  '/',
+  '/explore',
+  '/fridge',
+  '/recommendations',
+  '/profile',
+];
+
 /// Central GoRouter configuration for RecipeMate.
 final GoRouter appRouter = GoRouter(
   navigatorKey: _rootNavigatorKey,
@@ -33,6 +42,7 @@ final GoRouter appRouter = GoRouter(
           body: navigationShell,
           bottomNavigationBar: AppNavBar(
             currentIndex: navigationShell.currentIndex,
+            location: state.uri.path,
             onTap: (index) => navigationShell.goBranch(
               index,
               initialLocation: index == navigationShell.currentIndex,

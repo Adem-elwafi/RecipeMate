@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:recipemate/core/models/difficulty.dart';
 import 'package:recipemate/core/models/ingredient.dart';
 
 /// Full recipe representation with nutritional data and instructions.
@@ -23,6 +24,7 @@ class Recipe {
     this.rating = 4.8,
     this.matchPercentage,
     this.isFavorite = false,
+    this.difficulty = Difficulty.easy,
   });
 
   final String id;
@@ -46,6 +48,9 @@ class Recipe {
   final double? matchPercentage;
 
   final bool isFavorite;
+
+  /// Difficulty level, used by the advanced search filters.
+  final Difficulty difficulty;
 
   /// Total preparation and cooking duration in minutes.
   int get totalTimeMinutes => prepTimeMinutes + cookTimeMinutes;
@@ -79,6 +84,7 @@ class Recipe {
     double? rating,
     double? matchPercentage,
     bool? isFavorite,
+    Difficulty? difficulty,
   }) {
     return Recipe(
       id: id ?? this.id,
@@ -99,6 +105,7 @@ class Recipe {
       rating: rating ?? this.rating,
       matchPercentage: matchPercentage ?? this.matchPercentage,
       isFavorite: isFavorite ?? this.isFavorite,
+      difficulty: difficulty ?? this.difficulty,
     );
   }
 
