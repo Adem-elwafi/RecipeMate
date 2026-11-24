@@ -1,0 +1,38 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Each user can only read and write their own profile and subcollections.
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+
+      match /favorites/{recipeId} {
+        allow read, write: if request.auth != null && request.auth.uid == uid;
+      }
+
+      match /collections/{collectionId} {
+        allow read, write: if request.auth != null && request.auth.uid == uid;
+      }
+
+      //Historique des rappels locaux et des notifications déclenchées.
+      match /reminders/{reminderId} {
+        allow read, write: if request.auth != null && request.auth.uid == uid;
+      }
+
+      //Produits suivis par l'utilisateur (utilisés pour les rappels de péremption).
+      match /pantry/{itemId} {
+        allow read, write: if request.auth != null && request.auth.uid == uid;
+      }
+    }
+
+    // Recipes are visible to every authenticated user, but only their
+    // creator can modify or delete them.
+    match /recipes/{recipeId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+                    && request.resource.data.creatorId == request.auth.uid;
+      allow update, delete: if request.auth != null
+                            && resource.data.creatorId == request.auth.uid;
+    }
+  }
+}

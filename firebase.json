@@ -1,0 +1,29 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "recipemate-e49b7",
+          "appId": "1:1094817134596:android:34102d62fba52a08265d51",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "recipemate-e49b7",
+          "configurations": {
+            "android": "1:1094817134596:android:34102d62fba52a08265d51",
+            "ios": "1:1094817134596:ios:57e486ca4e1f426d265d51",
+            "web": "1:1094817134596:web:588c648b686dec09265d51"
+          }
+        }
+      }
+    }
+  }
+}

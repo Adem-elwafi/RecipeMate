@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:recipemate/core/services/startup_resolver.dart';
 import 'package:recipemate/features/add_recipe/add_recipe_screen.dart';
 import 'package:recipemate/features/auth/auth_screen.dart';
 import 'package:recipemate/features/collections/collections_screen.dart';
@@ -12,9 +15,12 @@ import 'package:recipemate/features/onboarding/onboarding_screen.dart';
 import 'package:recipemate/features/playground/playground_screen.dart';
 import 'package:recipemate/features/product/product_screen.dart';
 import 'package:recipemate/features/profile/profile_screen.dart';
+import 'package:recipemate/features/profile/settings_screen.dart';
 import 'package:recipemate/features/recipe_details/recipe_details_screen.dart';
 import 'package:recipemate/features/recommendations/recommendations_screen.dart';
+import 'package:recipemate/features/reminders/reminders_screen.dart';
 import 'package:recipemate/features/scanner/scanner_screen.dart';
+import 'package:recipemate/features/splash/splash_screen.dart';
 import 'package:recipemate/shared/widgets/app_nav_bar.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(
@@ -33,8 +39,28 @@ const appShellPaths = <String>[
 /// Central GoRouter configuration for RecipeMate.
 final GoRouter appRouter = GoRouter(
   navigatorKey: _rootNavigatorKey,
-  initialLocation: '/',
+  initialLocation: '/splash',
   routes: [
+    // Splash decides: onboarding / login / home (Farah)
+    GoRoute(
+      parentNavigatorKey: _rootNavigatorKey,
+      path: '/splash',
+      builder: (context, state) {
+        return SplashScreen(
+          onDestination: (destination) {
+            switch (destination) {
+              case SplashDestination.onboarding:
+                context.go('/onboarding');
+              case SplashDestination.auth:
+                context.go('/auth');
+              case SplashDestination.home:
+                context.go('/');
+            }
+          },
+        );
+      },
+    ),
+
     // Shell Route for 5 Bottom Bar Tabs
     StatefulShellRoute.indexedStack(
       builder: (context, state, navigationShell) {
@@ -141,7 +167,12 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       parentNavigatorKey: _rootNavigatorKey,
       path: '/onboarding',
-      builder: (context, state) => const OnboardingScreen(),
+      builder: (context, state) {
+        return OnboardingScreen(
+          onFinished: () => unawaited(_goAfterOnboarding(context)),
+          onSkip: () => unawaited(_goAfterOnboarding(context)),
+        );
+      },
     ),
 
     // Auth (Farah)
@@ -149,6 +180,20 @@ final GoRouter appRouter = GoRouter(
       parentNavigatorKey: _rootNavigatorKey,
       path: '/auth',
       builder: (context, state) => const AuthScreen(),
+    ),
+
+    // Settings (Farah)
+    GoRoute(
+      parentNavigatorKey: _rootNavigatorKey,
+      path: '/settings',
+      builder: (context, state) => const SettingsScreen(),
+    ),
+
+    // Mes rappels (Farah) — point 4/7.
+    GoRoute(
+      parentNavigatorKey: _rootNavigatorKey,
+      path: '/reminders',
+      builder: (context, state) => const RemindersScreen(),
     ),
 
     // Favorites (Farah)

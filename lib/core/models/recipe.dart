@@ -1,5 +1,5 @@
+
 import 'package:flutter/foundation.dart';
-import 'package:recipemate/core/models/difficulty.dart';
 import 'package:recipemate/core/models/ingredient.dart';
 
 /// Full recipe representation with nutritional data and instructions.
@@ -20,11 +20,17 @@ class Recipe {
     required this.instructions,
     this.dietBadges = const [],
     this.allergens = const [],
+    this.category = '',
+    this.difficulty = 'Facile',
+    this.dietTags = const <String>[],
+    this.fiberGrams = 0,
     this.servings = 2,
     this.rating = 4.8,
     this.matchPercentage,
     this.isFavorite = false,
-    this.difficulty = Difficulty.easy,
+    this.authorId = '',
+    this.ingredientKeywords = const <String>[],
+    this.isPublic = true,
   });
 
   final String id;
@@ -37,32 +43,54 @@ class Recipe {
   final double proteinGrams;
   final double carbsGrams;
   final double fatGrams;
+
   final List<String> dietBadges;
   final List<String> allergens;
+
+  /// Recipe category.
+  final String category;
+
+  /// Difficulty: Facile, Moyen or Difficile.
+  final String difficulty;
+
+  /// Diet tags.
+  final List<String> dietTags;
+
+  /// Fiber per serving, in grams.
+  final double fiberGrams;
+
   final List<RecipeIngredient> ingredients;
   final List<String> instructions;
+
   final int servings;
   final double rating;
-
-  /// Optional fridge ingredients match score (0.0 to 1.0 or 0 to 100).
   final double? matchPercentage;
-
   final bool isFavorite;
 
-  /// Difficulty level, used by the advanced search filters.
-  final Difficulty difficulty;
+  /// Author UID in Firestore.
+  final String authorId;
+
+  /// Normalized ingredient keywords for fridge search.
+  final List<String> ingredientKeywords;
+
+  /// Whether the recipe is publicly visible.
+  final bool isPublic;
 
   /// Total preparation and cooking duration in minutes.
   int get totalTimeMinutes => prepTimeMinutes + cookTimeMinutes;
 
-  /// Formatted total time (e.g. "25 min" or "1 h 15 min").
+  /// Formatted total time.
   String get formattedTotalTime {
     if (totalTimeMinutes < 60) {
       return '$totalTimeMinutes min';
     }
+
     final hours = totalTimeMinutes ~/ 60;
     final mins = totalTimeMinutes % 60;
-    return mins == 0 ? '${hours}h' : '${hours}h ${mins}min';
+
+    return mins == 0
+        ? '${hours}h'
+        : '${hours}h ${mins}min';
   }
 
   Recipe copyWith({
@@ -78,13 +106,19 @@ class Recipe {
     double? fatGrams,
     List<String>? dietBadges,
     List<String>? allergens,
+    String? category,
+    String? difficulty,
+    List<String>? dietTags,
+    double? fiberGrams,
     List<RecipeIngredient>? ingredients,
     List<String>? instructions,
     int? servings,
     double? rating,
     double? matchPercentage,
     bool? isFavorite,
-    Difficulty? difficulty,
+    String? authorId,
+    List<String>? ingredientKeywords,
+    bool? isPublic,
   }) {
     return Recipe(
       id: id ?? this.id,
@@ -99,13 +133,20 @@ class Recipe {
       fatGrams: fatGrams ?? this.fatGrams,
       dietBadges: dietBadges ?? this.dietBadges,
       allergens: allergens ?? this.allergens,
+      category: category ?? this.category,
+      difficulty: difficulty ?? this.difficulty,
+      dietTags: dietTags ?? this.dietTags,
+      fiberGrams: fiberGrams ?? this.fiberGrams,
       ingredients: ingredients ?? this.ingredients,
       instructions: instructions ?? this.instructions,
       servings: servings ?? this.servings,
       rating: rating ?? this.rating,
       matchPercentage: matchPercentage ?? this.matchPercentage,
       isFavorite: isFavorite ?? this.isFavorite,
-      difficulty: difficulty ?? this.difficulty,
+      authorId: authorId ?? this.authorId,
+      ingredientKeywords:
+          ingredientKeywords ?? this.ingredientKeywords,
+      isPublic: isPublic ?? this.isPublic,
     );
   }
 

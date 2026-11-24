@@ -20,6 +20,7 @@ class FeaturePlaceholder extends StatelessWidget {
     super.key,
     this.extraDetail,
     this.showBackButton = false,
+    this.appBar,
   });
 
   final String title;
@@ -29,27 +30,35 @@ class FeaturePlaceholder extends StatelessWidget {
   final String? extraDetail;
   final bool showBackButton;
 
+  /// Point B/C : en-tête injecté par l'écran qui utilise ce placeholder.
+  /// Les onglets racines passent l'en-tête RecipeMate, les pages secondaires
+  /// passent l'en-tête de retour. S'il est absent, on garde l'ancien bouton
+  /// retour pour ne pas casser les écrans existants.
+  final PreferredSizeWidget? appBar;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.cream,
-      appBar: showBackButton
-          ? AppBar(
-              backgroundColor: AppColors.cream,
-              elevation: 0,
-              leading: IconButton(
-                icon: const Icon(
-                  Icons.arrow_back_rounded,
-                  color: AppColors.textPrimary,
-                ),
-                onPressed: () {
-                  if (Navigator.of(context).canPop()) {
-                    Navigator.of(context).pop();
-                  }
-                },
-              ),
-            )
-          : null,
+      appBar:
+          appBar ??
+          (showBackButton
+              ? AppBar(
+                  backgroundColor: AppColors.cream,
+                  elevation: 0,
+                  leading: IconButton(
+                    icon: const Icon(
+                      Icons.arrow_back_rounded,
+                      color: AppColors.textPrimary,
+                    ),
+                    onPressed: () {
+                      if (Navigator.of(context).canPop()) {
+                        Navigator.of(context).pop();
+                      }
+                    },
+                  ),
+                )
+              : null),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
